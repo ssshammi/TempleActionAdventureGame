@@ -1,0 +1,6689 @@
+{
+  "Settings": {
+    "set_Localization": "False",
+    "set_TextFormatter": "Unity",
+    "set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
+    "set_UseScriptSupport": "True",
+    "ExportVersion": "1.2",
+    "ObjectDefinitionsHash": "24DB057B4062171373AB1B083B59AC4514A29F4901A72D366FA266D6039A9340",
+    "ScriptFragmentsHash": "5591239950"
+  },
+  "Project": {
+    "Name": "The Key of the Nile",
+    "DetailName": "",
+    "Guid": "5e6ae696-800c-4397-98bf-318520f0d5b6",
+    "TechnicalName": "The_Key_Of_The_Nile"
+  },
+  "GlobalVariables": [
+    {
+      "Namespace": "glyph_states",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "air_glyph_activated",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player first interacts with the the Ankh pedestal."
+        },
+        {
+          "Variable": "fire_glyph_activated",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player earth_puzzle_solved is true and interacts with the Ankh pedestal."
+        },
+        {
+          "Variable": "water_glyph_activated",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player air_puzzle_solved is true and interacts with the Ankh pedestal."
+        },
+        {
+          "Variable": "earth_glyph_activated",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player water_puzzle_solved is true and interacts with the Ankh pedestal."
+        },
+        {
+          "Variable": "all_glyphs_activated",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player fire_puzzle_solved is true and interacts with the Ankh pedestal."
+        }
+      ]
+    },
+    {
+      "Namespace": "puzzle_states",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "air_puzzle_solved",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player completes the air puzzle."
+        },
+        {
+          "Variable": "water_puzzle_solved",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player completes the water puzzle."
+        },
+        {
+          "Variable": "earth_puzzle_solved",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player completes the earth puzzle."
+        },
+        {
+          "Variable": "fire_puzzle_solved",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after player completes the fire puzzle."
+        }
+      ]
+    },
+    {
+      "Namespace": "temple_object_states",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "ankh_door_open",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after all_glyphs_activated is true."
+        },
+        {
+          "Variable": "air_door_open",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after air_glyph_activated is true, but reset to false after water_glyph_activated is true."
+        },
+        {
+          "Variable": "water_door_open",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after water_glyph_activated is true, but reset to false after earth_glyph_activated is true."
+        },
+        {
+          "Variable": "earth_door_open",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after earth_glyph_activated is true, but reset to false after fire_glyph_activated is true."
+        },
+        {
+          "Variable": "fire_door_open",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True after fire_glyph_activated is true, but reset to false after all_glyphs_activated is true."
+        },
+        {
+          "Variable": "antechamber_door_open",
+          "Type": "Boolean",
+          "Value": "True",
+          "Description": "False after wind_door_open is true, but reset to true after ankh_door_open is true."
+        },
+        {
+          "Variable": "ankh_recovered",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if the player recovers the Ankh."
+        },
+        {
+          "Variable": "ankh_destroyed",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if the player destroys tha Ankh."
+        }
+      ]
+    },
+    {
+      "Namespace": "powers",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "air_power",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if air_glyph_activated is true."
+        },
+        {
+          "Variable": "water_power",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if water_glyph_activated is true."
+        },
+        {
+          "Variable": "fire_power",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if fire_glyph_activated is true."
+        },
+        {
+          "Variable": "earth_power",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "True if earth_glyph_activated is true."
+        }
+      ]
+    }
+  ],
+  "ObjectDefinitions": [
+    {
+      "Type": "Point",
+      "Class": "Primitive",
+      "Properties": [
+        {
+          "Property": "x",
+          "Type": "float"
+        },
+        {
+          "Property": "y",
+          "Type": "float"
+        }
+      ]
+    },
+    {
+      "Type": "Color",
+      "Class": "Primitive",
+      "Properties": [
+        {
+          "Property": "a",
+          "Type": "float"
+        },
+        {
+          "Property": "r",
+          "Type": "float"
+        },
+        {
+          "Property": "g",
+          "Type": "float"
+        },
+        {
+          "Property": "b",
+          "Type": "float"
+        }
+      ]
+    },
+    {
+      "Type": "Size",
+      "Class": "Primitive",
+      "Properties": [
+        {
+          "Property": "w",
+          "Type": "float"
+        },
+        {
+          "Property": "h",
+          "Type": "float"
+        }
+      ]
+    },
+    {
+      "Type": "Rect",
+      "Class": "Primitive",
+      "Properties": [
+        {
+          "Property": "x",
+          "Type": "float"
+        },
+        {
+          "Property": "y",
+          "Type": "float"
+        },
+        {
+          "Property": "w",
+          "Type": "float"
+        },
+        {
+          "Property": "h",
+          "Type": "float"
+        }
+      ]
+    },
+    {
+      "Type": "PreviewImage",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "ViewBox",
+          "Type": "Rect"
+        },
+        {
+          "Property": "Mode",
+          "Type": "PreviewImageViewBoxModes"
+        },
+        {
+          "Property": "Asset",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Transformation",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "Pivot",
+          "Type": "Point"
+        },
+        {
+          "Property": "Rotation",
+          "Type": "float"
+        },
+        {
+          "Property": "Translation",
+          "Type": "Point"
+        },
+        {
+          "Property": "Matrix",
+          "Type": "Array",
+          "ItemType": "float"
+        }
+      ]
+    },
+    {
+      "Type": "OutgoingConnection",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "Label",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "TargetPin",
+          "Type": "InputPin"
+        },
+        {
+          "Property": "Target",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "IncomingConnection",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "Label",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "SourcePin",
+          "Type": "OutputPin"
+        },
+        {
+          "Property": "Source",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "OutputPin",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "Text",
+          "Type": "Script_Instruction"
+        },
+        {
+          "Property": "Id",
+          "Type": "id"
+        },
+        {
+          "Property": "Owner",
+          "Type": "id"
+        },
+        {
+          "Property": "Connections",
+          "Type": "Array",
+          "ItemType": "OutgoingConnection"
+        }
+      ]
+    },
+    {
+      "Type": "InputPin",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "Text",
+          "Type": "Script_Condition"
+        },
+        {
+          "Property": "Id",
+          "Type": "id"
+        },
+        {
+          "Property": "Owner",
+          "Type": "id"
+        },
+        {
+          "Property": "Connections",
+          "Type": "Array",
+          "ItemType": "OutgoingConnection"
+        }
+      ]
+    },
+    {
+      "Type": "LocationAnchor",
+      "Class": "ArticyObject",
+      "Properties": [
+        {
+          "Property": "AnchorPositionX",
+          "Type": "float"
+        },
+        {
+          "Property": "AnchorPositionY",
+          "Type": "float"
+        },
+        {
+          "Property": "AnchorColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "AnchorSize",
+          "Type": "LocationAnchorSize"
+        }
+      ]
+    },
+    {
+      "Type": "Sex",
+      "Class": "Enum",
+      "DisplayName": "Sex",
+      "Values": {
+        "Male": 0,
+        "Female": 1,
+        "Unknown": 2
+      },
+      "DisplayNames": {
+        "Male": "Male",
+        "Female": "Female",
+        "Unknown": "Unknown"
+      }
+    },
+    {
+      "Type": "ShapeType",
+      "Class": "Enum",
+      "DisplayName": "ShapeType",
+      "Values": {
+        "Invalid": 0,
+        "Spot": 1,
+        "Circle": 2,
+        "Rectangle": 3,
+        "Path": 4,
+        "Polygon": 5,
+        "Link": 6
+      },
+      "DisplayNames": {
+        "Invalid": "Invalid",
+        "Spot": "Spot",
+        "Circle": "Circle",
+        "Rectangle": "Rectangle",
+        "Path": "Path",
+        "Polygon": "Polygon",
+        "Link": "Link"
+      }
+    },
+    {
+      "Type": "SelectabilityModes",
+      "Class": "Enum",
+      "DisplayName": "SelectabilityModes",
+      "Values": {
+        "Unselectable": 0,
+        "Selectable": 1
+      },
+      "DisplayNames": {
+        "Unselectable": "Unselectable",
+        "Selectable": "Selectable"
+      }
+    },
+    {
+      "Type": "VisibilityModes",
+      "Class": "Enum",
+      "DisplayName": "VisibilityModes",
+      "Values": {
+        "Invisible": 0,
+        "Visible": 1
+      },
+      "DisplayNames": {
+        "Invisible": "Invisible",
+        "Visible": "Visible"
+      }
+    },
+    {
+      "Type": "OutlineStyle",
+      "Class": "Enum",
+      "DisplayName": "OutlineStyle",
+      "Values": {
+        "Solid": 0,
+        "Dot": 1,
+        "Dash": 2,
+        "DashDot": 3,
+        "DashDotDot": 4
+      },
+      "DisplayNames": {
+        "Solid": "Solid",
+        "Dot": "Dot",
+        "Dash": "Dash",
+        "DashDot": "DashDot",
+        "DashDotDot": "DashDotDot"
+      }
+    },
+    {
+      "Type": "PathCaps",
+      "Class": "Enum",
+      "DisplayName": "PathCaps",
+      "Values": {
+        "ColoredDot": 0,
+        "None": 1,
+        "LineArrowHead": 2,
+        "FilledArrowHead": 3,
+        "Diamond": 4,
+        "Square": 5,
+        "Disc": 6
+      },
+      "DisplayNames": {
+        "ColoredDot": "ColoredDot",
+        "None": "None",
+        "LineArrowHead": "LineArrowHead",
+        "FilledArrowHead": "FilledArrowHead",
+        "Diamond": "Diamond",
+        "Square": "Square",
+        "Disc": "Disc"
+      }
+    },
+    {
+      "Type": "LocationAnchorSize",
+      "Class": "Enum",
+      "DisplayName": "LocationAnchorSize",
+      "Values": {
+        "Small": 0,
+        "Medium": 1,
+        "Large": 2
+      },
+      "DisplayNames": {
+        "Small": "Small",
+        "Medium": "Medium",
+        "Large": "Large"
+      }
+    },
+    {
+      "Type": "PreviewImageViewBoxModes",
+      "Class": "Enum",
+      "DisplayName": "PreviewImageViewBoxModes",
+      "Values": {
+        "FromAsset": 0,
+        "Custom": 1
+      },
+      "DisplayNames": {
+        "FromAsset": "FromAsset",
+        "Custom": "Custom"
+      }
+    },
+    {
+      "Type": "FlowFragment",
+      "Class": "FlowFragment",
+      "DisplayName": "FlowFragment",
+      "Properties": [
+        {
+          "Property": "Attachments",
+          "Type": "Array",
+          "ItemType": "Id"
+        },
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "Dialogue",
+      "Class": "Dialogue",
+      "DisplayName": "Dialogue",
+      "Properties": [
+        {
+          "Property": "Attachments",
+          "Type": "Array",
+          "ItemType": "Id"
+        },
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "DialogueFragment",
+      "Class": "DialogueFragment",
+      "DisplayName": "DialogueFragment",
+      "Properties": [
+        {
+          "Property": "MenuText",
+          "Type": "string"
+        },
+        {
+          "Property": "StageDirections",
+          "Type": "string"
+        },
+        {
+          "Property": "Speaker",
+          "Type": "Id"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "Hub",
+      "Class": "Hub",
+      "DisplayName": "Hub",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "Comment",
+      "Class": "Comment",
+      "DisplayName": "Comment",
+      "Properties": [
+        {
+          "Property": "CreatedBy",
+          "Type": "string"
+        },
+        {
+          "Property": "CreatedOn",
+          "Type": "DateTime"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Jump",
+      "Class": "Jump",
+      "DisplayName": "Jump",
+      "Properties": [
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "Target",
+          "Type": "Id"
+        },
+        {
+          "Property": "TargetPin",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "Entity",
+      "Class": "Entity",
+      "DisplayName": "Entity",
+      "Properties": [
+        {
+          "Property": "Attachments",
+          "Type": "Array",
+          "ItemType": "Id"
+        },
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "DefaultSupportingCharacterTemplate",
+      "Class": "Entity",
+      "InheritsFrom": "Entity",
+      "Template": {
+        "TechnicalName": "DefaultSupportingCharacterTemplate",
+        "DisplayName": "Supporting characters",
+        "Features": [
+          {
+            "TechnicalName": "DefaultBasicCharacterFeature",
+            "DisplayName": "Basic Character Properties",
+            "Properties": [
+              {
+                "Property": "Age",
+                "Type": "Float",
+                "DisplayName": "Age"
+              },
+              {
+                "Property": "Species",
+                "Type": "string",
+                "DisplayName": "Species"
+              },
+              {
+                "Property": "BornIn",
+                "Type": "string",
+                "DisplayName": "Born in"
+              },
+              {
+                "Property": "Sex",
+                "Type": "Sex",
+                "DisplayName": "Sex"
+              },
+              {
+                "Property": "Occupation",
+                "Type": "string",
+                "DisplayName": "Profession"
+              },
+              {
+                "Property": "Accent",
+                "Type": "string",
+                "DisplayName": "Voice"
+              },
+              {
+                "Property": "Personality",
+                "Type": "string",
+                "DisplayName": "Personality"
+              },
+              {
+                "Property": "Appearance",
+                "Type": "string",
+                "DisplayName": "Appearance"
+              }
+            ],
+            "Constraints": [
+              {
+                "Property": "Age",
+                "Type": "Number",
+                "MinValue": "-3.40282346638529E+38",
+                "MaxValue": "3.40282346638529E+38",
+                "Precision": "0",
+                "MinPrecision": "0",
+                "MaxPrecision": "0",
+                "Unit": null
+              },
+              {
+                "Property": "Species",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "BornIn",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Sex",
+                "Type": "Enum",
+                "IsLocalized": "True",
+                "SortMode": "BySortIndex"
+              },
+              {
+                "Property": "Occupation",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Accent",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Personality",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "Appearance",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Type": "DefaultMainCharacterTemplate",
+      "Class": "Entity",
+      "InheritsFrom": "Entity",
+      "Template": {
+        "TechnicalName": "DefaultMainCharacterTemplate",
+        "DisplayName": "Main characters",
+        "Features": [
+          {
+            "TechnicalName": "DefaultExtendedCharacterFeature",
+            "DisplayName": "Extended Character Properties",
+            "Properties": [
+              {
+                "Property": "Motivation",
+                "Type": "string",
+                "DisplayName": "Goals"
+              },
+              {
+                "Property": "InnerConflict",
+                "Type": "string",
+                "DisplayName": "Inner Conflict"
+              },
+              {
+                "Property": "Skills",
+                "Type": "string",
+                "DisplayName": "Skills"
+              },
+              {
+                "Property": "Fears",
+                "Type": "string",
+                "DisplayName": "Weaknesses"
+              },
+              {
+                "Property": "Habits",
+                "Type": "string",
+                "DisplayName": "Quirks / Habits"
+              },
+              {
+                "Property": "FurtherDetails",
+                "Type": "string",
+                "DisplayName": "Further Details"
+              }
+            ],
+            "Constraints": [
+              {
+                "Property": "Motivation",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "InnerConflict",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "Skills",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "Fears",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "Habits",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "FurtherDetails",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              }
+            ]
+          },
+          {
+            "TechnicalName": "DefaultBasicCharacterFeature",
+            "DisplayName": "Basic Character Properties",
+            "Properties": [
+              {
+                "Property": "Age",
+                "Type": "Float",
+                "DisplayName": "Age"
+              },
+              {
+                "Property": "Species",
+                "Type": "string",
+                "DisplayName": "Species"
+              },
+              {
+                "Property": "BornIn",
+                "Type": "string",
+                "DisplayName": "Born in"
+              },
+              {
+                "Property": "Sex",
+                "Type": "Sex",
+                "DisplayName": "Sex"
+              },
+              {
+                "Property": "Occupation",
+                "Type": "string",
+                "DisplayName": "Profession"
+              },
+              {
+                "Property": "Accent",
+                "Type": "string",
+                "DisplayName": "Voice"
+              },
+              {
+                "Property": "Personality",
+                "Type": "string",
+                "DisplayName": "Personality"
+              },
+              {
+                "Property": "Appearance",
+                "Type": "string",
+                "DisplayName": "Appearance"
+              }
+            ],
+            "Constraints": [
+              {
+                "Property": "Age",
+                "Type": "Number",
+                "MinValue": "-3.40282346638529E+38",
+                "MaxValue": "3.40282346638529E+38",
+                "Precision": "0",
+                "MinPrecision": "0",
+                "MaxPrecision": "0",
+                "Unit": null
+              },
+              {
+                "Property": "Species",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "BornIn",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Sex",
+                "Type": "Enum",
+                "IsLocalized": "True",
+                "SortMode": "BySortIndex"
+              },
+              {
+                "Property": "Occupation",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Accent",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "False"
+              },
+              {
+                "Property": "Personality",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              },
+              {
+                "Property": "Appearance",
+                "Type": "Text",
+                "MaxLength": "2048",
+                "PlaceholderValue": "",
+                "IsLocalized": "True",
+                "AllowsLinebreaks": "True"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Location",
+      "Class": "Location",
+      "DisplayName": "Location",
+      "Properties": [
+        {
+          "Property": "Attachments",
+          "Type": "Array",
+          "ItemType": "Id"
+        },
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Spot",
+      "Class": "Spot",
+      "DisplayName": "Spot",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "ShowDisplayName",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "DisplayNameColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "DisplayNameSize",
+          "Type": "int"
+        },
+        {
+          "Property": "OutlineColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "OutlineSize",
+          "Type": "Float"
+        },
+        {
+          "Property": "OutlineStyle",
+          "Type": "OutlineStyle"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Zone",
+      "Class": "Zone",
+      "DisplayName": "Zone",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Vertices",
+          "Type": "Array",
+          "ItemType": "Point"
+        },
+        {
+          "Property": "Transform",
+          "Type": "Transformation"
+        },
+        {
+          "Property": "ShapeType",
+          "Type": "ShapeType"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "OutlineColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "OutlineSize",
+          "Type": "Float"
+        },
+        {
+          "Property": "OutlineStyle",
+          "Type": "OutlineStyle"
+        },
+        {
+          "Property": "ShowDisplayName",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "DisplayNameColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "DisplayNameSize",
+          "Type": "int"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Path",
+      "Class": "Path",
+      "DisplayName": "Path",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Vertices",
+          "Type": "Array",
+          "ItemType": "Point"
+        },
+        {
+          "Property": "Transform",
+          "Type": "Transformation"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "ShowDisplayName",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "DisplayNameColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "DisplayNameSize",
+          "Type": "int"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "OutlineColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "OutlineSize",
+          "Type": "Float"
+        },
+        {
+          "Property": "OutlineStyle",
+          "Type": "OutlineStyle"
+        },
+        {
+          "Property": "StartCap",
+          "Type": "PathCaps"
+        },
+        {
+          "Property": "EndCap",
+          "Type": "PathCaps"
+        },
+        {
+          "Property": "LineWidth",
+          "Type": "Float"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Link",
+      "Class": "Link",
+      "DisplayName": "Link",
+      "Properties": [
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "Target",
+          "Type": "Id"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "ShowDisplayName",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "DisplayNameColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "DisplayNameSize",
+          "Type": "int"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Asset",
+      "Class": "Asset",
+      "DisplayName": "Asset",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Filename",
+          "Type": "string"
+        },
+        {
+          "Property": "OriginalSource",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Condition",
+      "Class": "Condition",
+      "DisplayName": "Condition",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "String"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Expression",
+          "Type": "Script_Condition"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "Instruction",
+      "Class": "Instruction",
+      "DisplayName": "Instruction",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "String"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Expression",
+          "Type": "Script_Instruction"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "InputPins",
+          "Type": "Array",
+          "ItemType": "InputPin"
+        },
+        {
+          "Property": "OutputPins",
+          "Type": "Array",
+          "ItemType": "OutputPin"
+        }
+      ]
+    },
+    {
+      "Type": "LocationText",
+      "Class": "LocationText",
+      "DisplayName": "LocationText",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "String"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Anchors",
+          "Type": "Array",
+          "ItemType": "LocationAnchor"
+        },
+        {
+          "Property": "Vertices",
+          "Type": "Array",
+          "ItemType": "Point"
+        },
+        {
+          "Property": "Transform",
+          "Type": "Transformation"
+        },
+        {
+          "Property": "ShapeType",
+          "Type": "ShapeType"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "OutlineColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "OutlineSize",
+          "Type": "Float"
+        },
+        {
+          "Property": "OutlineStyle",
+          "Type": "OutlineStyle"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "ForcedWidth",
+          "Type": "Float"
+        },
+        {
+          "Property": "ForcedHeight",
+          "Type": "Float"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "LocationImage",
+      "Class": "LocationImage",
+      "DisplayName": "LocationImage",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Anchors",
+          "Type": "Array",
+          "ItemType": "LocationAnchor"
+        },
+        {
+          "Property": "Vertices",
+          "Type": "Array",
+          "ItemType": "Point"
+        },
+        {
+          "Property": "Transform",
+          "Type": "Transformation"
+        },
+        {
+          "Property": "ShapeType",
+          "Type": "ShapeType"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Visibility",
+          "Type": "VisibilityModes"
+        },
+        {
+          "Property": "OutlineColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "OutlineSize",
+          "Type": "Float"
+        },
+        {
+          "Property": "OutlineStyle",
+          "Type": "OutlineStyle"
+        },
+        {
+          "Property": "Selectability",
+          "Type": "SelectabilityModes"
+        },
+        {
+          "Property": "DropShadow",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "ClipRect",
+          "Type": "Rect"
+        },
+        {
+          "Property": "ImageOpacity",
+          "Type": "Float"
+        },
+        {
+          "Property": "ImageAsset",
+          "Type": "Id"
+        },
+        {
+          "Property": "CachedImageWidth",
+          "Type": "int"
+        },
+        {
+          "Property": "CachedImageHeight",
+          "Type": "int"
+        },
+        {
+          "Property": "ShowDisplayName",
+          "Type": "Boolean"
+        },
+        {
+          "Property": "DisplayNameColor",
+          "Type": "Color"
+        },
+        {
+          "Property": "DisplayNameSize",
+          "Type": "int"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "Document",
+      "Class": "Document",
+      "DisplayName": "Document",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "TextObject",
+      "Class": "TextObject",
+      "DisplayName": "TextObject",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "Attachments",
+          "Type": "Array",
+          "ItemType": "Id"
+        },
+        {
+          "Property": "PreviewImage",
+          "Type": "PreviewImage"
+        },
+        {
+          "Property": "Color",
+          "Type": "Color"
+        },
+        {
+          "Property": "Text",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "Position",
+          "Type": "Point"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        },
+        {
+          "Property": "Size",
+          "Type": "Size"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        }
+      ]
+    },
+    {
+      "Type": "UserFolder",
+      "Class": "UserFolder",
+      "DisplayName": "UserFolder",
+      "Properties": [
+        {
+          "Property": "DisplayName",
+          "Type": "string"
+        },
+        {
+          "Property": "ExternalId",
+          "Type": "string"
+        },
+        {
+          "Property": "ShortId",
+          "Type": "uint"
+        },
+        {
+          "Property": "Id",
+          "Type": "Id"
+        },
+        {
+          "Property": "TechnicalName",
+          "Type": "string"
+        },
+        {
+          "Property": "Parent",
+          "Type": "Id"
+        },
+        {
+          "Property": "ZIndex",
+          "Type": "Float"
+        }
+      ]
+    }
+  ],
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_7BED27E5",
+            "Id": "0x010000000000014B",
+            "Parent": "0x0300000043CE43F7",
+            "Attachments": [],
+            "DisplayName": "The Game",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001DD"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "This is the container for the game story.",
+            "ExternalId": "",
+            "Position": {
+              "x": 125.0,
+              "y": 125.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2079139813,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014E",
+                "Owner": "0x010000000000014B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000154",
+                    "Target": "0x0100000000000151"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014F",
+                "Owner": "0x010000000000014B"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_7A335D96",
+            "Id": "0x0100000000000151",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x0100000000000113",
+              "0x010000000000010F",
+              "0x010000000000012B"
+            ],
+            "DisplayName": "The Antechamber",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x010000000000022D"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "This is the first room the player experiences when starting the game. The <color=#ffa61aff>Protagonist</color> finds himself in an empty <color=#ffa61aff>Antechamber</color>. He's brought up to speed by the <color=#ffa61aff>Assistant</color>.",
+            "ExternalId": "",
+            "Position": {
+              "x": -850.0,
+              "y": 375.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2050186646,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000154",
+                "Owner": "0x0100000000000151",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000198",
+                    "Target": "0x0100000000000195"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000155",
+                "Owner": "0x0100000000000151",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_EE507CC9",
+            "Id": "0x0100000000000195",
+            "Parent": "0x0100000000000151",
+            "Attachments": [],
+            "DisplayName": "You're In...",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You've just entered the long-forgotten Temple of Life. Standing just inside a small <color=#ffa61aff>Antechamber</color>, you shake the sand off yourself and get your bearings.",
+            "ExternalId": "",
+            "Position": {
+              "x": -225.0,
+              "y": 325.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3998252233,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000198",
+                "Owner": "0x0100000000000195"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000199",
+                "Owner": "0x0100000000000195",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000031C",
+                    "Target": "0x0100000000000319"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_05E5D39C",
+            "Id": "0x01000000000001A5",
+            "Parent": "0x0100000000000151",
+            "Attachments": [],
+            "DisplayName": "What now?",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "The Protagonist has no way to go but forward, through the <color=#ffa61aff>Antechamber</color> doorway and into the <color=#ffa61aff>Nexus</color>.",
+            "ExternalId": "",
+            "Position": {
+              "x": 475.0,
+              "y": 325.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 98947996,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A8",
+                "Owner": "0x01000000000001A5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A9",
+                "Owner": "0x01000000000001A5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000155",
+                    "Target": "0x0100000000000151"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_D37D39F9",
+            "Id": "0x010000000000015D",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x010000000000012F"
+            ],
+            "DisplayName": "The Nexus",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You enter a room with 5 sealed doors. Make that 6 sealed doors. The one behind you just slid shut. Glyphs adorn the walls and a giant pedestal dominates the room at its center. A giant stone Ankh sits atop the pedestal, which is adorned on 4 sides by glowing glyphs representing the four elements. Four of the doors are adorned by corresponding glyphs and one displays another Ankh symbol.",
+            "ExternalId": "",
+            "Position": {
+              "x": -300.0,
+              "y": 375.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3548199417,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000160",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000256",
+                    "Target": "0x0100000000000254"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000528",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000529",
+                    "Target": "0x0100000000000163"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x010000000000056F",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016C",
+                    "Target": "0x0100000000000169"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000571",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000018E",
+                    "Target": "0x010000000000016F"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000573",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000191",
+                    "Target": "0x0100000000000175"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000577",
+                "Owner": "0x010000000000015D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000193",
+                    "Target": "0x010000000000017B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_8074FAEF",
+            "Id": "0x0100000000000163",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x0100000000000137"
+            ],
+            "DisplayName": "The Air Puzzle",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You enter the air puzzle room after activating the air glyph. You're faced with an air-themed puzzle. You solve the puzzle using air and water powers. When the puzzle is solved, you return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 275.0,
+              "y": 0.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2155150063,
+            "InputPins": [
+              {
+                "Text": "// Player cannot enter until the corresponding glyph is active",
+                "Id": "0x0100000000000529",
+                "Owner": "0x0100000000000163"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Player cannot return to the nexus until the puzzle is solved.",
+                "Id": "0x0100000000000167",
+                "Owner": "0x0100000000000163",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_335AE670",
+            "Id": "0x0100000000000169",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x010000000000013F"
+            ],
+            "DisplayName": "The Water Puzzle",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You enter the water puzzle room after activating the water glyph. You're faced with a water-themed puzzle. You solve the puzzle using air and water powers. When the puzzle is solved, you return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 275.0,
+              "y": 300.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 861595248,
+            "InputPins": [
+              {
+                "Text": "// Player cannot enter until the corresponding glyph is active",
+                "Id": "0x010000000000016C",
+                "Owner": "0x0100000000000169"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Player cannot return to the nexus until the puzzle is solved.",
+                "Id": "0x010000000000016D",
+                "Owner": "0x0100000000000169",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_8253B1C0",
+            "Id": "0x010000000000016F",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x0100000000000133"
+            ],
+            "DisplayName": "The Earth Puzzle",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You enter the earth puzzle room after activating the earth glyph. You're faced with an earth-themed puzzle. You solve the puzzle using air, water, and earth powers. When the puzzle is solved, you return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 250.0,
+              "y": 600.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2186523072,
+            "InputPins": [
+              {
+                "Text": "// Player cannot enter until the corresponding glyph is active",
+                "Id": "0x010000000000018E",
+                "Owner": "0x010000000000016F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Player cannot return to the nexus until the puzzle is solved.",
+                "Id": "0x0100000000000173",
+                "Owner": "0x010000000000016F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_32B39A42",
+            "Id": "0x0100000000000175",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x010000000000013B"
+            ],
+            "DisplayName": "The Fire Puzzle",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You enter the fire puzzle room after activating the fire glyph. You're faced with a fire-themed puzzle. You solve the puzzle using air, water,  earth, and fire powers. When the puzzle is solved, you return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 250.0,
+              "y": 875.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 850631234,
+            "InputPins": [
+              {
+                "Text": "// Player cannot enter until the corresponding glyph is active",
+                "Id": "0x0100000000000191",
+                "Owner": "0x0100000000000175"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Player cannot return to the nexus until the puzzle is solved.",
+                "Id": "0x0100000000000179",
+                "Owner": "0x0100000000000175",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_8EC0B4E7",
+            "Id": "0x010000000000017B",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x0100000000000143"
+            ],
+            "DisplayName": "The Ankh Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "After solving all four puzzles and unlocking the four glyphs, you enter the resting place of the Ankh. Go now, and seek your treasure. You may choose to retrieve or destroy the Ankh",
+            "ExternalId": "",
+            "Position": {
+              "x": 800.0,
+              "y": 450.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2394993895,
+            "InputPins": [
+              {
+                "Text": "// Player cannot enter until activating the pedestal after all four glyphs are activated and all four puzzle rooms have been solved.\n",
+                "Id": "0x0100000000000193",
+                "Owner": "0x010000000000017B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000017F",
+                "Owner": "0x010000000000017B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000024F",
+                    "Target": "0x010000000000024C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_BBAAFF89",
+            "Id": "0x010000000000024C",
+            "Parent": "0x010000000000014B",
+            "Attachments": [
+              "0x0100000000000147"
+            ],
+            "DisplayName": "The End",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You did it. You got the Ankh and saved the world... or maybe you destroyed it. Maybe the real treasure was the friends we made along the way. Congratulations!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1300.0,
+              "y": 450.0
+            },
+            "ZIndex": 19.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3148545929,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000024F",
+                "Owner": "0x010000000000024C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000250",
+                "Owner": "0x010000000000024C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014F",
+                    "Target": "0x010000000000014B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_C4424484",
+            "Id": "0x0100000000000519",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Approach the pedestal",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "You approach the pedestal.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 75.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3292677252,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000051C",
+                "Owner": "0x0100000000000519",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000564",
+                    "Target": "0x0100000000000562"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000051D",
+                "Owner": "0x0100000000000519",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000256",
+                    "Target": "0x0100000000000254"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_85ED7B96",
+            "Id": "0x0100000000000521",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Air Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 325.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2246933398,
+            "InputPins": [
+              {
+                "Text": "// Only available if the air glyph is activated. No longer available after the water glyph is activated.",
+                "Id": "0x0100000000000524",
+                "Owner": "0x0100000000000521"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000525",
+                "Owner": "0x0100000000000521",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000528",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_C732BFD8",
+            "Id": "0x010000000000052C",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Water Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 575.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3341991896,
+            "InputPins": [
+              {
+                "Text": "// Only available if the water glyph is activated. No longer available after the earth glyph is activated.",
+                "Id": "0x010000000000052F",
+                "Owner": "0x010000000000052C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000530",
+                "Owner": "0x010000000000052C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000056F",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_3966D6FB",
+            "Id": "0x010000000000057A",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Earth Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 825.0
+            },
+            "ZIndex": 11.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 963041019,
+            "InputPins": [
+              {
+                "Text": "// Only available if the earth glyph is activated. No longer available after the fire glyph is activated.",
+                "Id": "0x010000000000057D",
+                "Owner": "0x010000000000057A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000057E",
+                "Owner": "0x010000000000057A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000571",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_6529263D",
+            "Id": "0x010000000000053A",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Air Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 200.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1697195581,
+            "InputPins": [
+              {
+                "Text": "// Only available if no other glyphs have been activated.",
+                "Id": "0x010000000000053D",
+                "Owner": "0x010000000000053A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Air Puzzle Room door.\nglyph_states.air_glyph_activated = true;\ntemple_object_states.air_door_open = true\n",
+                "Id": "0x010000000000053E",
+                "Owner": "0x010000000000053A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B087761A",
+            "Id": "0x0100000000000541",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the water Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 450.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2961667610,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Air Puzzle Room has been solved.",
+                "Id": "0x0100000000000544",
+                "Owner": "0x0100000000000541"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Water Puzzle Room door and closes the Air Puzzle Room door.\nglyph_states.water_glyph_activated = true;\ntemple_object_states.water_door_open = true;\ntemple_object_states.air_door_open = false",
+                "Id": "0x0100000000000545",
+                "Owner": "0x0100000000000541",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_54B0F629",
+            "Id": "0x0100000000000548",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Earth Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 700.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1420883497,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Water Puzzle Room has been solved.",
+                "Id": "0x010000000000054B",
+                "Owner": "0x0100000000000548"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Earth Puzzle Room door and closes the Water Puzzle Room door.\nglyph_states.earth_glyph_activated = true;\ntemple_object_states.earth_door_open = true;\ntemple_object_states.water_door_open = false",
+                "Id": "0x010000000000054C",
+                "Owner": "0x0100000000000548",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B85EF628",
+            "Id": "0x010000000000054F",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Fire Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 950.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3093231144,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Earth Puzzle Room has been solved.",
+                "Id": "0x0100000000000552",
+                "Owner": "0x010000000000054F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Fire Puzzle Room door and closes the Earth Puzzle Room door.\nglyph_states.fire_glyph_activated = true;\ntemple_object_states.fire_door_open = true;\ntemple_object_states.earth_door_open = false",
+                "Id": "0x0100000000000553",
+                "Owner": "0x010000000000054F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_FF00E2FD",
+            "Id": "0x010000000000055A",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate all glyphs and the Ankh statue",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 1225.0
+            },
+            "ZIndex": 14.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4278248189,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Fire Puzzle Room has been solved.",
+                "Id": "0x010000000000055D",
+                "Owner": "0x010000000000055A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Ankh Room door and closes the Fire Puzzle Room door.",
+                "Id": "0x010000000000055E",
+                "Owner": "0x010000000000055A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B8F6DAF7",
+            "Id": "0x0100000000000582",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Fire Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 1075.0
+            },
+            "ZIndex": 14.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3103185655,
+            "InputPins": [
+              {
+                "Text": "// Only available if the fire glyph is activated. No longer available after the Ankh glyph is activated.",
+                "Id": "0x0100000000000585",
+                "Owner": "0x0100000000000582"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000586",
+                "Owner": "0x0100000000000582",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000573",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_FB9D56BC",
+            "Id": "0x010000000000058A",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Ankh room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 1325.0
+            },
+            "ZIndex": 17.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4221392572,
+            "InputPins": [
+              {
+                "Text": "// Only available if all four elemental puzzle rooms have been solved.",
+                "Id": "0x010000000000058D",
+                "Owner": "0x010000000000058A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000058E",
+                "Owner": "0x010000000000058A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000577",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_A8AB5F0C",
+            "Id": "0x0100000000000742",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try something else.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "You can't do that right now. Try something else.",
+            "ExternalId": "",
+            "Position": {
+              "x": -125.0,
+              "y": 0.0
+            },
+            "ZIndex": 19.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2829803276,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000745",
+                "Owner": "0x0100000000000742"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000746",
+                "Owner": "0x0100000000000742",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000564",
+                    "Target": "0x0100000000000562"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Dialogue",
+          "Properties": {
+            "TechnicalName": "Dlg_23B3DE7A",
+            "Id": "0x0100000000000319",
+            "Parent": "0x0100000000000151",
+            "Attachments": [
+              "0x010000000000010F",
+              "0x0100000000000113",
+              "0x0100000000000346"
+            ],
+            "DisplayName": "Introductory Exposition",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "The <color=#ffa61aff>Protagonist</color>'s radio transmitter crackles to life. The <color=#ffa61aff>Assistant</color>'s voice comes in through the static.",
+            "ExternalId": "",
+            "Position": {
+              "x": 117.0,
+              "y": 325.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 291.0,
+              "h": 200.0
+            },
+            "ShortId": 598990458,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000031C",
+                "Owner": "0x0100000000000319",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C4",
+                    "Target": "0x01000000000001C1"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000031D",
+                "Owner": "0x0100000000000319",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A8",
+                    "Target": "0x01000000000001A5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_418B3EA1",
+            "Id": "0x01000000000001E7",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "Well... it could mean that I'm about to find the Ankh, use its power, and save the world. *pauses briefly to consider* Or it could be really, really bad... Only one way to find out!",
+            "ExternalId": "",
+            "Position": {
+              "x": 675.0,
+              "y": 300.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 300.0,
+              "h": 275.0
+            },
+            "ShortId": 1099644577,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EA",
+                "Owner": "0x01000000000001E7"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EB",
+                "Owner": "0x01000000000001E7",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000334",
+                    "Target": "0x0100000000000331"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C97AA5ED",
+            "Id": "0x01000000000001C1",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "An excited voice comes in through initial radio static.",
+            "Speaker": "0x0100000000000113",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "John... JOHN - Can you hear me okay? You're in! I can't believe you actually found it... the ACTUAL Temple of Life! I mean... do you know what this means?",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 275.0
+            },
+            "ShortId": 3380258285,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C4",
+                "Owner": "0x01000000000001C1"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C5",
+                "Owner": "0x01000000000001C1",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EA",
+                    "Target": "0x01000000000001E7"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_72F99B78",
+            "Id": "0x0100000000000331",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000113",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "It's gotta be better than sitting around waiting for the world to end. Anyway ... we're getting paid. What are you seeing down there? Your chest cam isn't transmitting.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1075.0,
+              "y": 300.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 250.0,
+              "h": 275.0
+            },
+            "ShortId": 1928960888,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000334",
+                "Owner": "0x0100000000000331"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000335",
+                "Owner": "0x0100000000000331",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000033A",
+                    "Target": "0x0100000000000337"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6E442F53",
+            "Id": "0x0100000000000337",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "Must've gotten damaged going through that ventilation shaft. Looks like there's a door further in. I'm gonna check it out.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1425.0,
+              "y": 300.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 275.0
+            },
+            "ShortId": 1849962323,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000033A",
+                "Owner": "0x0100000000000337"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000033B",
+                "Owner": "0x0100000000000337",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000341",
+                    "Target": "0x010000000000033E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_728C0A37",
+            "Id": "0x010000000000033E",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000113",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "Just be careful. I'll be here if you need me. Good luck!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 300.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 250.0,
+              "h": 275.0
+            },
+            "ShortId": 1921780279,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000341",
+                "Owner": "0x010000000000033E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000342",
+                "Owner": "0x010000000000033E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000031D",
+                    "Target": "0x0100000000000319"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Hub",
+          "Properties": {
+            "TechnicalName": "Hub_414B4AD6",
+            "Id": "0x0100000000000254",
+            "Parent": "0x010000000000015D",
+            "DisplayName": "Decide what to do",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 100.0,
+              "y": 375.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 175.0,
+              "h": 50.0
+            },
+            "ShortId": 1095453398,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000256",
+                "Owner": "0x0100000000000254"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000257",
+                "Owner": "0x0100000000000254",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051C",
+                    "Target": "0x0100000000000519"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000524",
+                    "Target": "0x0100000000000521"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000052F",
+                    "Target": "0x010000000000052C"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000057D",
+                    "Target": "0x010000000000057A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000585",
+                    "Target": "0x0100000000000582"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000058D",
+                    "Target": "0x010000000000058A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Hub",
+          "Properties": {
+            "TechnicalName": "Hub_15083459",
+            "Id": "0x0100000000000562",
+            "Parent": "0x0100000000000519",
+            "DisplayName": "Activate a glyph.",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": -150.0,
+              "y": 475.0
+            },
+            "ZIndex": 17.0,
+            "Size": {
+              "w": 175.0,
+              "h": 50.0
+            },
+            "ShortId": 352859225,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000564",
+                "Owner": "0x0100000000000562"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000565",
+                "Owner": "0x0100000000000562",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000073D",
+                    "Target": "0x010000000000073B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000074D",
+                    "Target": "0x010000000000074B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000756",
+                    "Target": "0x0100000000000754"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000075D",
+                    "Target": "0x010000000000075B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000055D",
+                    "Target": "0x010000000000055A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_6F685EC8",
+            "Id": "0x010000000000073B",
+            "Parent": "0x0100000000000519",
+            "DisplayName": "glyph_states.air_glyph_activated ==  ...",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 250.0,
+              "y": 250.0
+            },
+            "ZIndex": 17.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 1869110984,
+            "Expression": "glyph_states.air_glyph_activated == false",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000073D",
+                "Owner": "0x010000000000073B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000073E",
+                "Owner": "0x010000000000073B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000745",
+                    "Target": "0x0100000000000742"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x010000000000073F",
+                "Owner": "0x010000000000073B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000053D",
+                    "Target": "0x010000000000053A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_F054B62A",
+            "Id": "0x010000000000074B",
+            "Parent": "0x0100000000000519",
+            "DisplayName": "puzzle_states.air_puzzle_solved == true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 475.0
+            },
+            "ZIndex": 22.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 4032083498,
+            "Expression": "puzzle_states.air_puzzle_solved == true",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000074D",
+                "Owner": "0x010000000000074B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000074E",
+                "Owner": "0x010000000000074B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000544",
+                    "Target": "0x0100000000000541"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x010000000000074F",
+                "Owner": "0x010000000000074B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000745",
+                    "Target": "0x0100000000000742"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_276A61A5",
+            "Id": "0x0100000000000754",
+            "Parent": "0x0100000000000519",
+            "DisplayName": "puzzle_states.water_puzzle_solved == ...",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 650.0
+            },
+            "ZIndex": 25.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 661283237,
+            "Expression": "puzzle_states.water_puzzle_solved == true",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000756",
+                "Owner": "0x0100000000000754"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000757",
+                "Owner": "0x0100000000000754",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000054B",
+                    "Target": "0x0100000000000548"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000758",
+                "Owner": "0x0100000000000754",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000745",
+                    "Target": "0x0100000000000742"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_0A6753C6",
+            "Id": "0x010000000000075B",
+            "Parent": "0x0100000000000519",
+            "DisplayName": "puzzle_states.earth_puzzle_solved == ...",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 825.0
+            },
+            "ZIndex": 28.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 174543814,
+            "Expression": "puzzle_states.earth_puzzle_solved == true",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000075D",
+                "Owner": "0x010000000000075B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000075E",
+                "Owner": "0x010000000000075B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000552",
+                    "Target": "0x010000000000054F"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x010000000000075F",
+                "Owner": "0x010000000000075B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000745",
+                    "Target": "0x0100000000000742"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_A2233345",
+            "Id": "0x010000000000010F",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Protagonist",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Hey - It's you!",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001CD"
+            },
+            "ShortId": 2720215877
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_DE2457D1",
+            "Id": "0x0100000000000113",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Assistant",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Your plucky assistant who guides you through the temple.",
+            "ExternalId": "",
+            "Position": {
+              "x": 20.0,
+              "y": 20.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001C9"
+            },
+            "ShortId": 3726923729
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_FC7B792C",
+            "Id": "0x0100000000000117",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Ankh",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001DD"
+            },
+            "ShortId": 4235950380
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_3268532E",
+            "Id": "0x010000000000011B",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Water Glyph",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001DA"
+            },
+            "ShortId": 845697838
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_E2D814E4",
+            "Id": "0x010000000000011F",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Fire Glyph",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 80.0,
+              "y": 80.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001D4"
+            },
+            "ShortId": 3805811940
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_D0700024",
+            "Id": "0x0100000000000123",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Wind Glyph",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 100.0,
+              "y": 100.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001D7"
+            },
+            "ShortId": 3497000996
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_255FF3A2",
+            "Id": "0x0100000000000127",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Earth Glyph",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 120.0,
+              "y": 120.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x01000000000001D1"
+            },
+            "ShortId": 627045282
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_EDCE3F1E",
+            "Id": "0x010000000000012B",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Antechamber",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x010000000000022D"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 3989716766
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_AF492A5D",
+            "Id": "0x010000000000012F",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Nexus",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000230"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 20.0,
+              "y": 20.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2940807773
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_98AC2F9E",
+            "Id": "0x0100000000000133",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Earth Puzzle Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000239"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2561421214
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_A6D72776",
+            "Id": "0x0100000000000137",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Air Puzzle Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x010000000000023F"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2799118198
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_03D29257",
+            "Id": "0x010000000000013B",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Fire Puzzle Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x010000000000023C"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 80.0,
+              "y": 80.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 64131671
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_300226D7",
+            "Id": "0x010000000000013F",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Water Puzzle Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000236"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 100.0,
+              "y": 100.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 805447383
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_2391D56B",
+            "Id": "0x0100000000000143",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "Ankh Room",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000233"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 120.0,
+              "y": 120.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 596759915
+          }
+        },
+        {
+          "Type": "Location",
+          "Properties": {
+            "TechnicalName": "Loc_17832C5C",
+            "Id": "0x0100000000000147",
+            "Parent": "0x030000003140D3AC",
+            "Attachments": [],
+            "DisplayName": "End",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000242"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 140.0,
+              "y": 140.0
+            },
+            "ZIndex": 7.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 394472540
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/The_Assistant.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_03517B49",
+            "Id": "0x01000000000001C9",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "The Assistant",
+            "Filename": "barbaragordon(00C9).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/barbaragordon.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 55671625
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/Protagonist.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_7C36A0FE",
+            "Id": "0x01000000000001CD",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "Protagonist",
+            "Filename": "NathanDrake(00CD).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/NathanDrake.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 20.0,
+              "y": 20.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2083954942
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/LandGlyph.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_BF27C754",
+            "Id": "0x01000000000001D1",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "LandGlyph",
+            "Filename": "Land_Glyph(00D1).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Land Glyph.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 3207055188
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/FireGlyph.png",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_83B000E8",
+            "Id": "0x01000000000001D4",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "FireGlyph",
+            "Filename": "Fire_Glyph(00D4).png",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Fire Glyph.png",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2209349864
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/WindGlyph.png",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_258AA964",
+            "Id": "0x01000000000001D7",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "WindGlyph",
+            "Filename": "Wind_Glyph(00D7).png",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Wind Glyph.png",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 80.0,
+              "y": 80.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 629844324
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/WaterGlyph.png",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_FF7ECC2E",
+            "Id": "0x01000000000001DA",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "WaterGlyph",
+            "Filename": "Water_Glyph(00DA).png",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Water Glyph.png",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 100.0,
+              "y": 100.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 4286499886
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/Ankh.png",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_2538AB09",
+            "Id": "0x01000000000001DD",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "Ankh",
+            "Filename": "450px-Ankh.svg(00DD).png",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/450px-Ankh.svg.png",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 120.0,
+              "y": 120.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 624470793
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/Antechamber.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_F15AC54E",
+            "Id": "0x010000000000022D",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "Antechamber",
+            "Filename": "Antechamber(032D).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Antechamber.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 140.0,
+              "y": 140.0
+            },
+            "ZIndex": 7.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 4049257806
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/TempleNexus.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_CFF65049",
+            "Id": "0x0100000000000230",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "TempleNexus",
+            "Filename": "TempleNexus(0330).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/TempleNexus.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 160.0,
+              "y": 160.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 3489026121
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/AnkhRoom.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_600B855C",
+            "Id": "0x0100000000000233",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "AnkhRoom",
+            "Filename": "Ankh_Room(0333).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Ankh Room.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 180.0,
+              "y": 180.0
+            },
+            "ZIndex": 9.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 1611367772
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/WaterRoom.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_76A704F6",
+            "Id": "0x0100000000000236",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "WaterRoom",
+            "Filename": "Water_Room(0336).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Water Room.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "ZIndex": 10.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 1990657270
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/EarthRoom.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_D734779C",
+            "Id": "0x0100000000000239",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "EarthRoom",
+            "Filename": "Earth_room(0339).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Earth room.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 220.0,
+              "y": 220.0
+            },
+            "ZIndex": 11.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 3610539932
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/FireRoom.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_5953FE3C",
+            "Id": "0x010000000000023C",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "FireRoom",
+            "Filename": "Fire_Room(033C).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Fire Room.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 240.0,
+              "y": 240.0
+            },
+            "ZIndex": 12.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 1498676796
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/WindRoom.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_A4AFADE5",
+            "Id": "0x010000000000023F",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "WindRoom",
+            "Filename": "wind_room(033F).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/wind room.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 260.0,
+              "y": 260.0
+            },
+            "ZIndex": 13.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2762976741
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/AnkhMagic.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_99C32E5A",
+            "Id": "0x0100000000000242",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "AnkhMagic",
+            "Filename": "Ankh_Magic(0342).jpg",
+            "OriginalSource": "file:///C:/Users/stump/Desktop/Ankh Magic.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 280.0,
+              "y": 280.0
+            },
+            "ZIndex": 14.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2579705434
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Audio/radio.wav",
+          "Category": "Audio",
+          "Properties": {
+            "TechnicalName": "Ast_E96B2563",
+            "Id": "0x0100000000000346",
+            "Parent": "0x0100000000000109",
+            "DisplayName": "radio",
+            "Filename": "radio(0246).wav",
+            "OriginalSource": "file:///C:/Users/stump/Downloads/radio.wav",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 3916113251
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Audio/radio2.wav",
+          "Category": "Audio",
+          "Properties": {
+            "TechnicalName": "Ast_0D2AF1B6",
+            "Id": "0x0100000000000412",
+            "Parent": "0x0100000000000109",
+            "DisplayName": "radio2",
+            "Filename": "radio2(0512).wav",
+            "OriginalSource": "file:///C:/Users/stump/Downloads/radio2.wav",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 20.0,
+              "y": 20.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 220918198
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_D420A84E",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 3558910030
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_7C45C3DF",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 2084946911
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_89C083E7",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 2311095271
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_822106D9",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 2183202521
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_22FE38EB",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 587086059
+          }
+        }
+      ]
+    }
+  ],
+  "ScriptMethods": [],
+  "Hierarchy": {
+    "Id": "0x0100000000000001",
+    "TechnicalName": "The_Key_Of_The_Nile",
+    "Type": "Project",
+    "Children": [
+      {
+        "Id": "0x03000000F917511B",
+        "TechnicalName": "ProjectSettings",
+        "Type": "ProjectSettingsFolder",
+        "Children": [
+          {
+            "Id": "0x01000000000000FD",
+            "TechnicalName": "",
+            "Type": "ProjectSettingsFlow"
+          },
+          {
+            "Id": "0x01000000000000FA",
+            "TechnicalName": "",
+            "Type": "ProjectSettingsGeneral"
+          },
+          {
+            "Id": "0x01000000000000FB",
+            "TechnicalName": "",
+            "Type": "ProjectSettingsJourneys"
+          },
+          {
+            "Id": "0x01000000000000FC",
+            "TechnicalName": "",
+            "Type": "ProjectSettingsLocation"
+          }
+        ]
+      },
+      {
+        "Id": "0x030000002B4F4C54",
+        "TechnicalName": "GlobalVariables",
+        "Type": "GlobalVariables",
+        "Children": [
+          {
+            "Id": "0x0100000000000416",
+            "TechnicalName": "",
+            "Type": "VariableSet"
+          },
+          {
+            "Id": "0x0100000000000437",
+            "TechnicalName": "",
+            "Type": "VariableSet"
+          },
+          {
+            "Id": "0x0100000000000423",
+            "TechnicalName": "",
+            "Type": "VariableSet"
+          },
+          {
+            "Id": "0x010000000000042C",
+            "TechnicalName": "",
+            "Type": "VariableSet"
+          }
+        ]
+      },
+      {
+        "Id": "0x0300000043CE43F7",
+        "TechnicalName": "Flow",
+        "Type": "Flow",
+        "Children": [
+          {
+            "Id": "0x010000000000014B",
+            "TechnicalName": "FFr_7BED27E5",
+            "Type": "FlowFragment",
+            "Children": [
+              {
+                "Id": "0x0100000000000151",
+                "TechnicalName": "FFr_7A335D96",
+                "Type": "FlowFragment",
+                "Children": [
+                  {
+                    "Id": "0x0100000000000195",
+                    "TechnicalName": "FFr_EE507CC9",
+                    "Type": "FlowFragment"
+                  },
+                  {
+                    "Id": "0x0100000000000319",
+                    "TechnicalName": "Dlg_23B3DE7A",
+                    "Type": "Dialogue",
+                    "Children": [
+                      {
+                        "Id": "0x01000000000001C1",
+                        "TechnicalName": "DFr_C97AA5ED",
+                        "Type": "DialogueFragment"
+                      },
+                      {
+                        "Id": "0x01000000000001E7",
+                        "TechnicalName": "DFr_418B3EA1",
+                        "Type": "DialogueFragment"
+                      },
+                      {
+                        "Id": "0x0100000000000331",
+                        "TechnicalName": "DFr_72F99B78",
+                        "Type": "DialogueFragment"
+                      },
+                      {
+                        "Id": "0x0100000000000337",
+                        "TechnicalName": "DFr_6E442F53",
+                        "Type": "DialogueFragment"
+                      },
+                      {
+                        "Id": "0x010000000000033E",
+                        "TechnicalName": "DFr_728C0A37",
+                        "Type": "DialogueFragment"
+                      }
+                    ]
+                  },
+                  {
+                    "Id": "0x01000000000001A5",
+                    "TechnicalName": "FFr_05E5D39C",
+                    "Type": "FlowFragment"
+                  }
+                ]
+              },
+              {
+                "Id": "0x010000000000015D",
+                "TechnicalName": "FFr_D37D39F9",
+                "Type": "FlowFragment",
+                "Children": [
+                  {
+                    "Id": "0x0100000000000254",
+                    "TechnicalName": "Hub_414B4AD6",
+                    "Type": "Hub"
+                  },
+                  {
+                    "Id": "0x0100000000000519",
+                    "TechnicalName": "FFr_C4424484",
+                    "Type": "FlowFragment",
+                    "Children": [
+                      {
+                        "Id": "0x0100000000000562",
+                        "TechnicalName": "Hub_15083459",
+                        "Type": "Hub"
+                      },
+                      {
+                        "Id": "0x0100000000000742",
+                        "TechnicalName": "FFr_A8AB5F0C",
+                        "Type": "FlowFragment"
+                      },
+                      {
+                        "Id": "0x010000000000074B",
+                        "TechnicalName": "Cnd_F054B62A",
+                        "Type": "Condition"
+                      },
+                      {
+                        "Id": "0x0100000000000754",
+                        "TechnicalName": "Cnd_276A61A5",
+                        "Type": "Condition"
+                      },
+                      {
+                        "Id": "0x010000000000075B",
+                        "TechnicalName": "Cnd_0A6753C6",
+                        "Type": "Condition"
+                      },
+                      {
+                        "Id": "0x010000000000073B",
+                        "TechnicalName": "Cnd_6F685EC8",
+                        "Type": "Condition"
+                      },
+                      {
+                        "Id": "0x010000000000053A",
+                        "TechnicalName": "FFr_6529263D",
+                        "Type": "FlowFragment"
+                      },
+                      {
+                        "Id": "0x0100000000000541",
+                        "TechnicalName": "FFr_B087761A",
+                        "Type": "FlowFragment"
+                      },
+                      {
+                        "Id": "0x0100000000000548",
+                        "TechnicalName": "FFr_54B0F629",
+                        "Type": "FlowFragment"
+                      },
+                      {
+                        "Id": "0x010000000000054F",
+                        "TechnicalName": "FFr_B85EF628",
+                        "Type": "FlowFragment"
+                      },
+                      {
+                        "Id": "0x010000000000055A",
+                        "TechnicalName": "FFr_FF00E2FD",
+                        "Type": "FlowFragment"
+                      }
+                    ]
+                  },
+                  {
+                    "Id": "0x0100000000000521",
+                    "TechnicalName": "FFr_85ED7B96",
+                    "Type": "FlowFragment"
+                  },
+                  {
+                    "Id": "0x010000000000052C",
+                    "TechnicalName": "FFr_C732BFD8",
+                    "Type": "FlowFragment"
+                  },
+                  {
+                    "Id": "0x010000000000057A",
+                    "TechnicalName": "FFr_3966D6FB",
+                    "Type": "FlowFragment"
+                  },
+                  {
+                    "Id": "0x0100000000000582",
+                    "TechnicalName": "FFr_B8F6DAF7",
+                    "Type": "FlowFragment"
+                  },
+                  {
+                    "Id": "0x010000000000058A",
+                    "TechnicalName": "FFr_FB9D56BC",
+                    "Type": "FlowFragment"
+                  }
+                ]
+              },
+              {
+                "Id": "0x010000000000016F",
+                "TechnicalName": "FFr_8253B1C0",
+                "Type": "FlowFragment"
+              },
+              {
+                "Id": "0x0100000000000175",
+                "TechnicalName": "FFr_32B39A42",
+                "Type": "FlowFragment"
+              },
+              {
+                "Id": "0x0100000000000163",
+                "TechnicalName": "FFr_8074FAEF",
+                "Type": "FlowFragment"
+              },
+              {
+                "Id": "0x0100000000000169",
+                "TechnicalName": "FFr_335AE670",
+                "Type": "FlowFragment"
+              },
+              {
+                "Id": "0x010000000000017B",
+                "TechnicalName": "FFr_8EC0B4E7",
+                "Type": "FlowFragment"
+              },
+              {
+                "Id": "0x010000000000024C",
+                "TechnicalName": "FFr_BBAAFF89",
+                "Type": "FlowFragment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "0x03000000AC61A2B3",
+        "TechnicalName": "Entities",
+        "Type": "Entities",
+        "Children": [
+          {
+            "Id": "0x0100000000000117",
+            "TechnicalName": "Ntt_FC7B792C",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x0100000000000113",
+            "TechnicalName": "Ntt_DE2457D1",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x0100000000000127",
+            "TechnicalName": "Ntt_255FF3A2",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x010000000000011F",
+            "TechnicalName": "Ntt_E2D814E4",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x010000000000010F",
+            "TechnicalName": "Ntt_A2233345",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x010000000000011B",
+            "TechnicalName": "Ntt_3268532E",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x0100000000000123",
+            "TechnicalName": "Ntt_D0700024",
+            "Type": "Entity"
+          }
+        ]
+      },
+      {
+        "Id": "0x030000003140D3AC",
+        "TechnicalName": "Locations",
+        "Type": "Locations",
+        "Children": [
+          {
+            "Id": "0x0100000000000137",
+            "TechnicalName": "Loc_A6D72776",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x0100000000000143",
+            "TechnicalName": "Loc_2391D56B",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x010000000000012B",
+            "TechnicalName": "Loc_EDCE3F1E",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x0100000000000133",
+            "TechnicalName": "Loc_98AC2F9E",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x0100000000000147",
+            "TechnicalName": "Loc_17832C5C",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x010000000000013B",
+            "TechnicalName": "Loc_03D29257",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x010000000000012F",
+            "TechnicalName": "Loc_AF492A5D",
+            "Type": "Location"
+          },
+          {
+            "Id": "0x010000000000013F",
+            "TechnicalName": "Loc_300226D7",
+            "Type": "Location"
+          }
+        ]
+      },
+      {
+        "Id": "0x03000000103AA2F0",
+        "TechnicalName": "Documents",
+        "Type": "Documents"
+      },
+      {
+        "Id": "0x03000000236F7272",
+        "TechnicalName": "Journeys",
+        "Type": "Journeys"
+      },
+      {
+        "Id": "0x0300000029CF057C",
+        "TechnicalName": "TemplateDesign",
+        "Type": "TemplateDesign",
+        "Children": [
+          {
+            "Id": "0x03000000D2404DC0",
+            "TechnicalName": "Features",
+            "Type": "Features",
+            "Children": [
+              {
+                "Id": "0x0100000000000008",
+                "TechnicalName": "DefaultBasicCharacterFeature",
+                "Type": "Feature"
+              },
+              {
+                "Id": "0x0100000000000043",
+                "TechnicalName": "DefaultExtendedCharacterFeature",
+                "Type": "Feature"
+              }
+            ]
+          },
+          {
+            "Id": "0x030000002C0951AE",
+            "TechnicalName": "PropertyTemplates",
+            "Type": "TraitTemplatesFolder",
+            "Children": [
+              {
+                "Id": "0x03000000BB12F1B8",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              },
+              {
+                "Id": "0x0300000037DCE3F0",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              },
+              {
+                "Id": "0x030000006E2C178B",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              },
+              {
+                "Id": "0x03000000D745C449",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              },
+              {
+                "Id": "0x030000003630A240",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              },
+              {
+                "Id": "0x030000006F82D78E",
+                "TechnicalName": "",
+                "Type": "TraitTemplatesTypedFolder"
+              }
+            ]
+          },
+          {
+            "Id": "0x030000009AF68DCD",
+            "TechnicalName": "Templates",
+            "Type": "Templates",
+            "Children": [
+              {
+                "Id": "0x0300000030635118",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000DCC67F9D",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000030B5ACF",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x030000008DD5C0F2",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000ECC00F83",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x0300000078B45A71",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder",
+                "Children": [
+                  {
+                    "Id": "0x0100000000000095",
+                    "TechnicalName": "DefaultMainCharacterTemplate",
+                    "Type": "Template"
+                  },
+                  {
+                    "Id": "0x010000000000006B",
+                    "TechnicalName": "DefaultSupportingCharacterTemplate",
+                    "Type": "Template"
+                  }
+                ]
+              },
+              {
+                "Id": "0x030000006D1BC275",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x0300000013DF3A1A",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000CC5A07F0",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000BA022E2F",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000ADA9FA17",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000FB371D5C",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x0300000092CF598E",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x030000005314E813",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x030000004264B29C",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000F514339C",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x0300000096812FC1",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              },
+              {
+                "Id": "0x03000000A715C057",
+                "TechnicalName": "",
+                "Type": "TemplateTypeFolder"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "0x03000000173C3392",
+        "TechnicalName": "",
+        "Type": "RuleSets",
+        "Children": [
+          {
+            "Id": "0x01000000000000FF",
+            "TechnicalName": "",
+            "Type": "RuleSet",
+            "Children": [
+              {
+                "Id": "0x0100000000000102",
+                "TechnicalName": "",
+                "Type": "RuleSetPackage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "0x030000004C3DAF54",
+        "TechnicalName": "Assets",
+        "Type": "Assets",
+        "Children": [
+          {
+            "Id": "0x0100000000000109",
+            "TechnicalName": "Ufo_89C083E7",
+            "Type": "AssetsUserFolder",
+            "Children": [
+              {
+                "Id": "0x0100000000000346",
+                "TechnicalName": "Ast_E96B2563",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000412",
+                "TechnicalName": "Ast_0D2AF1B6",
+                "Type": "Asset"
+              }
+            ]
+          },
+          {
+            "Id": "0x010000000000010B",
+            "TechnicalName": "Ufo_822106D9",
+            "Type": "AssetsUserFolder"
+          },
+          {
+            "Id": "0x0100000000000105",
+            "TechnicalName": "Ufo_D420A84E",
+            "Type": "AssetsUserFolder",
+            "Children": [
+              {
+                "Id": "0x01000000000001DD",
+                "TechnicalName": "Ast_2538AB09",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000242",
+                "TechnicalName": "Ast_99C32E5A",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000233",
+                "TechnicalName": "Ast_600B855C",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x010000000000022D",
+                "TechnicalName": "Ast_F15AC54E",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000239",
+                "TechnicalName": "Ast_D734779C",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001D4",
+                "TechnicalName": "Ast_83B000E8",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x010000000000023C",
+                "TechnicalName": "Ast_5953FE3C",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001D1",
+                "TechnicalName": "Ast_BF27C754",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001CD",
+                "TechnicalName": "Ast_7C36A0FE",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000230",
+                "TechnicalName": "Ast_CFF65049",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001C9",
+                "TechnicalName": "Ast_03517B49",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001DA",
+                "TechnicalName": "Ast_FF7ECC2E",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000236",
+                "TechnicalName": "Ast_76A704F6",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x01000000000001D7",
+                "TechnicalName": "Ast_258AA964",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x010000000000023F",
+                "TechnicalName": "Ast_A4AFADE5",
+                "Type": "Asset"
+              }
+            ]
+          },
+          {
+            "Id": "0x010000000000010D",
+            "TechnicalName": "Ufo_22FE38EB",
+            "Type": "AssetsUserFolder"
+          },
+          {
+            "Id": "0x0100000000000107",
+            "TechnicalName": "Ufo_7C45C3DF",
+            "Type": "AssetsUserFolder"
+          }
+        ]
+      }
+    ]
+  }
+}
