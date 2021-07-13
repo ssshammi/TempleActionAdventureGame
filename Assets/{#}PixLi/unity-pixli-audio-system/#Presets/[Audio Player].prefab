@@ -43,17 +43,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf696f663a21c94ea2846aa7b2fc90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioIdTagsContainer: {fileID: -5233494821952566981, guid: 0cea09d6a344f1a4ab1f9e1bedc70253, type: 2}
   _audioPlayerData:
-  - _audioSourcePlayer: {fileID: 0}
+  - _audioSourcePlayer: {fileID: 7034265708579950244, guid: 263eb35cb0882e4468281508374a502d, type: 3}
     _idTag:
       _tag: Ambience
       _id: -1090754126
-  - _audioSourcePlayer: {fileID: 0}
+  - _audioSourcePlayer: {fileID: 3285925778131587845, guid: 4ab2e61d2b438c043acf2492d3500247, type: 3}
     _idTag:
       _tag: Music
       _id: 1527925909
-  - _audioSourcePlayer: {fileID: 0}
+  - _audioSourcePlayer: {fileID: 5978324185120632919, guid: eba404f1e15d00c4bb4b7d7c9e7f9a5f, type: 3}
     _idTag:
-      _tag: Sound Effect
-      _id: -1695834586
+      _tag: SoundEffect
+      _id: -1176389404
+  - _audioSourcePlayer: {fileID: 5978324185120632919, guid: 95cf88a69362f2947a6d01a21251561e, type: 3}
+    _idTag:
+      _tag: Footstep
+      _id: 378158204
+  - _audioSourcePlayer: {fileID: 5978324185120632919, guid: 50978e904128fea40a017f25a09aacd3, type: 3}
+    _idTag:
+      _tag: Other
+      _id: -582599340
+  _eoAudioIdTagsContainer: {fileID: 7436067080745908663, guid: 2ba32f841abe8324e8ef1fe7e2116093, type: 2}

@@ -23,5 +23,7 @@ public partial struct IdTag
 		public static IdTag Ambience = new IdTag("Ambience");
 		public static IdTag Music = new IdTag("Music");
 		public static IdTag SoundEffect = new IdTag("SoundEffect");
+		public static IdTag Footstep = new IdTag("Footstep");
+		public static IdTag Other = new IdTag("Other");
 	}
 }

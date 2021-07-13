@@ -1206,6 +1206,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320386112}
   m_CullTransparentMesh: 0
+--- !u!1 &384146069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7732027478483770683, guid: 390bab4607595964892a9aec62603510, type: 3}
+  m_PrefabInstance: {fileID: 788840335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &384146070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384146069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ce5f1cdf0582241a87d3689121076e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClipArchive: {fileID: 11400000, guid: 8cb7a71f52691614db640253b4db1255, type: 2}
+  _timeDistance: 0.4
 --- !u!1 &437993683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2409,87 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &788840335
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7732027478483770682, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: _loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770682, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770682, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 168bbd9ea53a01343886f39cffeee93a, type: 3}
+    - target: {fileID: 7732027478483770682, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: _playOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770682, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: _audioSourcePlayer
+      value: 
+      objectReference: {fileID: 5978324185120632919, guid: 95cf88a69362f2947a6d01a21251561e, type: 3}
+    - target: {fileID: 7732027478483770683, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_Name
+      value: '[Audio Clip Playback Engine]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770683, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 390bab4607595964892a9aec62603510, type: 3}
 --- !u!1001 &798043295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2416,6 +2516,10 @@ PrefabInstance:
     - target: {fileID: 7732027478483770683, guid: 390bab4607595964892a9aec62603510, type: 3}
       propertyPath: m_Name
       value: '[Audio Clip Playback Engine]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732027478483770683, guid: 390bab4607595964892a9aec62603510, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7732027478483770685, guid: 390bab4607595964892a9aec62603510, type: 3}
       propertyPath: m_RootOrder
@@ -4540,6 +4644,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430987635}
   m_CullTransparentMesh: 0
+--- !u!1 &1438857096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438857098}
+  - component: {fileID: 1438857097}
+  m_Layer: 0
+  m_Name: '[Audio Reverb Zone] Stone Corridor'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!167 &1438857097
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438857096}
+  m_Enabled: 1
+  m_MinDistance: 10000
+  m_MaxDistance: 10000
+  m_ReverbPreset: 14
+  m_Room: -1000
+  m_RoomHF: -237
+  m_DecayTime: 2.7
+  m_DecayHFRatio: 0.79
+  m_Reflections: -1214
+  m_ReflectionsDelay: 0.013
+  m_Reverb: 395
+  m_ReverbDelay: 0.02
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
+--- !u!4 &1438857098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438857096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471640881
 GameObject:
   m_ObjectHideFlags: 0
@@ -7428,16 +7587,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2135048601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!114 &2135048603
 MonoBehaviour:
   m_ObjectHideFlags: 0

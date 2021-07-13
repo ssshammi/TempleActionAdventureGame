@@ -86,6 +86,12 @@ MonoBehaviour:
   - _originalInstance: {fileID: 3162757859917470294, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
     _initialPoolCapacity: 32
     _dontDestroyOnLoad: 0
+  - _originalInstance: {fileID: 3162757859917470294, guid: 665216609c472bc409229520b62c9f8b, type: 3}
+    _initialPoolCapacity: 4
+    _dontDestroyOnLoad: 0
+  - _originalInstance: {fileID: 3162757859917470294, guid: ab1d7a714ba9cb1468f2b186ea96775b, type: 3}
+    _initialPoolCapacity: 4
+    _dontDestroyOnLoad: 0
 --- !u!1001 &7775400712464209603
 PrefabInstance:
   m_ObjectHideFlags: 0
