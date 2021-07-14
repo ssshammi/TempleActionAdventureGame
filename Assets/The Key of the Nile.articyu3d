@@ -6,7 +6,7 @@
     "set_UseScriptSupport": "True",
     "ExportVersion": "1.2",
     "ObjectDefinitionsHash": "C6F05331D4ED989E2C53B1DE3E7087D718B724A162E53A676F8F1078D3E855F4",
-    "ScriptFragmentsHash": "2894786220"
+    "ScriptFragmentsHash": "1624876174"
   },
   "Project": {
     "Name": "The Key of the Nile",
@@ -2418,7 +2418,7 @@
             "Text": "This is the first room the player experiences when starting the game. The <color=#ffa61aff>Protagonist</color> finds himself in an empty <color=#ffa61aff>Antechamber</color>. He's brought up to speed by the <color=#ffa61aff>Assistant</color>.",
             "ExternalId": "",
             "Position": {
-              "x": -850.0,
+              "x": -875.0,
               "y": 375.0
             },
             "ZIndex": 0.0,
@@ -2436,9 +2436,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000198",
@@ -2520,9 +2520,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000031C",
@@ -2663,9 +2663,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000529",
@@ -2681,9 +2681,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000016C",
@@ -2699,9 +2699,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000018E",
@@ -2717,9 +2717,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000191",
@@ -2735,13 +2735,1178 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000193",
                     "Target": "0x010000000000017B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_C4424484",
+            "Id": "0x0100000000000519",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Approach the pedestal",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You approach the pedestal.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 75.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3292677252,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000051C",
+                "Owner": "0x0100000000000519",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000564",
+                    "Target": "0x0100000000000562"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000051D",
+                "Owner": "0x0100000000000519",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000256",
+                    "Target": "0x0100000000000254"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_6529263D",
+            "Id": "0x010000000000053A",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Air Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You activate the Air Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door with the corresponding glyph grinds open to reveal a passage.",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 200.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1697195581,
+            "InputPins": [
+              {
+                "Text": "// Only available if no other glyphs have been activated.",
+                "Id": "0x010000000000053D",
+                "Owner": "0x010000000000053A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Air Puzzle Room door.\nglyph_states.air_glyph_activated = true;\ntemple_object_states.air_door_open = true\n",
+                "Id": "0x010000000000053E",
+                "Owner": "0x010000000000053A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B087761A",
+            "Id": "0x0100000000000541",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Water Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You activate the Water Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Water door opens.",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 450.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2961667610,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Air Puzzle Room has been solved.",
+                "Id": "0x0100000000000544",
+                "Owner": "0x0100000000000541"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Water Puzzle Room door and closes the Air Puzzle Room door.\nglyph_states.water_glyph_activated = true;\ntemple_object_states.water_door_open = true;\ntemple_object_states.air_door_open = false",
+                "Id": "0x0100000000000545",
+                "Owner": "0x0100000000000541",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_54B0F629",
+            "Id": "0x0100000000000548",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Earth Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You activate the Earth Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Earth door opens.",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 700.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1420883497,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Water Puzzle Room has been solved.",
+                "Id": "0x010000000000054B",
+                "Owner": "0x0100000000000548"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Earth Puzzle Room door and closes the Water Puzzle Room door.\nglyph_states.earth_glyph_activated = true;\ntemple_object_states.earth_door_open = true;\ntemple_object_states.water_door_open = false",
+                "Id": "0x010000000000054C",
+                "Owner": "0x0100000000000548",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B85EF628",
+            "Id": "0x010000000000054F",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate the Fire Glyph",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You activate the Fire Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Fire door opens.",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 950.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3093231144,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Earth Puzzle Room has been solved.",
+                "Id": "0x0100000000000552",
+                "Owner": "0x010000000000054F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Fire Puzzle Room door and closes the Earth Puzzle Room door.\nglyph_states.fire_glyph_activated = true;\ntemple_object_states.fire_door_open = true;\ntemple_object_states.earth_door_open = false",
+                "Id": "0x0100000000000553",
+                "Owner": "0x010000000000054F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_FF00E2FD",
+            "Id": "0x010000000000055A",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Activate all glyphs and the Ankh statue",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You activate the Ankh Statue. A glow emanates from your body, blinding you momentarily as the fire door slams shut. When you recover your senses, the glyphs are gone from your body and the Ankh statue emits a light directed toward the doors decorated with the same symbol. They grind open to reveal the way to the way inside.",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 1225.0
+            },
+            "ZIndex": 14.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4278248189,
+            "InputPins": [
+              {
+                "Text": "// Only available if the Fire Puzzle Room has been solved.",
+                "Id": "0x010000000000055D",
+                "Owner": "0x010000000000055A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "//Opens the Ankh Room door and closes the Fire Puzzle Room door.\nglyph_states.all_glyphs_activated = true;\ntemple_object_states.ankh_door_open = true;\ntemple_object_states.fire_door_open = false",
+                "Id": "0x010000000000055E",
+                "Owner": "0x010000000000055A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000051D",
+                    "Target": "0x0100000000000519"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_A8AB5F0C",
+            "Id": "0x0100000000000742",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Nothing happened.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You can't do that right now. Try something else.",
+            "ExternalId": "",
+            "Position": {
+              "x": -750.0,
+              "y": 200.0
+            },
+            "ZIndex": 19.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2829803276,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000745",
+                "Owner": "0x0100000000000742"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000746",
+                "Owner": "0x0100000000000742",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000564",
+                    "Target": "0x0100000000000562"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_C3E1C571",
+            "Id": "0x0100000000000AEC",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try to activate the Ankh statue.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You try to activate the Ankh statue.",
+            "ExternalId": "",
+            "Position": {
+              "x": -275.0,
+              "y": 1150.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3286353265,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AEF",
+                "Owner": "0x0100000000000AEC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AF0",
+                "Owner": "0x0100000000000AEC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000764",
+                    "Target": "0x0100000000000762"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_A2207E96",
+            "Id": "0x0100000000000AF4",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try to activate the Fire glyph.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You try to activate the Fire glyph.",
+            "ExternalId": "",
+            "Position": {
+              "x": -275.0,
+              "y": 925.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2720038550,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AF5",
+                "Owner": "0x0100000000000AF4"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AF6",
+                "Owner": "0x0100000000000AF4",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000075D",
+                    "Target": "0x010000000000075B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_72DA433F",
+            "Id": "0x0100000000000AFC",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try to activate the Earth glyph.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You try to activate the Earth glyph.",
+            "ExternalId": "",
+            "Position": {
+              "x": -275.0,
+              "y": 700.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1926906687,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AFD",
+                "Owner": "0x0100000000000AFC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000AFE",
+                "Owner": "0x0100000000000AFC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000756",
+                    "Target": "0x0100000000000754"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_69EAE2AD",
+            "Id": "0x0100000000000B04",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try to activate the Water glyph.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You try to activate the Water glyph.",
+            "ExternalId": "",
+            "Position": {
+              "x": -275.0,
+              "y": 475.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 1777001133,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000B05",
+                "Owner": "0x0100000000000B04"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000B06",
+                "Owner": "0x0100000000000B04",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000074D",
+                    "Target": "0x010000000000074B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_36C26DE2",
+            "Id": "0x0100000000000B0D",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Try to activate the Air glyph.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You try to activate the Air glyph.",
+            "ExternalId": "",
+            "Position": {
+              "x": -275.0,
+              "y": 225.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 918711778,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000B0E",
+                "Owner": "0x0100000000000B0D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000B0F",
+                "Owner": "0x0100000000000B0D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000073D",
+                    "Target": "0x010000000000073B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_F1FBAFEB",
+            "Id": "0x0100000000000DB6",
+            "Parent": "0x0100000000000519",
+            "Attachments": [],
+            "DisplayName": "Back away from the pedestal.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You back away from the pedestal and survey the room.",
+            "ExternalId": "",
+            "Position": {
+              "x": -975.0,
+              "y": 1250.0
+            },
+            "ZIndex": 44.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4059803627,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000E5B",
+                "Owner": "0x0100000000000DB6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000DBA",
+                "Owner": "0x0100000000000DB6",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000E5A",
+                    "Target": "0x0100000000000E57"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_85ED7B96",
+            "Id": "0x0100000000000521",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Air Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You decide to enter the air puzzle room.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 325.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2246933398,
+            "InputPins": [
+              {
+                "Text": "// Only available if the air glyph is activated. No longer available after the water glyph is activated.\n\ntemple_object_states.air_door_open == true && puzzle_states.air_puzzle_solved == false",
+                "Id": "0x0100000000000524",
+                "Owner": "0x0100000000000521"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000525",
+                "Owner": "0x0100000000000521",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000528",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_C732BFD8",
+            "Id": "0x010000000000052C",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Water Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You decide to enter the water puzzle room.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 575.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3341991896,
+            "InputPins": [
+              {
+                "Text": "// Only available if the water glyph is activated. No longer available after the earth glyph is activated.\ntemple_object_states.water_door_open == true && puzzle_states.water_puzzle_solved == false\n",
+                "Id": "0x010000000000052F",
+                "Owner": "0x010000000000052C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000530",
+                "Owner": "0x010000000000052C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000056F",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_3966D6FB",
+            "Id": "0x010000000000057A",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Earth Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You decide to enter the earth puzzle room.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 825.0
+            },
+            "ZIndex": 11.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 963041019,
+            "InputPins": [
+              {
+                "Text": "// Only available if the earth glyph is activated. No longer available after the fire glyph is activated.\ntemple_object_states.earth_door_open == true && puzzle_states.earth_puzzle_solved == false",
+                "Id": "0x010000000000057D",
+                "Owner": "0x010000000000057A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000057E",
+                "Owner": "0x010000000000057A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000571",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B8F6DAF7",
+            "Id": "0x0100000000000582",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Fire Puzzle room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You decide to enter the fire puzzle room.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 1075.0
+            },
+            "ZIndex": 14.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3103185655,
+            "InputPins": [
+              {
+                "Text": "// Only available if the fire glyph is activated. No longer available after the Ankh glyph is activated.\ntemple_object_states.fire_door_open == true &&\npuzzle_states.fire_puzzle_solved == false",
+                "Id": "0x0100000000000585",
+                "Owner": "0x0100000000000582"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000586",
+                "Owner": "0x0100000000000582",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000573",
+                    "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_FB9D56BC",
+            "Id": "0x010000000000058A",
+            "Parent": "0x010000000000015D",
+            "Attachments": [],
+            "DisplayName": "Enter the Ankh room.",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You decide to enter the Ankh room.",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 1325.0
+            },
+            "ZIndex": 17.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4221392572,
+            "InputPins": [
+              {
+                "Text": "// Only available if all four elemental puzzle rooms have been solved.\ntemple_object_states.ankh_door_open == true",
+                "Id": "0x010000000000058D",
+                "Owner": "0x010000000000058A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000058E",
+                "Owner": "0x010000000000058A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000577",
+                    "Target": "0x010000000000015D"
                   }
                 ]
               }
@@ -2794,9 +3959,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000008DA",
@@ -2814,13 +3979,141 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000160",
                     "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_B683DFAB",
+            "Id": "0x0100000000000772",
+            "Parent": "0x0100000000000163",
+            "Attachments": [],
+            "DisplayName": "Solve the Air puzzle!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You solve the puzzle using air powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 375.0,
+              "y": 375.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3062095787,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000008D6",
+                "Owner": "0x0100000000000772"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "puzzle_states.air_puzzle_solved = true;\ntemple_object_states.air_door_open = true",
+                "Id": "0x0100000000000776",
+                "Owner": "0x0100000000000772",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000167",
+                    "Target": "0x0100000000000163"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_866643AF",
+            "Id": "0x01000000000008D0",
+            "Parent": "0x0100000000000163",
+            "Attachments": [],
+            "DisplayName": "Trapped in the Air Puzzle room!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Oh no! You're trapped in the Air Puzzle room! You've got no choice but to solve this puzzle.",
+            "ExternalId": "",
+            "Position": {
+              "x": 25.0,
+              "y": 375.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2254848943,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000008DA",
+                "Owner": "0x01000000000008D0"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "temple_object_states.air_door_open = false",
+                "Id": "0x01000000000008D4",
+                "Owner": "0x01000000000008D0",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000008D6",
+                    "Target": "0x0100000000000772"
                   }
                 ]
               }
@@ -2873,9 +4166,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000008EB",
@@ -2893,13 +4186,141 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000160",
                     "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_D6E0B455",
+            "Id": "0x01000000000008EA",
+            "Parent": "0x0100000000000169",
+            "Attachments": [],
+            "DisplayName": "Trapped in the Water Puzzle room!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Oh no! You're trapped in the Water Puzzle room! You've got no choice but to solve this puzzle.",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 450.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 3605050453,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000008EB",
+                "Owner": "0x01000000000008EA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "temple_object_states.water_door_open = false",
+                "Id": "0x01000000000008EC",
+                "Owner": "0x01000000000008EA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000008F3",
+                    "Target": "0x01000000000008F2"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_1EF65AAB",
+            "Id": "0x01000000000008F2",
+            "Parent": "0x0100000000000169",
+            "Attachments": [],
+            "DisplayName": "Solve the Water puzzle!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You solve the puzzle using air and water powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 600.0,
+              "y": 450.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 519461547,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000008F3",
+                "Owner": "0x01000000000008F2"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "puzzle_states.water_puzzle_solved = true;\ntemple_object_states.water_door_open = true",
+                "Id": "0x01000000000008F4",
+                "Owner": "0x01000000000008F2",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016D",
+                    "Target": "0x0100000000000169"
                   }
                 ]
               }
@@ -2952,9 +4373,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000008FC",
@@ -2972,13 +4393,141 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000160",
                     "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_928804ED",
+            "Id": "0x01000000000008FB",
+            "Parent": "0x010000000000016F",
+            "Attachments": [],
+            "DisplayName": "Trapped in the Earth Puzzle room!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Oh no! You're trapped in the Earth Puzzle room! You've got no choice but to solve this puzzle.",
+            "ExternalId": "",
+            "Position": {
+              "x": 543.33333333333326,
+              "y": 468.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 2458387693,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000008FC",
+                "Owner": "0x01000000000008FB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "temple_object_states.earth_door_open = false",
+                "Id": "0x01000000000008FD",
+                "Owner": "0x01000000000008FB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000903",
+                    "Target": "0x0100000000000902"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_17A76287",
+            "Id": "0x0100000000000902",
+            "Parent": "0x010000000000016F",
+            "Attachments": [],
+            "DisplayName": "Solve the Earth puzzle!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You solve the puzzle using air, water, and earth powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 918.33333333333326,
+              "y": 468.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 396845703,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000903",
+                "Owner": "0x0100000000000902"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "puzzle_states.earth_puzzle_solved = true;\ntemple_object_states.earth_door_open = true",
+                "Id": "0x0100000000000904",
+                "Owner": "0x0100000000000902",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000173",
+                    "Target": "0x010000000000016F"
                   }
                 ]
               }
@@ -3031,9 +4580,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000090E",
@@ -3051,13 +4600,141 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000160",
                     "Target": "0x010000000000015D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_32A86D3F",
+            "Id": "0x010000000000090D",
+            "Parent": "0x0100000000000175",
+            "Attachments": [],
+            "DisplayName": "Trapped in the Fire Puzzle room!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Oh no! You're trapped in the Fire Puzzle room! You've got no choice but to solve this puzzle.",
+            "ExternalId": "",
+            "Position": {
+              "x": 440.66666666666663,
+              "y": 349.33333333333337
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 849898815,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000090E",
+                "Owner": "0x010000000000090D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "temple_object_states.fire_door_open = false",
+                "Id": "0x010000000000090F",
+                "Owner": "0x010000000000090D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000915",
+                    "Target": "0x0100000000000914"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "FlowFragment",
+          "Properties": {
+            "TechnicalName": "FFr_F0D766F5",
+            "Id": "0x0100000000000914",
+            "Parent": "0x0100000000000175",
+            "Attachments": [],
+            "DisplayName": "Solve the Fire puzzle!",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You solve the puzzle using air, water, earth, and fire powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
+            "ExternalId": "",
+            "Position": {
+              "x": 815.66666666666663,
+              "y": 349.33333333333337
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 275.0,
+              "h": 200.0
+            },
+            "ShortId": 4040648437,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000915",
+                "Owner": "0x0100000000000914"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "puzzle_states.fire_puzzle_solved = true;\ntemple_object_states.fire_door_open = true",
+                "Id": "0x0100000000000916",
+                "Owner": "0x0100000000000914",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000179",
+                    "Target": "0x0100000000000175"
                   }
                 ]
               }
@@ -3197,1683 +4874,6 @@
           }
         },
         {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_C4424484",
-            "Id": "0x0100000000000519",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Approach the pedestal",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You approach the pedestal.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 75.0
-            },
-            "ZIndex": 2.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3292677252,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000051C",
-                "Owner": "0x0100000000000519",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000564",
-                    "Target": "0x0100000000000562"
-                  }
-                ]
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000051D",
-                "Owner": "0x0100000000000519",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000256",
-                    "Target": "0x0100000000000254"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_85ED7B96",
-            "Id": "0x0100000000000521",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Enter the Air Puzzle room.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You decide to enter the air puzzle room.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 325.0
-            },
-            "ZIndex": 5.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2246933398,
-            "InputPins": [
-              {
-                "Text": "// Only available if the air glyph is activated. No longer available after the water glyph is activated.\n\ntemple_object_states.air_door_open == true && puzzle_states.air_puzzle_solved == false",
-                "Id": "0x0100000000000524",
-                "Owner": "0x0100000000000521"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000525",
-                "Owner": "0x0100000000000521",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000528",
-                    "Target": "0x010000000000015D"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_C732BFD8",
-            "Id": "0x010000000000052C",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Enter the Water Puzzle room.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You decide to enter the water puzzle room.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 575.0
-            },
-            "ZIndex": 8.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3341991896,
-            "InputPins": [
-              {
-                "Text": "// Only available if the water glyph is activated. No longer available after the earth glyph is activated.\ntemple_object_states.water_door_open == true && puzzle_states.water_puzzle_solved == false\n",
-                "Id": "0x010000000000052F",
-                "Owner": "0x010000000000052C"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000530",
-                "Owner": "0x010000000000052C",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000056F",
-                    "Target": "0x010000000000015D"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_3966D6FB",
-            "Id": "0x010000000000057A",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Enter the Earth Puzzle room.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You decide to enter the earth puzzle room.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 825.0
-            },
-            "ZIndex": 11.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 963041019,
-            "InputPins": [
-              {
-                "Text": "// Only available if the earth glyph is activated. No longer available after the fire glyph is activated.\ntemple_object_states.earth_door_open == true && puzzle_states.earth_puzzle_solved == false",
-                "Id": "0x010000000000057D",
-                "Owner": "0x010000000000057A"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000057E",
-                "Owner": "0x010000000000057A",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000571",
-                    "Target": "0x010000000000015D"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_6529263D",
-            "Id": "0x010000000000053A",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Activate the Air Glyph",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You activate the Air Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door with the corresponding glyph grinds open to reveal a passage.",
-            "ExternalId": "",
-            "Position": {
-              "x": 575.0,
-              "y": 200.0
-            },
-            "ZIndex": 2.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 1697195581,
-            "InputPins": [
-              {
-                "Text": "// Only available if no other glyphs have been activated.",
-                "Id": "0x010000000000053D",
-                "Owner": "0x010000000000053A"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "//Opens the Air Puzzle Room door.\nglyph_states.air_glyph_activated = true;\ntemple_object_states.air_door_open = true\n",
-                "Id": "0x010000000000053E",
-                "Owner": "0x010000000000053A",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000051D",
-                    "Target": "0x0100000000000519"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_B087761A",
-            "Id": "0x0100000000000541",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Activate the Water Glyph",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You activate the Water Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Water door opens.",
-            "ExternalId": "",
-            "Position": {
-              "x": 575.0,
-              "y": 450.0
-            },
-            "ZIndex": 4.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2961667610,
-            "InputPins": [
-              {
-                "Text": "// Only available if the Air Puzzle Room has been solved.",
-                "Id": "0x0100000000000544",
-                "Owner": "0x0100000000000541"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "//Opens the Water Puzzle Room door and closes the Air Puzzle Room door.\nglyph_states.water_glyph_activated = true;\ntemple_object_states.water_door_open = true;\ntemple_object_states.air_door_open = false",
-                "Id": "0x0100000000000545",
-                "Owner": "0x0100000000000541",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000051D",
-                    "Target": "0x0100000000000519"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_54B0F629",
-            "Id": "0x0100000000000548",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Activate the Earth Glyph",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You activate the Earth Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Earth door opens.",
-            "ExternalId": "",
-            "Position": {
-              "x": 575.0,
-              "y": 700.0
-            },
-            "ZIndex": 6.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 1420883497,
-            "InputPins": [
-              {
-                "Text": "// Only available if the Water Puzzle Room has been solved.",
-                "Id": "0x010000000000054B",
-                "Owner": "0x0100000000000548"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "//Opens the Earth Puzzle Room door and closes the Water Puzzle Room door.\nglyph_states.earth_glyph_activated = true;\ntemple_object_states.earth_door_open = true;\ntemple_object_states.water_door_open = false",
-                "Id": "0x010000000000054C",
-                "Owner": "0x0100000000000548",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000051D",
-                    "Target": "0x0100000000000519"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_B85EF628",
-            "Id": "0x010000000000054F",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Activate the Fire Glyph",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You activate the Fire Glyph. Its glow envelops your body and it appears embedded in your flesh. You feel a strange sense of power surge through you but are otherwise unaffected. The door to the previous puzzle slams shut and the Fire door opens.",
-            "ExternalId": "",
-            "Position": {
-              "x": 575.0,
-              "y": 950.0
-            },
-            "ZIndex": 8.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3093231144,
-            "InputPins": [
-              {
-                "Text": "// Only available if the Earth Puzzle Room has been solved.",
-                "Id": "0x0100000000000552",
-                "Owner": "0x010000000000054F"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "//Opens the Fire Puzzle Room door and closes the Earth Puzzle Room door.\nglyph_states.fire_glyph_activated = true;\ntemple_object_states.fire_door_open = true;\ntemple_object_states.earth_door_open = false",
-                "Id": "0x0100000000000553",
-                "Owner": "0x010000000000054F",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000051D",
-                    "Target": "0x0100000000000519"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_FF00E2FD",
-            "Id": "0x010000000000055A",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Activate all glyphs and the Ankh statue",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You activate the Ankh Statue. A glow emanates from your body, blinding you momentarily as the fire door slams shut. When you recover your senses, the glyphs are gone from your body and the Ankh statue emits a light directed toward the doors decorated with the same symbol. They grind open to reveal the way to the way inside.",
-            "ExternalId": "",
-            "Position": {
-              "x": 575.0,
-              "y": 1225.0
-            },
-            "ZIndex": 14.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 4278248189,
-            "InputPins": [
-              {
-                "Text": "// Only available if the Fire Puzzle Room has been solved.",
-                "Id": "0x010000000000055D",
-                "Owner": "0x010000000000055A"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "//Opens the Ankh Room door and closes the Fire Puzzle Room door.\nglyph_states.all_glyphs_activated = true;\ntemple_object_states.ankh_door_open = true;\ntemple_object_states.fire_door_open = false",
-                "Id": "0x010000000000055E",
-                "Owner": "0x010000000000055A",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000051D",
-                    "Target": "0x0100000000000519"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_B8F6DAF7",
-            "Id": "0x0100000000000582",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Enter the Fire Puzzle room.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You decide to enter the fire puzzle room.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 1075.0
-            },
-            "ZIndex": 14.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3103185655,
-            "InputPins": [
-              {
-                "Text": "// Only available if the fire glyph is activated. No longer available after the Ankh glyph is activated.\ntemple_object_states.fire_door_open == true &&\npuzzle_states.fire_puzzle_solved == false",
-                "Id": "0x0100000000000585",
-                "Owner": "0x0100000000000582"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000586",
-                "Owner": "0x0100000000000582",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000573",
-                    "Target": "0x010000000000015D"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_FB9D56BC",
-            "Id": "0x010000000000058A",
-            "Parent": "0x010000000000015D",
-            "Attachments": [],
-            "DisplayName": "Enter the Ankh room.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You decide to enter the Ankh room.",
-            "ExternalId": "",
-            "Position": {
-              "x": 350.0,
-              "y": 1325.0
-            },
-            "ZIndex": 17.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 4221392572,
-            "InputPins": [
-              {
-                "Text": "// Only available if all four elemental puzzle rooms have been solved.\ntemple_object_states.ankh_door_open == true",
-                "Id": "0x010000000000058D",
-                "Owner": "0x010000000000058A"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000058E",
-                "Owner": "0x010000000000058A",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000577",
-                    "Target": "0x010000000000015D"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_A8AB5F0C",
-            "Id": "0x0100000000000742",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Nothing happened.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You can't do that right now. Try something else.",
-            "ExternalId": "",
-            "Position": {
-              "x": -750.0,
-              "y": 200.0
-            },
-            "ZIndex": 19.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2829803276,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000745",
-                "Owner": "0x0100000000000742"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000746",
-                "Owner": "0x0100000000000742",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000564",
-                    "Target": "0x0100000000000562"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_B683DFAB",
-            "Id": "0x0100000000000772",
-            "Parent": "0x0100000000000163",
-            "Attachments": [],
-            "DisplayName": "Solve the Air puzzle!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You solve the puzzle using air powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
-            "ExternalId": "",
-            "Position": {
-              "x": 375.0,
-              "y": 375.0
-            },
-            "ZIndex": 0.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3062095787,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000008D6",
-                "Owner": "0x0100000000000772"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "puzzle_states.air_puzzle_solved = true;\ntemple_object_states.air_door_open = true",
-                "Id": "0x0100000000000776",
-                "Owner": "0x0100000000000772",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000167",
-                    "Target": "0x0100000000000163"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_866643AF",
-            "Id": "0x01000000000008D0",
-            "Parent": "0x0100000000000163",
-            "Attachments": [],
-            "DisplayName": "Trapped in the Air Puzzle room!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "Oh no! You're trapped in the Air Puzzle room! You've got no choice but to solve this puzzle.",
-            "ExternalId": "",
-            "Position": {
-              "x": 25.0,
-              "y": 375.0
-            },
-            "ZIndex": 3.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2254848943,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000008DA",
-                "Owner": "0x01000000000008D0"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "temple_object_states.air_door_open = false",
-                "Id": "0x01000000000008D4",
-                "Owner": "0x01000000000008D0",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x01000000000008D6",
-                    "Target": "0x0100000000000772"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_D6E0B455",
-            "Id": "0x01000000000008EA",
-            "Parent": "0x0100000000000169",
-            "Attachments": [],
-            "DisplayName": "Trapped in the Water Puzzle room!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "Oh no! You're trapped in the Water Puzzle room! You've got no choice but to solve this puzzle.",
-            "ExternalId": "",
-            "Position": {
-              "x": 225.0,
-              "y": 450.0
-            },
-            "ZIndex": 3.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3605050453,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000008EB",
-                "Owner": "0x01000000000008EA"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "temple_object_states.water_door_open = false",
-                "Id": "0x01000000000008EC",
-                "Owner": "0x01000000000008EA",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x01000000000008F3",
-                    "Target": "0x01000000000008F2"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_1EF65AAB",
-            "Id": "0x01000000000008F2",
-            "Parent": "0x0100000000000169",
-            "Attachments": [],
-            "DisplayName": "Solve the Water puzzle!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You solve the puzzle using air and water powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
-            "ExternalId": "",
-            "Position": {
-              "x": 600.0,
-              "y": 450.0
-            },
-            "ZIndex": 0.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 519461547,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000008F3",
-                "Owner": "0x01000000000008F2"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "puzzle_states.water_puzzle_solved = true;\ntemple_object_states.water_door_open = true",
-                "Id": "0x01000000000008F4",
-                "Owner": "0x01000000000008F2",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000016D",
-                    "Target": "0x0100000000000169"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_17A76287",
-            "Id": "0x0100000000000902",
-            "Parent": "0x010000000000016F",
-            "Attachments": [],
-            "DisplayName": "Solve the Earth puzzle!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You solve the puzzle using air, water, and earth powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
-            "ExternalId": "",
-            "Position": {
-              "x": 918.33333333333326,
-              "y": 468.0
-            },
-            "ZIndex": 0.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 396845703,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000903",
-                "Owner": "0x0100000000000902"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "puzzle_states.earth_puzzle_solved = true;\ntemple_object_states.earth_door_open = true",
-                "Id": "0x0100000000000904",
-                "Owner": "0x0100000000000902",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000173",
-                    "Target": "0x010000000000016F"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_928804ED",
-            "Id": "0x01000000000008FB",
-            "Parent": "0x010000000000016F",
-            "Attachments": [],
-            "DisplayName": "Trapped in the Earth Puzzle room!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "Oh no! You're trapped in the Earth Puzzle room! You've got no choice but to solve this puzzle.",
-            "ExternalId": "",
-            "Position": {
-              "x": 543.33333333333326,
-              "y": 468.0
-            },
-            "ZIndex": 3.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2458387693,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000008FC",
-                "Owner": "0x01000000000008FB"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "temple_object_states.earth_door_open = false",
-                "Id": "0x01000000000008FD",
-                "Owner": "0x01000000000008FB",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000903",
-                    "Target": "0x0100000000000902"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_F0D766F5",
-            "Id": "0x0100000000000914",
-            "Parent": "0x0100000000000175",
-            "Attachments": [],
-            "DisplayName": "Solve the Fire puzzle!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You solve the puzzle using air, water, earth, and fire powers. When the puzzle is solved, the door opens so you may return to the Nexus.",
-            "ExternalId": "",
-            "Position": {
-              "x": 815.66666666666663,
-              "y": 349.33333333333337
-            },
-            "ZIndex": 0.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 4040648437,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000915",
-                "Owner": "0x0100000000000914"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "puzzle_states.fire_puzzle_solved = true;\ntemple_object_states.fire_door_open = true",
-                "Id": "0x0100000000000916",
-                "Owner": "0x0100000000000914",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000179",
-                    "Target": "0x0100000000000175"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_32A86D3F",
-            "Id": "0x010000000000090D",
-            "Parent": "0x0100000000000175",
-            "Attachments": [],
-            "DisplayName": "Trapped in the Fire Puzzle room!",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "Oh no! You're trapped in the Fire Puzzle room! You've got no choice but to solve this puzzle.",
-            "ExternalId": "",
-            "Position": {
-              "x": 440.66666666666663,
-              "y": 349.33333333333337
-            },
-            "ZIndex": 3.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 849898815,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000090E",
-                "Owner": "0x010000000000090D"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "temple_object_states.fire_door_open = false",
-                "Id": "0x010000000000090F",
-                "Owner": "0x010000000000090D",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000915",
-                    "Target": "0x0100000000000914"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_C3E1C571",
-            "Id": "0x0100000000000AEC",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Try to activate the Ankh statue.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You try to activate the Ankh statue.",
-            "ExternalId": "",
-            "Position": {
-              "x": -275.0,
-              "y": 1150.0
-            },
-            "ZIndex": 34.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 3286353265,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AEF",
-                "Owner": "0x0100000000000AEC"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AF0",
-                "Owner": "0x0100000000000AEC",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000764",
-                    "Target": "0x0100000000000762"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_A2207E96",
-            "Id": "0x0100000000000AF4",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Try to activate the Fire glyph.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You try to activate the Fire glyph.",
-            "ExternalId": "",
-            "Position": {
-              "x": -275.0,
-              "y": 925.0
-            },
-            "ZIndex": 34.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 2720038550,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AF5",
-                "Owner": "0x0100000000000AF4"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AF6",
-                "Owner": "0x0100000000000AF4",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000075D",
-                    "Target": "0x010000000000075B"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_72DA433F",
-            "Id": "0x0100000000000AFC",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Try to activate the Earth glyph.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You try to activate the Earth glyph.",
-            "ExternalId": "",
-            "Position": {
-              "x": -275.0,
-              "y": 700.0
-            },
-            "ZIndex": 34.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 1926906687,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AFD",
-                "Owner": "0x0100000000000AFC"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000AFE",
-                "Owner": "0x0100000000000AFC",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000756",
-                    "Target": "0x0100000000000754"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_69EAE2AD",
-            "Id": "0x0100000000000B04",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Try to activate the Water glyph.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You try to activate the Water glyph.",
-            "ExternalId": "",
-            "Position": {
-              "x": -275.0,
-              "y": 475.0
-            },
-            "ZIndex": 34.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 1777001133,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000B05",
-                "Owner": "0x0100000000000B04"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000B06",
-                "Owner": "0x0100000000000B04",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000074D",
-                    "Target": "0x010000000000074B"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_36C26DE2",
-            "Id": "0x0100000000000B0D",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Try to activate the Air glyph.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You try to activate the Air glyph.",
-            "ExternalId": "",
-            "Position": {
-              "x": -275.0,
-              "y": 225.0
-            },
-            "ZIndex": 34.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 918711778,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000B0E",
-                "Owner": "0x0100000000000B0D"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000B0F",
-                "Owner": "0x0100000000000B0D",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x010000000000073D",
-                    "Target": "0x010000000000073B"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "FlowFragment",
-          "Properties": {
-            "TechnicalName": "FFr_F1FBAFEB",
-            "Id": "0x0100000000000DB6",
-            "Parent": "0x0100000000000519",
-            "Attachments": [],
-            "DisplayName": "Back away from the pedestal.",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              },
-              "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
-            },
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "You back away from the pedestal and survey the room.",
-            "ExternalId": "",
-            "Position": {
-              "x": -975.0,
-              "y": 1250.0
-            },
-            "ZIndex": 44.0,
-            "Size": {
-              "w": 275.0,
-              "h": 200.0
-            },
-            "ShortId": 4059803627,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000E5B",
-                "Owner": "0x0100000000000DB6"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000DBA",
-                "Owner": "0x0100000000000DB6",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000E5A",
-                    "Target": "0x0100000000000E57"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
           "Type": "Dialogue",
           "Properties": {
             "TechnicalName": "Dlg_23B3DE7A",
@@ -4896,9 +4896,9 @@
               "Asset": "0x0000000000000000"
             },
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "The <color=#ffa61aff>Protagonist</color>'s radio transmitter crackles to life. The <color=#ffa61aff>Assistant</color>'s voice comes in through the static.",
             "ExternalId": "",
@@ -4921,9 +4921,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000001C4",
@@ -4941,68 +4941,13 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000001A8",
                     "Target": "0x01000000000001A5"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "DialogueFragment",
-          "Properties": {
-            "TechnicalName": "DFr_418B3EA1",
-            "Id": "0x01000000000001E7",
-            "Parent": "0x0100000000000319",
-            "MenuText": "",
-            "StageDirections": "",
-            "Speaker": "0x010000000000010F",
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "Text": "Well... it could mean that I'm about to find the Ankh, use its power, and save the world. *pauses briefly to consider* Or it could be really, really bad... Only one way to find out!",
-            "ExternalId": "",
-            "Position": {
-              "x": 675.0,
-              "y": 300.0
-            },
-            "ZIndex": 3.0,
-            "Size": {
-              "w": 300.0,
-              "h": 275.0
-            },
-            "ShortId": 1099644577,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000001EA",
-                "Owner": "0x01000000000001E7"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000001EB",
-                "Owner": "0x01000000000001E7",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000334",
-                    "Target": "0x0100000000000331"
                   }
                 ]
               }
@@ -5019,9 +4964,9 @@
             "StageDirections": "An excited voice comes in through initial radio static.",
             "Speaker": "0x0100000000000113",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "John... JOHN - Can you hear me okay? You're in! I can't believe you actually found it... the ACTUAL Temple of Life! I mean... do you know what this means?",
             "ExternalId": "",
@@ -5051,13 +4996,68 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000001EA",
                     "Target": "0x01000000000001E7"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_418B3EA1",
+            "Id": "0x01000000000001E7",
+            "Parent": "0x0100000000000319",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Well... it could mean that I'm about to find the Ankh, use its power, and save the world. *pauses briefly to consider* Or it could be really, really bad... Only one way to find out!",
+            "ExternalId": "",
+            "Position": {
+              "x": 675.0,
+              "y": 300.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 300.0,
+              "h": 275.0
+            },
+            "ShortId": 1099644577,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EA",
+                "Owner": "0x01000000000001E7"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EB",
+                "Owner": "0x01000000000001E7",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000334",
+                    "Target": "0x0100000000000331"
                   }
                 ]
               }
@@ -5074,9 +5074,9 @@
             "StageDirections": "",
             "Speaker": "0x0100000000000113",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "It's gotta be better than sitting around waiting for the world to end. Anyway ... we're getting paid. What are you seeing down there? Your chest cam isn't transmitting.",
             "ExternalId": "",
@@ -5106,9 +5106,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000033A",
@@ -5129,9 +5129,9 @@
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "Must've gotten damaged going through that ventilation shaft. Looks like there's a door further in. I'm gonna check it out.",
             "ExternalId": "",
@@ -5161,9 +5161,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000341",
@@ -5184,9 +5184,9 @@
             "StageDirections": "",
             "Speaker": "0x0100000000000113",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "Just be careful. I'll be here if you need me. Good luck!",
             "ExternalId": "",
@@ -5216,9 +5216,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000031D",
@@ -5269,9 +5269,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000051C",
@@ -5280,9 +5280,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000524",
@@ -5291,9 +5291,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000052F",
@@ -5302,9 +5302,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000057D",
@@ -5313,9 +5313,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000585",
@@ -5324,9 +5324,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000058D",
@@ -5345,9 +5345,9 @@
             "Parent": "0x0100000000000519",
             "DisplayName": "Activate something on the pedestal.",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "",
             "ExternalId": "",
@@ -5377,9 +5377,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000AFD",
@@ -5388,9 +5388,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000AF5",
@@ -5399,9 +5399,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000AEF",
@@ -5410,9 +5410,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000B05",
@@ -5421,9 +5421,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000B0E",
@@ -5432,9 +5432,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000E5B",
@@ -5454,9 +5454,9 @@
             "Target": "0x010000000000015D",
             "TargetPin": "0x0100000000000160",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "",
             "ExternalId": "",
@@ -5500,9 +5500,9 @@
             "ShortId": 1869110984,
             "Expression": "glyph_states.air_glyph_activated == false && puzzle_states.air_puzzle_solved == false",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "InputPins": [
               {
@@ -5520,9 +5520,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000053D",
@@ -5538,9 +5538,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000745",
@@ -5572,9 +5572,9 @@
             "ShortId": 4032083498,
             "Expression": "glyph_states.water_glyph_activated == false &&\npuzzle_states.air_puzzle_solved == true ",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "InputPins": [
               {
@@ -5592,9 +5592,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000544",
@@ -5610,9 +5610,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000745",
@@ -5644,9 +5644,9 @@
             "ShortId": 661283237,
             "Expression": "glyph_states.earth_glyph_activated == false && puzzle_states.water_puzzle_solved == true",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "InputPins": [
               {
@@ -5664,9 +5664,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000054B",
@@ -5682,9 +5682,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000745",
@@ -5716,9 +5716,9 @@
             "ShortId": 174543814,
             "Expression": "glyph_states.fire_glyph_activated == false && puzzle_states.earth_puzzle_solved == true",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "InputPins": [
               {
@@ -5736,9 +5736,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000552",
@@ -5754,9 +5754,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000745",
@@ -5788,9 +5788,9 @@
             "ShortId": 2329064109,
             "Expression": "glyph_states.all_glyphs_activated == false && puzzle_states.fire_puzzle_solved == true\n",
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "InputPins": [
               {
@@ -5808,9 +5808,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000055D",
@@ -5826,9 +5826,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x0100000000000745",
@@ -6984,9 +6984,9 @@
               }
             },
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "",
             "ExternalId": "",
@@ -7022,9 +7022,9 @@
               }
             },
             "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
             },
             "Text": "",
             "ExternalId": "",
