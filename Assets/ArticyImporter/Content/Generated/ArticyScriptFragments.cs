@@ -20,7 +20,7 @@ namespace Articy.The_Key_Of_The_Nile.GlobalVariables
 {
     
     
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(637618176064264060)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(637618501735103182)]
     public class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         
@@ -38,134 +38,6 @@ namespace Articy.The_Key_Of_The_Nile.GlobalVariables
         public void Script_0x100000000000155Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
             aGlobalVariablesState.temple_object_states.antechamber_door_open = false;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000529
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929257?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x100000000000529Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Player cannot enter until the corresponding glyph is active
-true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000167
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928295?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_0x100000000000167Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            //Player cannot return to the nexus until the puzzle is solved.;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x10000000000016C
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928300?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x10000000000016CText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Player cannot enter until the corresponding glyph is active
-true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x10000000000016D
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928301?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_0x10000000000016DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            //Player cannot return to the nexus until the puzzle is solved.;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x10000000000018E
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928334?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x10000000000018EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Player cannot enter until the corresponding glyph is active
-true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000173
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928307?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_0x100000000000173Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            //Player cannot return to the nexus until the puzzle is solved.;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000191
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928337?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x100000000000191Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Player cannot enter until the corresponding glyph is active
-true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000179
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928313?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_0x100000000000179Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            //Player cannot return to the nexus until the puzzle is solved.;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000193
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928339?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x100000000000193Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Player cannot enter until activating the pedestal after all four glyphs are activated and all four puzzle rooms have been solved.
-
-true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000250
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928528?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_0x100000000000250Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            //The end.;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x100000000000524
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929252?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x100000000000524Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Only available if the air glyph is activated. No longer available after the water glyph is activated.
-
-aGlobalVariablesState.temple_object_states.air_door_open == true && aGlobalVariablesState.puzzle_states.air_puzzle_solved == false;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x10000000000052F
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929263?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x10000000000052FText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Only available if the water glyph is activated. No longer available after the earth glyph is activated.
-aGlobalVariablesState.temple_object_states.water_door_open == true && aGlobalVariablesState.puzzle_states.water_puzzle_solved == false
-;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x10000000000057D
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929341?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_0x10000000000057DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return // Only available if the earth glyph is activated. No longer available after the fire glyph is activated.
-aGlobalVariablesState.temple_object_states.earth_door_open == true && aGlobalVariablesState.puzzle_states.earth_puzzle_solved == false;
         }
         
         /// <summary>
@@ -279,6 +151,38 @@ aGlobalVariablesState.temple_object_states.fire_door_open = false;
         }
         
         /// <summary>
+        /// ObjectID: 0x100000000000524
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929252?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000524Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Only available if the air glyph is activated. No longer available after the water glyph is activated.
+
+aGlobalVariablesState.temple_object_states.air_door_open == true && aGlobalVariablesState.puzzle_states.air_puzzle_solved == false;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000052F
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929263?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000052FText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Only available if the water glyph is activated. No longer available after the earth glyph is activated.
+aGlobalVariablesState.temple_object_states.water_door_open == true && aGlobalVariablesState.puzzle_states.water_puzzle_solved == false
+;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000057D
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929341?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000057DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Only available if the earth glyph is activated. No longer available after the fire glyph is activated.
+aGlobalVariablesState.temple_object_states.earth_door_open == true && aGlobalVariablesState.puzzle_states.earth_puzzle_solved == false;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x100000000000585
         /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929349?pane=selected&amp;tab=current
         /// </summary>
@@ -297,6 +201,25 @@ aGlobalVariablesState.puzzle_states.fire_puzzle_solved == false;
         {
             return // Only available if all four elemental puzzle rooms have been solved.
 aGlobalVariablesState.temple_object_states.ankh_door_open == true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000529
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037929257?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x100000000000529Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Player cannot enter until the corresponding glyph is active
+true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000167
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928295?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000167Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            //Player cannot return to the nexus until the puzzle is solved.;
         }
         
         /// <summary>
@@ -319,6 +242,25 @@ aGlobalVariablesState.temple_object_states.air_door_open = true;
         }
         
         /// <summary>
+        /// ObjectID: 0x10000000000016C
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928300?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000016CText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Player cannot enter until the corresponding glyph is active
+true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000016D
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928301?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000016DText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            //Player cannot return to the nexus until the puzzle is solved.;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x1000000000008EC
         /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930220?pane=selected&amp;tab=current
         /// </summary>
@@ -338,6 +280,34 @@ aGlobalVariablesState.temple_object_states.water_door_open = true;
         }
         
         /// <summary>
+        /// ObjectID: 0x10000000000018E
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928334?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_0x10000000000018EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return // Player cannot enter until the corresponding glyph is active
+true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000173
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928307?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000173Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            //Player cannot return to the nexus until the puzzle is solved.;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000008FD
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930237?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x1000000000008FDText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.temple_object_states.earth_door_open = false;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x100000000000904
         /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930244?pane=selected&amp;tab=current
         /// </summary>
@@ -348,12 +318,31 @@ aGlobalVariablesState.temple_object_states.earth_door_open = true;
         }
         
         /// <summary>
-        /// ObjectID: 0x1000000000008FD
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930237?pane=selected&amp;tab=current
+        /// ObjectID: 0x100000000000191
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928337?pane=selected&amp;tab=current
         /// </summary>
-        public void Script_0x1000000000008FDText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        public bool Script_0x100000000000191Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.temple_object_states.earth_door_open = false;
+            return // Player cannot enter until the corresponding glyph is active
+true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000179
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928313?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000179Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            //Player cannot return to the nexus until the puzzle is solved.;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000090F
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930255?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000090FText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.temple_object_states.fire_door_open = false;
         }
         
         /// <summary>
@@ -367,12 +356,23 @@ aGlobalVariablesState.temple_object_states.fire_door_open = true;
         }
         
         /// <summary>
-        /// ObjectID: 0x10000000000090F
-        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037930255?pane=selected&amp;tab=current
+        /// ObjectID: 0x100000000000193
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928339?pane=selected&amp;tab=current
         /// </summary>
-        public void Script_0x10000000000090FText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        public bool Script_0x100000000000193Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.temple_object_states.fire_door_open = false;
+            return // Player cannot enter until activating the pedestal after all four glyphs are activated and all four puzzle rooms have been solved.
+
+true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000250
+        /// Articy Object ref: articy://localhost/view/5e6ae696-800c-4397-98bf-318520f0d5b6/72057594037928528?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000250Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            //The end.;
         }
         
         /// <summary>
@@ -433,39 +433,39 @@ aGlobalVariablesState.puzzle_states.air_puzzle_solved == true ;
             Conditions = new System.Collections.Generic.Dictionary<uint, System.Func<ArticyGlobalVariables, Articy.Unity.IBaseScriptMethodProvider, bool>>();
             Instructions = new System.Collections.Generic.Dictionary<uint, System.Action<ArticyGlobalVariables, Articy.Unity.IBaseScriptMethodProvider>>();
             Instructions.Add(1u, this.Script_0x100000000000155Text);
-            Conditions.Add(2u, this.Script_0x100000000000529Text);
-            Instructions.Add(3u, this.Script_0x100000000000167Text);
-            Conditions.Add(4u, this.Script_0x10000000000016CText);
-            Instructions.Add(5u, this.Script_0x10000000000016DText);
-            Conditions.Add(6u, this.Script_0x10000000000018EText);
-            Instructions.Add(7u, this.Script_0x100000000000173Text);
-            Conditions.Add(8u, this.Script_0x100000000000191Text);
-            Instructions.Add(9u, this.Script_0x100000000000179Text);
-            Conditions.Add(10u, this.Script_0x100000000000193Text);
-            Instructions.Add(11u, this.Script_0x100000000000250Text);
+            Conditions.Add(2u, this.Script_0x10000000000053DText);
+            Instructions.Add(3u, this.Script_0x10000000000053EText);
+            Conditions.Add(4u, this.Script_0x100000000000544Text);
+            Instructions.Add(5u, this.Script_0x100000000000545Text);
+            Conditions.Add(6u, this.Script_0x10000000000054BText);
+            Instructions.Add(7u, this.Script_0x10000000000054CText);
+            Conditions.Add(8u, this.Script_0x100000000000552Text);
+            Instructions.Add(9u, this.Script_0x100000000000553Text);
+            Conditions.Add(10u, this.Script_0x10000000000055DText);
+            Instructions.Add(11u, this.Script_0x10000000000055EText);
             Conditions.Add(12u, this.Script_0x100000000000524Text);
             Conditions.Add(13u, this.Script_0x10000000000052FText);
             Conditions.Add(14u, this.Script_0x10000000000057DText);
-            Conditions.Add(15u, this.Script_0x10000000000053DText);
-            Instructions.Add(16u, this.Script_0x10000000000053EText);
-            Conditions.Add(17u, this.Script_0x100000000000544Text);
-            Instructions.Add(18u, this.Script_0x100000000000545Text);
-            Conditions.Add(19u, this.Script_0x10000000000054BText);
-            Instructions.Add(20u, this.Script_0x10000000000054CText);
-            Conditions.Add(21u, this.Script_0x100000000000552Text);
-            Instructions.Add(22u, this.Script_0x100000000000553Text);
-            Conditions.Add(23u, this.Script_0x10000000000055DText);
-            Instructions.Add(24u, this.Script_0x10000000000055EText);
-            Conditions.Add(25u, this.Script_0x100000000000585Text);
-            Conditions.Add(26u, this.Script_0x10000000000058DText);
-            Instructions.Add(27u, this.Script_0x100000000000776Text);
-            Instructions.Add(28u, this.Script_0x1000000000008D4Text);
-            Instructions.Add(29u, this.Script_0x1000000000008ECText);
-            Instructions.Add(30u, this.Script_0x1000000000008F4Text);
-            Instructions.Add(31u, this.Script_0x100000000000904Text);
-            Instructions.Add(32u, this.Script_0x1000000000008FDText);
-            Instructions.Add(33u, this.Script_0x100000000000916Text);
-            Instructions.Add(34u, this.Script_0x10000000000090FText);
+            Conditions.Add(15u, this.Script_0x100000000000585Text);
+            Conditions.Add(16u, this.Script_0x10000000000058DText);
+            Conditions.Add(17u, this.Script_0x100000000000529Text);
+            Instructions.Add(18u, this.Script_0x100000000000167Text);
+            Instructions.Add(19u, this.Script_0x100000000000776Text);
+            Instructions.Add(20u, this.Script_0x1000000000008D4Text);
+            Conditions.Add(21u, this.Script_0x10000000000016CText);
+            Instructions.Add(22u, this.Script_0x10000000000016DText);
+            Instructions.Add(23u, this.Script_0x1000000000008ECText);
+            Instructions.Add(24u, this.Script_0x1000000000008F4Text);
+            Conditions.Add(25u, this.Script_0x10000000000018EText);
+            Instructions.Add(26u, this.Script_0x100000000000173Text);
+            Instructions.Add(27u, this.Script_0x1000000000008FDText);
+            Instructions.Add(28u, this.Script_0x100000000000904Text);
+            Conditions.Add(29u, this.Script_0x100000000000191Text);
+            Instructions.Add(30u, this.Script_0x100000000000179Text);
+            Instructions.Add(31u, this.Script_0x10000000000090FText);
+            Instructions.Add(32u, this.Script_0x100000000000916Text);
+            Conditions.Add(33u, this.Script_0x100000000000193Text);
+            Instructions.Add(34u, this.Script_0x100000000000250Text);
             Conditions.Add(35u, this.Script_0x10000000000073BExpression);
             Conditions.Add(36u, this.Script_0x10000000000074BExpression);
             Conditions.Add(37u, this.Script_0x100000000000754Expression);
