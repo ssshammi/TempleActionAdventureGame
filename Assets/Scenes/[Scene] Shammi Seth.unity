@@ -202,11 +202,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11483866, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
       propertyPath: startOn.lowId
-      value: 405
+      value: 337
       objectReference: {fileID: 0}
     - target: {fileID: 11483866, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
       propertyPath: startOn.highId
       value: 16777216
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483866, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
+      propertyPath: ignoreInvalidBranches
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22406978, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
       propertyPath: m_AnchorMax.x
@@ -346,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22483428, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22483428, guid: 777aebc90044bcd4a8fbc30628247904, type: 3}
       propertyPath: m_AnchorMax.x
