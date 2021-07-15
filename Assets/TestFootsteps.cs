@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using PixLi;
+
 public class TestFootsteps : MonoBehaviour
 {
 	[SerializeField] private AudioClipArchive _audioClipArchive;

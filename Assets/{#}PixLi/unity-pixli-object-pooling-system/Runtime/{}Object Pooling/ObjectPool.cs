@@ -103,14 +103,15 @@ public class ObjectPool : MonoBehaviourSingleton<ObjectPool>
 			return poolable;
 		}
 
+		//TODO: Resolve stuff with middleware already, it should be outside of this and modular.
 		private void Configure()
 		{
 			this.ReleasePipeline.Add(
 				middleware: new ActivationMiddleware(active: false)
 			);
-			//this.ReleasePipeline.Add(
-			//	middleware: new PositionMiddleware(position: Vector3.zero)
-			//);
+			this.ReleasePipeline.Add(
+				middleware: new PositionMiddleware(position: Vector3.zero)
+			);
 
 			this.AcquirePipeline.Add(
 				middleware: new ActivationMiddleware(active: true)
