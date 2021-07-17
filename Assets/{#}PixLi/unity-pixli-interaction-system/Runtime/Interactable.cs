@@ -22,6 +22,12 @@ namespace PixLi
 		[SerializeField] private UnityEvent _onInteract;
 		public UnityEvent _OnInteract => this._onInteract;
 
+		[SerializeField] private float _delay = 2.0f;
+		public float _Delay => this._delay;
+
+		[SerializeField] private UnityEvent _onInteractDelayed;
+		public UnityEvent _OnInteractDelayed => this._onInteractDelayed;
+
 		[Tooltip("Called when no reaction was present when there is interaction with this Interactable.")]
 		[SerializeField] private UnityEvent _onInteractionFail;
 		public UnityEvent _OnInteractionFail => this._onInteractionFail;
@@ -34,6 +40,8 @@ namespace PixLi
 		public void Interact()
 		{
 			this._onInteract.Invoke();
+
+			this.StartCoroutine(CoroutineProcessorsCollection.InvokeAfter(this._delay, () => this._onInteractDelayed.Invoke()));
 
 			for (int i = 0; i < this._conditionalEvents.Length; i++)
 			{
