@@ -9,16 +9,18 @@ public class TestFootsteps : MonoBehaviour
 	[SerializeField] private AudioClipArchive _audioClipArchive;
 	public AudioClipArchive _AudioClipArchive => this._audioClipArchive;
 
-	[SerializeField] private float _timeDistance = 0.4f;
-	public float _TimeDistance => this._timeDistance;
+	[SerializeField] private Cooldown _cooldown;
+	public Cooldown _Cooldown => this._cooldown;
 
 	private IEnumerator Play()
 	{
 		while (true)
 		{
+			this._cooldown.Reset();
+
 			AudioPlayer._Instance.Play(this._audioClipArchive.Random(), IdTag.Audio.Footstep);
 
-			yield return new WaitForSeconds(this._timeDistance);
+			yield return this._cooldown;
 		}
 	}
 
