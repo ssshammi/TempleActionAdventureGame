@@ -25,6 +25,15 @@ namespace StarterAssets
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
+		[Tooltip("How fast the character slide to face movement direction")]
+		public float slideSpeed = 2.0f; // slide speed
+		private bool isSliding = false;
+		private Vector3 slideForward ; // direction of slide
+		[Tooltip("How fast the character slide to face movement direction")]
+		[Range(0.0f, 2.5f)]
+		private float slideTimer  = 0.0f;
+		public float slideTimerMax = 2.5f; // time while sliding
+
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
