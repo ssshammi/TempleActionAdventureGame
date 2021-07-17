@@ -4,7 +4,9 @@ public class BasicRigidBodyPush : MonoBehaviour
 {
 	public LayerMask pushLayers;
 	public bool canPush;
-	[Range(0.5f, 5f)] public float strength = 1.1f;
+	[Min(0.0f)] public float strength = 10.1f;
+
+	public ForceMode ForceMode = ForceMode.Impulse;
 
 	private void OnControllerColliderHit(ControllerColliderHit hit)
 	{
@@ -17,7 +19,7 @@ public class BasicRigidBodyPush : MonoBehaviour
 
 		// make sure we hit a non kinematic rigidbody
 		Rigidbody body = hit.collider.attachedRigidbody;
-		if (body == null || body.isKinematic) return;
+		if (body == null) return;
 
 		// make sure we only push desired layer(s)
 		var bodyLayerMask = 1 << body.gameObject.layer;
@@ -29,7 +31,16 @@ public class BasicRigidBodyPush : MonoBehaviour
 		// Calculate push direction from move direction, horizontal motion only
 		Vector3 pushDir = new Vector3(hit.moveDirection.x, 0.0f, hit.moveDirection.z);
 
+		TransformWaypointsPathMovement twpm = hit.collider.GetComponentInParent<TransformWaypointsPathMovement>();
+
+		if (twpm != null)
+		{
+			twpm.Move(strength * Time.deltaTime, pushDir);
+		}
+
 		// Apply the push and take strength into account
-		body.AddForce(pushDir * strength, ForceMode.Impulse);
+		//body.AddForce(pushDir * strength, this.ForceMode);
+
+		//Debug.Log("Pushed");
 	}
 }

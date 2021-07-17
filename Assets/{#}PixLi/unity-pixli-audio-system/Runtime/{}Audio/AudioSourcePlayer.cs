@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,15 +7,6 @@ public class AudioSourcePlayer : MonoBehaviour
 {
 	[SerializeField] private AudioSourceController _audioSourceControllerPrefab;
 	public AudioSourceController _AudioSourceControllerPrefab => this._audioSourceControllerPrefab;
-
-	//public void PlayUI(AudioClip audioClip)
-	//{
-	//	AudioSourceController audioSourceController = ObjectPool.Instance.Aquire<AudioSourceController>(
-	//		poolable: this._audioSourceControllerPrefab
-	//	);
-
-	//	audioSourceController.Play(audioClip: audioClip);
-	//}
 
 	public AudioSourceController Play(AudioClip audioClip)
 	{
@@ -25,6 +17,22 @@ public class AudioSourcePlayer : MonoBehaviour
 		audioSourceController.Play(audioClip: audioClip);
 
 		return audioSourceController;
+	}
+
+	public void PlayUI(AudioClip audioClip)
+	{
+		AudioSourceController audioSourceController = this.Play(audioClip: audioClip);
+
+		//TODO: Some extension like that could prove handy for Object Pooling, like self releasing thingy after some seconds.
+		audioSourceController.StartCoroutine(
+			routine: CoroutineProcessorsCollection.InvokeAfter(
+				seconds: audioClip.length,
+				action: () =>
+				{
+					ObjectPool._Instance.Release(audioSourceController);
+				}
+			)
+		);
 	}
 
 	public AudioSourceController Play(AudioClip audioClip, float volume)

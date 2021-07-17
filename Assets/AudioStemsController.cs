@@ -75,6 +75,7 @@ public class AudioStemsController : MonoBehaviourSingleton<AudioStemsController>
 	private void Start()
 	{
 		this._audioSourceControllers = new AudioSourceController[this._audioClipArchive.Assets.Count];
+		this._isAudioSourceControllerActive = new bool[this._audioSourceControllers.Length];
 
 		for (int a = 0; a < this._audioClipArchive.Assets.Count; a++)
 		{
@@ -88,8 +89,8 @@ public class AudioStemsController : MonoBehaviourSingleton<AudioStemsController>
 			audioSourceController.Fade(
 				time: this._fadeTime,
 				animationCurve: this._fadeInCurve
-			); //? It's not really necessary the way fading works but just to be sure that there isn't a spike when it's FadesOut.
-			audioSourceController.AudioSource.loop = true;
+			); //? It's not really necessary to do Fade with the way fading works but just to be sure that there isn't a spike when it's FadesOut.
+			audioSourceController.AudioSource.loop = true; //? We can modify a state of pulled entry because we are never releasing it.
 
 			this._audioSourceControllers[a] = audioSourceController;
 		}

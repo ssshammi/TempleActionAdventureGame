@@ -55,6 +55,8 @@ public class AudioClipPlaybackEngine : MonoBehaviour
 			//!? Because you are modifything a state of an entity that has been pooled.
 			//!? It sure seems an easier and a better choice, but it may lead to unexpected bugs like something playing again when it shouldn't have.
 
+			//TODO: You should actually have some kind of system that reverses pulled objects back to prototype state.
+
 			//audioSourceController.AudioSource.loop = this._loop;
 
 			//audioSourceController.Play(

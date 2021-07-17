@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
   m_Name: ArticyDatabase
   m_EditorClassIdentifier: 
-  mHierarchy: {fileID: 6997498839754520462}
+  mHierarchy: {fileID: 6795480035499861227}
   mLocalization: {fileID: -1670827142909677120}
   mInternalProject:
     mName: The Key of the Nile
@@ -165,7 +165,7 @@ MonoBehaviour:
     _VariableStorage: {fileID: 4173007840861623647}
   mPowers:
     _VariableStorage: {fileID: 4173007840861623647}
---- !u!114 &6997498839754520462
+--- !u!114 &6795480035499861227
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}

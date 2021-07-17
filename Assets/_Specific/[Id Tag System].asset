@@ -33,20 +33,22 @@ MonoBehaviour:
   _allIdTagsRelativePaths:
   - Default
   - Audio/Ambience
-  - Audio/Music
-  - Audio/SoundEffect
   - Audio/Footstep
+  - Audio/Music
+  - Audio/Narrative
   - Audio/Other
+  - Audio/SoundEffect
   _sharedIdTagsContainer: {fileID: -3611668287090115986}
   _uniqueIdTagsContainer: {fileID: 3301211147561547458}
   _mixedIdTagsContainer: {fileID: 6438563623588406215}
   _mixedIdTagsRelativePaths:
   - Default
   - Audio/Ambience
-  - Audio/Music
-  - Audio/SoundEffect
   - Audio/Footstep
+  - Audio/Music
+  - Audio/Narrative
   - Audio/Other
+  - Audio/SoundEffect
   _combinations:
   - IdTagsContainer: {fileID: -3611668287090115986}
     IdTag:
@@ -60,23 +62,28 @@ MonoBehaviour:
     Unique: 1
   - IdTagsContainer: {fileID: 7436067080745908663}
     IdTag:
-      _tag: Music
-      _id: 1527925909
-    Unique: 1
-  - IdTagsContainer: {fileID: 7436067080745908663}
-    IdTag:
-      _tag: SoundEffect
-      _id: -1176389404
-    Unique: 1
-  - IdTagsContainer: {fileID: 7436067080745908663}
-    IdTag:
       _tag: Footstep
       _id: 378158204
     Unique: 1
   - IdTagsContainer: {fileID: 7436067080745908663}
     IdTag:
+      _tag: Music
+      _id: 1527925909
+    Unique: 1
+  - IdTagsContainer: {fileID: 7436067080745908663}
+    IdTag:
+      _tag: Narrative
+      _id: -1075600872
+    Unique: 1
+  - IdTagsContainer: {fileID: 7436067080745908663}
+    IdTag:
       _tag: Other
       _id: -582599340
+    Unique: 1
+  - IdTagsContainer: {fileID: 7436067080745908663}
+    IdTag:
+      _tag: SoundEffect
+      _id: -1176389404
     Unique: 1
   _combineIdenticalIdTagsInSelection: 0
 --- !u!114 &2905052066848863355
@@ -96,14 +103,16 @@ MonoBehaviour:
     _id: -728703673
   - _tag: Ambience
     _id: -1090754126
-  - _tag: Music
-    _id: 1527925909
-  - _tag: SoundEffect
-    _id: -1176389404
   - _tag: Footstep
     _id: 378158204
+  - _tag: Music
+    _id: 1527925909
+  - _tag: Narrative
+    _id: -1075600872
   - _tag: Other
     _id: -582599340
+  - _tag: SoundEffect
+    _id: -1176389404
 --- !u!114 &3301211147561547458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,14 +128,16 @@ MonoBehaviour:
   _idTags:
   - _tag: Ambience
     _id: -1090754126
-  - _tag: Music
-    _id: 1527925909
-  - _tag: SoundEffect
-    _id: -1176389404
   - _tag: Footstep
     _id: 378158204
+  - _tag: Music
+    _id: 1527925909
+  - _tag: Narrative
+    _id: -1075600872
   - _tag: Other
     _id: -582599340
+  - _tag: SoundEffect
+    _id: -1176389404
 --- !u!114 &6438563623588406215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,14 +155,16 @@ MonoBehaviour:
     _id: -728703673
   - _tag: Ambience
     _id: -1090754126
-  - _tag: Music
-    _id: 1527925909
-  - _tag: SoundEffect
-    _id: -1176389404
   - _tag: Footstep
     _id: 378158204
+  - _tag: Music
+    _id: 1527925909
+  - _tag: Narrative
+    _id: -1075600872
   - _tag: Other
     _id: -582599340
+  - _tag: SoundEffect
+    _id: -1176389404
 --- !u!114 &7436067080745908663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,11 +180,13 @@ MonoBehaviour:
   _idTags:
   - _tag: Ambience
     _id: -1090754126
-  - _tag: Music
-    _id: 1527925909
-  - _tag: SoundEffect
-    _id: -1176389404
   - _tag: Footstep
     _id: 378158204
+  - _tag: Music
+    _id: 1527925909
+  - _tag: Narrative
+    _id: -1075600872
   - _tag: Other
     _id: -582599340
+  - _tag: SoundEffect
+    _id: -1176389404

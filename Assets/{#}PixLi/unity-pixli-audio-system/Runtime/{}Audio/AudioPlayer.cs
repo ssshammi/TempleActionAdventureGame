@@ -12,13 +12,6 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 
 	private Dictionary<IdTag, AudioSourcePlayer> _audioSourcePlayers = new Dictionary<IdTag, AudioSourcePlayer>();
 
-	private IEnumerator InvokeAfter(float seconds, Action action)
-	{
-		yield return new WaitForSecondsRealtime(time: seconds);
-
-		action.Invoke();
-	}
-
 	public AudioSourceController Play(AudioClip audioClip, IdTag idTag)
 	{
 		AudioSourceController audioSourceController = this._audioSourcePlayers[idTag].Play(
@@ -26,7 +19,7 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 		);
 
 		this.StartCoroutine(
-			routine: this.InvokeAfter(
+			routine: CoroutineProcessorsCollection.InvokeAfter(
 				seconds: audioClip.length,
 				action: () =>
 				{
@@ -46,7 +39,7 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 		);
 
 		this.StartCoroutine(
-			routine: this.InvokeAfter(
+			routine: CoroutineProcessorsCollection.InvokeAfter(
 				seconds: audioClip.length,
 				action: () =>
 				{
@@ -66,7 +59,7 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 		);
 
 		this.StartCoroutine(
-			routine: this.InvokeAfter(
+			routine: CoroutineProcessorsCollection.InvokeAfter(
 				seconds: audioClip.length + delay,
 				action: () =>
 				{
