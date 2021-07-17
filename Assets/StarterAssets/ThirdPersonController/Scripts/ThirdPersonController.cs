@@ -25,6 +25,15 @@ namespace StarterAssets
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
+		[Tooltip("How fast the character slide to face movement direction")]
+		public float slideSpeed = 2.0f; // slide speed
+		private bool isSliding = false;
+		private Vector3 slideForward ; // direction of slide
+		[Tooltip("How fast the character slide to face movement direction")]
+		[Range(0.0f, 2.5f)]
+		private float slideTimer  = 0.0f;
+		public float slideTimerMax = 2.5f; // time while sliding
+
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
@@ -80,6 +89,7 @@ namespace StarterAssets
 		private int _animIDGrounded;
 		private int _animIDJump;
 		private int _animIDFreeFall;
+		private int _animIDSlide;
 		private int _animIDMotionSpeed;
 
 		private Animator _animator;
@@ -133,6 +143,7 @@ namespace StarterAssets
 			_animIDGrounded = Animator.StringToHash("Grounded");
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
+			_animIDSlide = Animator.StringToHash("Slide");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		}
 
@@ -239,6 +250,7 @@ namespace StarterAssets
 				{
 					_animator.SetBool(_animIDJump, false);
 					_animator.SetBool(_animIDFreeFall, false);
+					_animator.SetBool(_animIDSlide, false);
 				}
 
 				// stop our velocity dropping infinitely when grounded
