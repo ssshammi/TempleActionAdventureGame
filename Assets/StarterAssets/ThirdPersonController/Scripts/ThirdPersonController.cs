@@ -89,6 +89,7 @@ namespace StarterAssets
 		private int _animIDGrounded;
 		private int _animIDJump;
 		private int _animIDFreeFall;
+		private int _animIDSlide;
 		private int _animIDMotionSpeed;
 
 		private Animator _animator;
@@ -142,6 +143,7 @@ namespace StarterAssets
 			_animIDGrounded = Animator.StringToHash("Grounded");
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
+			_animIDSlide = Animator.StringToHash("Slide");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		}
 
@@ -238,7 +240,7 @@ namespace StarterAssets
 
 		private void JumpAndGravity()
 		{
-			if (Grounded)
+			if (Grounded )
 			{
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
@@ -248,6 +250,7 @@ namespace StarterAssets
 				{
 					_animator.SetBool(_animIDJump, false);
 					_animator.SetBool(_animIDFreeFall, false);
+					_animator.SetBool(_animIDSlide, false);
 				}
 
 				// stop our velocity dropping infinitely when grounded
