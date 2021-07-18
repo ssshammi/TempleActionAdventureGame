@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 13 Blowing up exit after AIR room'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "Look what you\u2019ve done! I\u2019m ruined! Literally! Who is
+      going to fix this? My glyphs! My statues! I really wasn\u2019t a big fan of
+      some of the bas-reliefs, but this\u2026 this is inexcusable!"
+    _audioCover: {fileID: 8300000, guid: 5816f0e5ce33f9345842b8f24ff42082, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

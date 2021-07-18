@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using PixLi;
 using UnityEngine;
 
 public class AudioSourcePlayer : MonoBehaviour
@@ -21,6 +22,24 @@ public class AudioSourcePlayer : MonoBehaviour
 
 	public void PlayUI(AudioClip audioClip)
 	{
+		AudioSourceController audioSourceController = this.Play(audioClip: audioClip);
+
+		//TODO: Some extension like that could prove handy for Object Pooling, like self releasing thingy after some seconds.
+		audioSourceController.StartCoroutine(
+			routine: CoroutineProcessorsCollection.InvokeAfter(
+				seconds: audioClip.length,
+				action: () =>
+				{
+					ObjectPool._Instance.Release(audioSourceController);
+				}
+			)
+		);
+	}
+
+	public void PlayUI(AudioClipArchive audioClipArchive)
+	{
+		AudioClip audioClip = audioClipArchive.Random();
+
 		AudioSourceController audioSourceController = this.Play(audioClip: audioClip);
 
 		//TODO: Some extension like that could prove handy for Object Pooling, like self releasing thingy after some seconds.

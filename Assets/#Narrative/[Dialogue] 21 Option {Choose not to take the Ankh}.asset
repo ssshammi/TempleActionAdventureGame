@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 21 Option {Choose not to take the Ankh}'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "Maybe some good did come of this after all. Maybe we even learned
+      something. Not some drek about the power of friendship... but something important.
+      Something about the nature of consequences. About considering your actions
+      and their effects on others. About not blindly rushing in and smashing up some
+      poor temple just because it\u2019s got what you think you need. Maybe it\u2019s
+      time for you to use YOUR power to save the world\u2026 you might as well. After
+      all, it\u2019s the only place you\u2019ve got to live."
+    _audioCover: {fileID: 8300000, guid: 48f8e3e8a3af15043b065e3c87a557e9, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

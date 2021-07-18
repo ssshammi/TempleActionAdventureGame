@@ -2122,8 +2122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _footstepsAudioClipArchive: {fileID: 11400000, guid: 8cb7a71f52691614db640253b4db1255, type: 2}
   MoveSpeed: 4
-  SprintSpeed: 5.335
+  _walkFootstepAudioCooldown:
+    _tagetElapsedTime: 0.55
+  SprintSpeed: 7
+  _sprintFootstepAudioCooldown:
+    _tagetElapsedTime: 0.38
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   slideSpeed: 2
@@ -2143,6 +2148,8 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  _jumpAudioClip: {fileID: 8300000, guid: 8724b38ffb4540043adb263e317f93a8, type: 3}
+  _landAudioClip: {fileID: 8300000, guid: 465a50d252a7ed64d908e53aa93ce6c6, type: 3}
 --- !u!114 &5885216827943657505
 MonoBehaviour:
   m_ObjectHideFlags: 0

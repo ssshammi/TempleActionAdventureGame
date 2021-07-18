@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e128e52d157f8c34a8ec5086d5186f74, type: 3}
+  m_Name: '[Audio Clip Archive] Refuse'
+  m_EditorClassIdentifier: 
+  _randomDistributionProvider:
+    _data:
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 90c952d5ebca0af429c37502b0274d35, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 14b2483a4f93e5f489b74af39af1d9b3, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 3ec4dd13487dd204e87749682eab7ada, type: 3}
+    _probabilityRatioPerPreviouslyProvidedData:
+    - 0
+    - 0

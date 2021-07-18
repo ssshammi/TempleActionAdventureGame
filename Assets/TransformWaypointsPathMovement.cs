@@ -8,8 +8,8 @@ public class TransformWaypointsPathMovement : MonoBehaviour
 	[SerializeField] private bool _updatePosition = true;
 	public bool _UpdatePosition => this._updatePosition;
 
-	[SerializeField] private AnimationCurve _positionCurve;
-	public AnimationCurve _PositionCurve => this._positionCurve;
+	//[SerializeField] private AnimationCurve _positionCurve;
+	//public AnimationCurve _PositionCurve => this._positionCurve;
 
 	[SerializeField] private bool _updateRotation;
 	public bool _UpdateRotation => this._updateRotation;
@@ -46,7 +46,7 @@ public class TransformWaypointsPathMovement : MonoBehaviour
 
 			Vector3 directionToTargetWaypoint = targetWaypoint.position - currentWaypoint.position;
 
-			Debug.Log(MathUtil.GetProjectionValue(direction, directionToTargetWaypoint));
+			//Debug.Log(MathUtil.GetProjectionValue(direction, directionToTargetWaypoint));
 
 			if (MathUtil.GetProjectionValue(direction, directionToTargetWaypoint) > 0.7f)
 			{

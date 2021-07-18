@@ -9,21 +9,21 @@ public class TestFootsteps : MonoBehaviour
 	[SerializeField] private AudioClipArchive _audioClipArchive;
 	public AudioClipArchive _AudioClipArchive => this._audioClipArchive;
 
-	[SerializeField] private float _timeDistance = 0.4f;
-	public float _TimeDistance => this._timeDistance;
-
-	private IEnumerator Play()
-	{
-		while (true)
-		{
-			AudioPlayer._Instance.Play(this._audioClipArchive.Random(), IdTag.Audio.Footstep);
-
-			yield return new WaitForSeconds(this._timeDistance);
-		}
-	}
+	[SerializeField] private Cooldown _cooldown;
+	public Cooldown _Cooldown => this._cooldown;
 
 	private void Start()
 	{
-		this.StartCoroutine(this.Play());
+		this.StartCoroutine(
+			routine: CoroutineProcessorsCollection.InvokeIndefinitely(
+				customYieldInstruction: this._cooldown,
+				action: () =>
+				{
+					this._cooldown.Reset();
+
+					AudioPlayer._Instance.Play(this._audioClipArchive.Random(), IdTag.Audio.Footstep);
+				}
+			)
+		);
 	}
 }
