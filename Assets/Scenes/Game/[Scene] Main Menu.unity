@@ -3219,7 +3219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6788187485361345861, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6788187485361345861, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3541,7 +3541,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cc62735a4c3fd434695cf87e4e513955, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc62735a4c3fd434695cf87e4e513955, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4744,7 +4744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6788187485361345861, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6788187485361345861, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6052,7 +6052,15 @@ PrefabInstance:
       value: '[Default Events Dispatcher]'
       objectReference: {fileID: 0}
     - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
       propertyPath: _onStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
@@ -6072,11 +6080,35 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4672927708315732728}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
       propertyPath: _onStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioStemsController, com.pixel-lifetime.unity-pixli-audio-system
       objectReference: {fileID: 0}
     - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioStemsController, com.pixel-lifetime.unity-pixli-audio-system
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
       propertyPath: _onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620597815445998509, guid: 189f64dbf7be67549b5e3a74f8d76462, type: 3}
+      propertyPath: _onStartDelayed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
