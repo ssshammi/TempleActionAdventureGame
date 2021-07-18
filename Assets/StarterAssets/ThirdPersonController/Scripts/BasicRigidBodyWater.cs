@@ -14,17 +14,17 @@ public class BasicRigidBodyWater : MonoBehaviour
 	}
 	public  void OnInteractionTriggerEnter(Collider other)
 	{
-		var bodyLayerMask = other.gameObject.layer;
-		if ((bodyLayerMask & WaterLayers.value) == 1) 
+		//var bodyLayerMask = 1 << other.gameObject.layer;
+		//if ((bodyLayerMask & WaterLayers.value) == 0) return; 
 
 		this.transform.gameObject.GetComponent<ThirdPersonController>().WaterPlayer(true);
 
 	}
 
-	private void OnInteractionTriggerExit(Collider other)
+	public void OnInteractionTriggerExit(Collider other)
 	{
-		var bodyLayerMask =other.gameObject.layer;// 1 << 
-		if ((bodyLayerMask & WaterLayers.value) == 1) 
+		//var bodyLayerMask = 1 << other.gameObject.layer;
+		//if ((bodyLayerMask & WaterLayers.value) == 0) return;
 
 		this.transform.gameObject.GetComponent<ThirdPersonController>().WaterPlayer(false);
 

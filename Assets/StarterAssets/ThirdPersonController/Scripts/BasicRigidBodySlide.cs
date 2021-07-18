@@ -13,16 +13,44 @@ public class BasicRigidBodySlide : MonoBehaviour
 		if (canSlide) PushRigidSlope(hit);
 	}
 
+	public void OnInteractionTriggerEnter()
+	{
+		//var bodyLayerMask = 1 << other.gameObject.layer;
+		//if ((bodyLayerMask & SlopeLayers.value) == 0) return;
+		Debug.Log("slope called");
+		this.transform.gameObject.GetComponent<ThirdPersonController>().SlidePlayer(true);
+
+	}
+
+	public void OnInteractionTriggerStay()
+	{
+		//var bodyLayerMask = 1 << other.gameObject.layer;
+		//if ((bodyLayerMask & SlopeLayers.value) == 0) return;
+		Debug.Log("slope enter");
+		this.transform.gameObject.GetComponent<ThirdPersonController>().SlidePlayer(true);
+
+	}
+
+	public void OnInteractionTriggerExit()
+	{
+		//var bodyLayerMask = 1 << other.gameObject.layer;
+		//if ((bodyLayerMask & SlopeLayers.value) == 0) return;
+
+		this.transform.gameObject.GetComponent<ThirdPersonController>().SlidePlayer(false);
+
+	}
+
 	private void PushRigidSlope(ControllerColliderHit hit)
 	{
+		return;
 		// https://docs.unity3d.com/ScriptReference/CharacterController.OnControllerColliderHit.html
 
 		// make sure we hit a non kinematic rigidbody
-		//Rigidbody body = hit.collider.attachedRigidbody;
-		//if (body == null) return;
+		Rigidbody body = hit.collider.attachedRigidbody;
+		if (body == null) return;
 
 		// make sure we only push desired layer(s)
-		var bodyLayerMask = hit.gameObject.layer;//1 << 
+		var bodyLayerMask = 1 << hit.gameObject.layer;//
 		if ((bodyLayerMask & SlopeLayers.value) == 0) return;
 
 		// We dont want to push objects below us
@@ -37,7 +65,7 @@ public class BasicRigidBodySlide : MonoBehaviour
 		{
 			twpm.Move(strength * Time.deltaTime, pushDir);
 		}*/
-		this.transform.gameObject.GetComponent<ThirdPersonController>().SlidePlayer(true);
+		//this.transform.gameObject.GetComponent<ThirdPersonController>().SlidePlayer(true);
 		// Apply the push and take strength into account
 		//body.AddForce(pushDir * strength, this.ForceMode);
 

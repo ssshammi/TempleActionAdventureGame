@@ -14,19 +14,19 @@ public class BasicRigidBodyPush : MonoBehaviour
 		
 		if (canPush) PushRigidBodies(hit);
 	}
-    private void OnTriggerEnter(Collider other)
+    public void OnInteractionTriggerEnter(Collider other)
     {
-		var bodyLayerMask = other.gameObject.layer;
-		if ((bodyLayerMask & pushLayers.value) == 0) return;
+		//var bodyLayerMask = other.gameObject.layer;
+		//if ((bodyLayerMask & pushLayers.value) == 0) return;
 
 		this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
 
 	}
 
-	private void OnTriggerExit(Collider other)
+	public void OnInteractionTriggerExit(Collider other)
 	{
-		var bodyLayerMask = other.gameObject.layer;
-		if ((bodyLayerMask & pushLayers.value) == 0) return;
+	//	var bodyLayerMask = other.gameObject.layer;
+	//	if ((bodyLayerMask & pushLayers.value) == 0) return;
 
 		this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(false);
 
@@ -52,9 +52,11 @@ public class BasicRigidBodyPush : MonoBehaviour
 		}
 	}
 	*/
-    private void PushRigidBodies(ControllerColliderHit hit)
+
+	
+	private void PushRigidBodies(ControllerColliderHit hit)
 	{
-		return;
+		
 		// https://docs.unity3d.com/ScriptReference/CharacterController.OnControllerColliderHit.html
 
 		// make sure we hit a non kinematic rigidbody
@@ -81,7 +83,7 @@ public class BasicRigidBodyPush : MonoBehaviour
 			twpm.Move(strength * Time.deltaTime, pushDir);
 		}*/
 
-		this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
+		//this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
 		// Apply the push and take strength into account
 		body.AddForce(pushDir * strength, this.ForceMode);
 

@@ -193,7 +193,8 @@ namespace StarterAssets
 
 			if (_hasAnimator)
 			{
-				_animator.SetBool(_animIDSlide, hasTrue);
+				_animator.SetBool("Slide", hasTrue);
+				//_animator.SetTrigger("Slope");
 			}
 		}
 
@@ -203,6 +204,7 @@ namespace StarterAssets
 			if (_hasAnimator)
 			{
 				_animator.SetBool(_animIDWater, hasTrue);
+				
 			}
 		}
 		
