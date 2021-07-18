@@ -112,7 +112,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &122036865199361367
 GameObject:
@@ -2040,6 +2040,8 @@ GameObject:
   - component: {fileID: 135756642000475821}
   - component: {fileID: 4416926081852918493}
   - component: {fileID: 1531259327}
+  - component: {fileID: 146141889625973393}
+  - component: {fileID: 7160624981922796342}
   m_Layer: 14
   m_Name: PlayerArmature
   m_TagString: Player
@@ -2123,6 +2125,8 @@ MonoBehaviour:
   SprintSpeed: 5.335
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
+  slideSpeed: 2
+  slideTimerMax: 2.5
   JumpHeight: 1.2
   Gravity: -15
   JumpTimeout: 0.3
@@ -2287,6 +2291,38 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &146141889625973393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926081852918481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a9ae9901e3e4adfa7098c7214be8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpwanPointContainer: {fileID: 0}
+  spwanLocation: 3
+--- !u!114 &7160624981922796342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926081852918481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68270b05deec6452fa7a09e3e98aa4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlopeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  canSlide: 1
+  strength: 10.1
+  ForceMode: 2
 --- !u!1 &4523139366846529165
 GameObject:
   m_ObjectHideFlags: 0

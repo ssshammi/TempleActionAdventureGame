@@ -91,6 +91,8 @@ namespace StarterAssets
 		private int _animIDFreeFall;
 		private int _animIDSlide;
 		private int _animIDMotionSpeed;
+		private int _animIDPush;
+		private int _animIDWater;
 
 		private Animator _animator;
 		private CharacterController _controller;
@@ -144,6 +146,8 @@ namespace StarterAssets
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
 			_animIDSlide = Animator.StringToHash("Slide");
+			_animIDPush = Animator.StringToHash("Push");
+			_animIDWater = Animator.StringToHash("Water");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		}
 
@@ -176,6 +180,33 @@ namespace StarterAssets
 			// Cinemachine will follow this target
 			CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, _cinemachineTargetYaw, 0.0f);
 		}
+		public void PushObject(bool hasTrue) {
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDPush, hasTrue);
+			}
+		}
+
+		public void SlidePlayer(bool hasTrue)
+		{
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDSlide, hasTrue);
+			}
+		}
+
+		public void WaterPlayer(bool hasTrue)
+		{
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDWater, hasTrue);
+			}
+		}
+		
+
 
 		private void Move()
 		{
@@ -251,6 +282,8 @@ namespace StarterAssets
 					_animator.SetBool(_animIDJump, false);
 					_animator.SetBool(_animIDFreeFall, false);
 					_animator.SetBool(_animIDSlide, false);
+					_animator.SetBool(_animIDWater, false);
+					_animator.SetBool(_animIDPush, false);
 				}
 
 				// stop our velocity dropping infinitely when grounded
@@ -258,7 +291,7 @@ namespace StarterAssets
 				{
 					_verticalVelocity = -2f;
 				}
-
+				
 				// Jump
 				if (_input.jump && _jumpTimeoutDelta <= 0.0f)
 				{
@@ -270,6 +303,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDJump, true);
 					}
+					//check for collision with water or slope 
 				}
 
 				// jump timeout
