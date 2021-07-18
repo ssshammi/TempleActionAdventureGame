@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 14 Option {Approaching ANKH CHAMBER doors}'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "Oh, I wish you\u2019d put that dynamite away. The torches are
+      much too close. I\u2019ve had enough damage to my innards for a millenia, thank
+      you very much."
+    _audioCover: {fileID: 8300000, guid: ea4d929f7deab5446945d6a22d28b87f, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 20 Option {Take the Ankh}'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "I suppose it was too much to ask. I can\u2019t say it\u2019s
+      been a very pleasant experience meeting you. Don\u2019t think we\u2019ll be
+      doing this again\u2026"
+    _audioCover: {fileID: 8300000, guid: 638ed9f29fafc724e8283c883c0a33f0, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

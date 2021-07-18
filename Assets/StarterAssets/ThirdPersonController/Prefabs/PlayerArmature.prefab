@@ -2122,10 +2122,10 @@ MonoBehaviour:
   _footstepsAudioClipArchive: {fileID: 11400000, guid: 8cb7a71f52691614db640253b4db1255, type: 2}
   MoveSpeed: 4
   _walkFootstepAudioCooldown:
-    _tagetElapsedTime: 0
+    _tagetElapsedTime: 0.55
   SprintSpeed: 7
   _sprintFootstepAudioCooldown:
-    _tagetElapsedTime: 0
+    _tagetElapsedTime: 0.38
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   slideSpeed: 2

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 14 Option {Approaching PEDESTAL}'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "What was it all for? I had one purpose. Keep the Ankh safe until
+      someone goes through all the puzzles and learns the mysteries of balance and
+      harmony... and now what? Well I\u2019ll tell you what. With those doors blocked
+      and the pedestal broken you\u2019re going to have tremendous difficulty managing
+      your current lifestyle."
+    _audioCover: {fileID: 8300000, guid: 4f1a986f15647cb4891d7727540b9d19, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

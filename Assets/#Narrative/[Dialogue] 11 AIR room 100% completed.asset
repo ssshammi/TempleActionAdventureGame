@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 11 AIR room 100% completed'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "Oh bravo! Maybe you\u2019re more capable than I thought. Maybe
+      there is hope for you. Let\u2019s see how you handle the rest of it. You might
+      even learn a thing or two."
+    _audioCover: {fileID: 8300000, guid: 7be6c1b45b35b4c47b0e543d03879823, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

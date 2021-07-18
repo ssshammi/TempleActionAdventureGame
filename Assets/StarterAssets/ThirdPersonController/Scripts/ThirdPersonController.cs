@@ -231,7 +231,7 @@ namespace StarterAssets
 			}
 			_animationBlend = this._speed;
 
-			Debug.Log($"_animationBlend: {_animationBlend}");
+			//Debug.Log($"_animationBlend: {_animationBlend}");
 
 			// normalise input direction
 			Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
