@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e128e52d157f8c34a8ec5086d5186f74, type: 3}
+  m_Name: '[Audio Clip Archive] Footsteps'
+  m_EditorClassIdentifier: 
+  _randomDistributionProvider:
+    _data:
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: cf7f1878db5d9674b9b7912496df2c49, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: acba102d1cb41cd448f4fe8ada4c00d4, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 89c2d18087ad3684ba4499830787269f, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 79e27452c04dc20409fafae1621007e6, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 1bc8a778c8a79fc41ab2524d767c156c, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: ff9f8c69908d7e6428703852a4039847, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 56abb161223f3d044829753988e909d9, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 1318f783d2c4a674a8bc97df912fc20f, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 73da0432c1c48b14bb90c49a1cd24311, type: 3}
+    - _initialProbability: 1
+      _selectable: 1
+      _selectAlways: 0
+      _selectOncePerQuery: 0
+      _object: {fileID: 8300000, guid: 02f36c002e563844faeff38d9bf0862e, type: 3}
+    _probabilityRatioPerPreviouslyProvidedData:
+    - 0
+    - 0.2
+    - 0.5

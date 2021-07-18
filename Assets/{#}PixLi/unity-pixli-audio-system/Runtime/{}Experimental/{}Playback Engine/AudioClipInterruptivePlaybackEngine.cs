@@ -10,6 +10,7 @@ public class AudioClipInterruptivePlaybackEngine : MonoBehaviour
 	private AudioSourceController _activeAudioSourceController;
 
 	public void Play(AudioClip audioClip) => this._activeAudioSourceController.Play(audioClip: audioClip);
+	public void Stop() => this._activeAudioSourceController.Stop();
 
 	private void Start()
 	{

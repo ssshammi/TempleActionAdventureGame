@@ -1224,7 +1224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClipArchive: {fileID: 11400000, guid: 8cb7a71f52691614db640253b4db1255, type: 2}
-  _timeDistance: 0.4
+  _cooldown:
+    _tagetElapsedTime: 0.4
 --- !u!1 &437993683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,7 +2650,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _fadeTime: 3
   _eoPieceIndex: 0
-  _eoAudioStemsCombination: {fileID: 0}
+  _eoAudioStemsCombination: {fileID: 11400000, guid: ba648ab8b91aac84680b6596e07e6fd7, type: 2}
 --- !u!4 &850682503
 Transform:
   m_ObjectHideFlags: 0
