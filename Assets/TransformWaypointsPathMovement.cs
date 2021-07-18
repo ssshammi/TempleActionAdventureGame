@@ -8,8 +8,8 @@ public class TransformWaypointsPathMovement : MonoBehaviour
 	[SerializeField] private bool _updatePosition = true;
 	public bool _UpdatePosition => this._updatePosition;
 
-	[SerializeField] private AnimationCurve _positionCurve;
-	public AnimationCurve _PositionCurve => this._positionCurve;
+	//[SerializeField] private AnimationCurve _positionCurve;
+	//public AnimationCurve _PositionCurve => this._positionCurve;
 
 	[SerializeField] private bool _updateRotation;
 	public bool _UpdateRotation => this._updateRotation;
