@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PixLi;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -14,11 +15,22 @@ namespace StarterAssets
 #endif
 	public class ThirdPersonController : MonoBehaviour
 	{
+		[SerializeField] private AudioClipArchive _footstepsAudioClipArchive;
+		public AudioClipArchive _FootstepsAudioClipArchive => this._footstepsAudioClipArchive;
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 2.0f;
+
+		[SerializeField] private Cooldown _walkFootstepAudioCooldown;
+		public Cooldown _WalkFootstepAudioCooldown => this._walkFootstepAudioCooldown;
+
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 5.335f;
+
+		[SerializeField] private Cooldown _sprintFootstepAudioCooldown;
+		public Cooldown _SprintFootstepAudioCooldown => this._sprintFootstepAudioCooldown;
+
 		[Tooltip("How fast the character turns to face movement direction")]
 		[Range(0.0f, 0.3f)]
 		public float RotationSmoothTime = 0.12f;
@@ -28,10 +40,10 @@ namespace StarterAssets
 		[Tooltip("How fast the character slide to face movement direction")]
 		public float slideSpeed = 2.0f; // slide speed
 		private bool isSliding = false;
-		private Vector3 slideForward ; // direction of slide
+		private Vector3 slideForward; // direction of slide
 		[Tooltip("How fast the character slide to face movement direction")]
 		[Range(0.0f, 2.5f)]
-		private float slideTimer  = 0.0f;
+		private float slideTimer = 0.0f;
 		public float slideTimerMax = 2.5f; // time while sliding
 
 		[Space(10)]
@@ -126,7 +138,7 @@ namespace StarterAssets
 		private void Update()
 		{
 			_hasAnimator = TryGetComponent(out _animator);
-			
+
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -149,9 +161,17 @@ namespace StarterAssets
 
 		private void GroundedCheck()
 		{
+			bool previousGrounded = this.Grounded;
+
 			// set sphere position, with offset
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+
+			// When became grounded.
+			if (this.Grounded && !previousGrounded)
+			{
+				AudioPlayer._Instance.Play(this._landAudioClip, idTag: IdTag.Audio.SoundEffect);
+			}
 
 			// update animator if using character
 			if (_hasAnimator)
@@ -186,7 +206,8 @@ namespace StarterAssets
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+			if (_input.move == Vector2.zero)
+				targetSpeed = 0.0f;
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
@@ -208,7 +229,9 @@ namespace StarterAssets
 			{
 				_speed = targetSpeed;
 			}
-			_animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+			_animationBlend = this._speed;
+
+			Debug.Log($"_animationBlend: {_animationBlend}");
 
 			// normalise input direction
 			Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
@@ -230,6 +253,15 @@ namespace StarterAssets
 			// move the player
 			_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
+			Cooldown cooldown = this._input.sprint ? this._sprintFootstepAudioCooldown : this._walkFootstepAudioCooldown;
+			if (this._speed > this.MoveSpeed / 2.0f && cooldown._Finished && this.Grounded)
+			{
+				this._walkFootstepAudioCooldown.Reset();
+				this._sprintFootstepAudioCooldown.Reset();
+
+				AudioPlayer._Instance.Play(this._footstepsAudioClipArchive.Random(), IdTag.Audio.Footstep);
+			}
+
 			// update animator if using character
 			if (_hasAnimator)
 			{
@@ -238,9 +270,15 @@ namespace StarterAssets
 			}
 		}
 
+		[SerializeField] private AudioClip _jumpAudioClip;
+		public AudioClip _JumpAudioClip => this._jumpAudioClip;
+
+		[SerializeField] private AudioClip _landAudioClip;
+		public AudioClip _LandAudioClip => this._landAudioClip;
+
 		private void JumpAndGravity()
 		{
-			if (Grounded )
+			if (Grounded)
 			{
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
@@ -270,6 +308,8 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDJump, true);
 					}
+
+					AudioPlayer._Instance.Play(this._jumpAudioClip, idTag: IdTag.Audio.SoundEffect);
 				}
 
 				// jump timeout
@@ -310,8 +350,10 @@ namespace StarterAssets
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
 		{
-			if (lfAngle < -360f) lfAngle += 360f;
-			if (lfAngle > 360f) lfAngle -= 360f;
+			if (lfAngle < -360f)
+				lfAngle += 360f;
+			if (lfAngle > 360f)
+				lfAngle -= 360f;
 			return Mathf.Clamp(lfAngle, lfMin, lfMax);
 		}
 
@@ -320,9 +362,11 @@ namespace StarterAssets
 			Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
 			Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
 
-			if (Grounded) Gizmos.color = transparentGreen;
-			else Gizmos.color = transparentRed;
-			
+			if (Grounded)
+				Gizmos.color = transparentGreen;
+			else
+				Gizmos.color = transparentRed;
+
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
