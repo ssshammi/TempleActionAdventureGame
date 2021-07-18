@@ -2650,7 +2650,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _fadeTime: 3
   _eoPieceIndex: 0
-  _eoAudioStemsCombination: {fileID: 0}
+  _eoAudioStemsCombination: {fileID: 11400000, guid: ba648ab8b91aac84680b6596e07e6fd7, type: 2}
 --- !u!4 &850682503
 Transform:
   m_ObjectHideFlags: 0

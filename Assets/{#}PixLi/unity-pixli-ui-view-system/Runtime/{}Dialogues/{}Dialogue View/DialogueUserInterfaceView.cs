@@ -42,16 +42,29 @@ namespace PixLi
 		[SerializeField] protected DialogueUserInterfaceViewOutput viewOutput;
 		public DialogueUserInterfaceViewOutput _ViewOutput => this.viewOutput;
 
+		[SerializeField] private AudioClipInterruptivePlaybackEngine _audioClipInterruptivePlaybackEngine;
+		public AudioClipInterruptivePlaybackEngine _AudioClipInterruptivePlaybackEngine => this._audioClipInterruptivePlaybackEngine;
+
 		public void Display(DialogueUserInterfaceViewDisplayData displayData)
 		{
 			DialogueData dialogueData = displayData.DialogueData;
 
-			//AudioPlayer.PlayClip(dialogueData._AudioCover, AudioPlayer.AudioPlayerType.Specialty);
+			this._audioClipInterruptivePlaybackEngine.Play(audioClip: dialogueData._AudioCover);
 
 			this.viewOutput._MessageTextField.text = dialogueData._SentenceText;
 
 			this.viewOutput._CollocutorNameTextField.text = dialogueData._Collocutor._ProfileName;
 			this.viewOutput._CollocutorIconImageField.sprite = dialogueData._Collocutor._ProfileIcon;
+
+			this.StartCoroutine(
+				routine: CoroutineProcessorsCollection.InvokeAfter(
+					seconds: dialogueData._AudioCover.length,
+					action: () =>
+					{
+						this.DisplayNext();
+					}
+				)
+			);
 		}
 
 		private DialogueUserInterfaceViewDisplayData _displayedData;
