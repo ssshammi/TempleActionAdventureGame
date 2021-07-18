@@ -34,6 +34,9 @@ namespace PixLi
 		[Tooltip("Reactions are called based on satisfaction of conditions.")]
 		[SerializeField] private ConditionalEvent[] _conditionalEvents;
 
+		[SerializeField] private bool _invokeAllConditionals = true;
+		public bool _InvokeAllConditionals => this._invokeAllConditionals;
+
 		public void Interact()
 		{
 			this._onInteract.Invoke();
@@ -50,8 +53,15 @@ namespace PixLi
 
 			for (int i = 0; i < this._conditionalEvents.Length; i++)
 			{
-				if (this._conditionalEvents[i].Invoke())
-					return;
+				if (this._invokeAllConditionals)
+				{
+					this._conditionalEvents[i].Invoke();
+				}
+				else
+				{
+					if (this._conditionalEvents[i].Invoke())
+						return;
+				}
 			}
 
 			this._onInteractionFail.Invoke();
