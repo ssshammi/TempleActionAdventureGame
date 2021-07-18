@@ -22,7 +22,7 @@ public class PathRevealPulse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioPlayer._Instance.Play(pulseSound, IdTag.Audio.SoundEffect);
+      
     }
 
     private void Awake()
@@ -33,8 +33,10 @@ public class PathRevealPulse : MonoBehaviour
             // Is my ID (the parent) not the same as the component's gameObject
             //if (FloathingObjects.gameObject.GetInstanceID() != GetInstanceID())
             //{
-                RevealObjectGameObjects.Add(FloathingObjects.gameObject);
-           // }
+            FloathingObjects.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            RevealObjectGameObjects.Add(FloathingObjects.gameObject);
+            
+            // }
         }
        Debug.Log(" "+RevealObjectGameObjects.Count);
 
@@ -44,8 +46,40 @@ public class PathRevealPulse : MonoBehaviour
        // this.transform.position = RevealObjectGameObjects[0].transform.position;
        //this.transform.rotation = Quaternion.Euler(0, SpawnPointsLoc[spwanLocation].transform.eulerAngles.y, 0);
     }
-    
-    
+
+    public void revealPath()
+    {
+        int floatIndx = 0;
+        AudioPlayer._Instance.Play(pulseSound, IdTag.Audio.SoundEffect);
+        foreach (GameObject floatingRocks in RevealObjectGameObjects) {
+            StartCoroutine(RevealObject(floatingRocks, 0.2f * floatIndx)); // maybe add sin wave?
+         
+                    floatIndx++;
+              
+        }
+
+    }
+
+    private IEnumerator RevealObject(GameObject floatingRocks, float delay )
+    {
+
+        yield return new WaitForSeconds(seconds: delay);
+
+        floatingRocks.GetComponent<MeshRenderer>().enabled = true;
+    }
+
+
+
+    public void hidePath()
+    {
+
+        foreach (GameObject floatingRocks in RevealObjectGameObjects)
+        {
+            floatingRocks.GetComponent<MeshRenderer>().enabled = false;
+        }
+        // Hide the path and also stop the sound.
+        // AudioPlayer._Instance.Play(pulseSound, IdTag.Audio.SoundEffect);
+    }
 
 
     // Update is called once per frame

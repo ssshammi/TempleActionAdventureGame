@@ -240,7 +240,7 @@ namespace StarterAssets
 
 		private void JumpAndGravity()
 		{
-			if (Grounded)
+			if (Grounded )
 			{
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
