@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c4eda54d14d8940a36f8574e9d82b6, type: 3}
+  m_Name: '[Dialogue] 4 Pulling Lever {BEFORE EXAMINATION OF GLYPHS}'
+  m_EditorClassIdentifier: 
+  _dialogueData:
+  - _sentenceText: "Not much of an art aficionado, eh? Can\u2019t understand it,
+      really, but everyone\u2019s in such a hurry these days. I suppose you\u2019ll
+      be venturing on then."
+    _audioCover: {fileID: 8300000, guid: c582188b25201084b8d077e6541ef282, type: 3}
+    _collocutor: {fileID: 11400000, guid: f74458dc83dd2b345977c1d8b031794d, type: 2}

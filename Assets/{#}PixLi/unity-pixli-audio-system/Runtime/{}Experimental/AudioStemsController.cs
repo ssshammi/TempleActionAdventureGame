@@ -6,12 +6,6 @@ using PixLi;
 
 public class AudioStemsController : MonoBehaviourSingleton<AudioStemsController>
 {
-	[SerializeField] private bool _playOnStart = true;
-	public bool _PlayOnStart => this._playOnStart;
-
-	//[SerializeField] private IdTag _audioPlayerType;
-	//public IdTag _AudioPlayerType => this._audioPlayerType;
-
 	[SerializeField] private AudioClipArchive _audioClipArchive;
 	public AudioClipArchive _AudioClipArchive => this._audioClipArchive;
 
