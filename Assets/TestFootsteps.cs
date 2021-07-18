@@ -12,20 +12,18 @@ public class TestFootsteps : MonoBehaviour
 	[SerializeField] private Cooldown _cooldown;
 	public Cooldown _Cooldown => this._cooldown;
 
-	private IEnumerator Play()
-	{
-		while (true)
-		{
-			this._cooldown.Reset();
-
-			AudioPlayer._Instance.Play(this._audioClipArchive.Random(), IdTag.Audio.Footstep);
-
-			yield return this._cooldown;
-		}
-	}
-
 	private void Start()
 	{
-		this.StartCoroutine(this.Play());
+		this.StartCoroutine(
+			routine: CoroutineProcessorsCollection.InvokeIndefinitely(
+				customYieldInstruction: this._cooldown,
+				action: () =>
+				{
+					this._cooldown.Reset();
+
+					AudioPlayer._Instance.Play(this._audioClipArchive.Random(), IdTag.Audio.Footstep);
+				}
+			)
+		);
 	}
 }
