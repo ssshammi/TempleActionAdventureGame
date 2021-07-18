@@ -3,7 +3,17 @@ guid: b72e01a68bc81cc4c82423f492b757d6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: P_Room_1_Column_Wall_1_Block_Mat
+    second: {fileID: 2100000, guid: 2e41b1848eb744d4fb32578f7337b729, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trim_1_Mat
+    second: {fileID: 2100000, guid: b441249aa3cbb874d888bfc5be7ceaf0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
