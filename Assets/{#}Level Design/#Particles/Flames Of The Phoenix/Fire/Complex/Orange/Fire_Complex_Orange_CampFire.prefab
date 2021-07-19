@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 454390}
   - component: {fileID: 19874624}
   - component: {fileID: 19960856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire_Orange_Embers_Falling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4740,7 +4740,7 @@ GameObject:
   - component: {fileID: 413332}
   - component: {fileID: 3963072795556858602}
   - component: {fileID: 5909695190697511002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire_Complex_Orange_CampFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9549,7 +9549,7 @@ GameObject:
   - component: {fileID: 418412}
   - component: {fileID: 19826920}
   - component: {fileID: 19974314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire_Orange_Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14278,7 +14278,7 @@ GameObject:
   - component: {fileID: 426716}
   - component: {fileID: 19879778}
   - component: {fileID: 19951904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire_Orange_CampFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18980,7 +18980,7 @@ GameObject:
   - component: {fileID: 430770}
   - component: {fileID: 19808606}
   - component: {fileID: 19971926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Smoke_CampFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23753,7 +23753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2710082643724997369}
   - component: {fileID: 3653558669722064998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
