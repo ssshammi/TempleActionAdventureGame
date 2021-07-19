@@ -3,7 +3,47 @@ guid: d7ee6728fee22c4469e42968b9900e06
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fbx Default Material
+    second: {fileID: 921073600287988000, guid: 309c65343b0897c4e807782a0cd8d852, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_1_Bricks_Mat
+    second: {fileID: 2100000, guid: d9e1699c807602b40ba73d5cfc4188e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_2_Base_Mat
+    second: {fileID: 2100000, guid: 804868080566182439b5d49cfa3d8776, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_2_Bricks_Mat
+    second: {fileID: 2100000, guid: 92867e730da2bc84eb3f884afce3da14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_3_Base_Mat
+    second: {fileID: 2100000, guid: b4b0c52fc92149f42a5021446ecf36f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_3_Deco_Mat
+    second: {fileID: 2100000, guid: 22153227216e9554086c680824c83e1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof_4_Base_Mat
+    second: {fileID: 2100000, guid: 427fcfbf17fe29b44b61fd5d6c576ad1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldGridMaterial
+    second: {fileID: 2100000, guid: 581ce3ef851757c47ae6844a16b5d650, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
