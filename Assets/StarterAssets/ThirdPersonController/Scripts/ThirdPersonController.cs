@@ -18,6 +18,9 @@ namespace StarterAssets
 		[SerializeField] private AudioClipArchive _footstepsAudioClipArchive;
 		public AudioClipArchive _FootstepsAudioClipArchive => this._footstepsAudioClipArchive;
 
+		[SerializeField] private Transform _feetPoint;
+		public Transform _FeetPoint => this._feetPoint;
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 2.0f;
@@ -259,7 +262,7 @@ namespace StarterAssets
 				this._walkFootstepAudioCooldown.Reset();
 				this._sprintFootstepAudioCooldown.Reset();
 
-				AudioPlayer._Instance.Play(this._footstepsAudioClipArchive.Random(), IdTag.Audio.Footstep);
+				AudioPlayer._Instance.Play(this._footstepsAudioClipArchive.Random(), IdTag.Audio.Footstep, this._feetPoint.position);
 			}
 
 			// update animator if using character

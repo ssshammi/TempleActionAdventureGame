@@ -11,8 +11,8 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "[Audio Source Control Group]", menuName = "[Audio]/[Audio Source Control Group]")]
 public class AudioSourceControlGroup : ScriptableObject
 {
-	[SerializeField] private MasterAudioSourceControlGroup _masterAudioSourceControlGroup;
-	public MasterAudioSourceControlGroup _MasterAudioSourceControlGroup => this._masterAudioSourceControlGroup;
+	[SerializeField] private AudioSourceControlGroup _masterAudioSourceControlGroup;
+	public AudioSourceControlGroup _MasterAudioSourceControlGroup => this._masterAudioSourceControlGroup;
 
 	[SerializeField] private UnityEventFloat _onVolumeChange;
 	public UnityEventFloat _OnVolumeChange => this._onVolumeChange;
@@ -23,7 +23,7 @@ public class AudioSourceControlGroup : ScriptableObject
 	[SerializeField] private float _volume = 1.0f;
 	public float Volume
 	{
-		get => this._volume * this._masterAudioSourceControlGroup.Volume;
+		get => this._volume * (this._masterAudioSourceControlGroup != this ? this._masterAudioSourceControlGroup.Volume : 1.0f);
 		set
 		{
 			this._volume = Mathf.Clamp01(value: value);
@@ -40,9 +40,9 @@ public class AudioSourceControlGroup : ScriptableObject
 
 		if (assetsGuids.Length > 0)
 		{
-			this._masterAudioSourceControlGroup = AssetDatabase.LoadAssetAtPath<MasterAudioSourceControlGroup>(
-				assetPath: AssetDatabase.GUIDToAssetPath(guid: assetsGuids[0])
-			);
+			//this._masterAudioSourceControlGroup = AssetDatabase.LoadAssetAtPath<MasterAudioSourceControlGroup>(
+			//	assetPath: AssetDatabase.GUIDToAssetPath(guid: assetsGuids[0])
+			//);
 		}
 	}
 #endif

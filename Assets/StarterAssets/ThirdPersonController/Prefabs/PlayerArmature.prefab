@@ -2120,6 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _footstepsAudioClipArchive: {fileID: 11400000, guid: 8cb7a71f52691614db640253b4db1255, type: 2}
+  _feetPoint: {fileID: 5897660081927762007}
   MoveSpeed: 4
   _walkFootstepAudioCooldown:
     _tagetElapsedTime: 0.55
@@ -2139,7 +2140,7 @@ MonoBehaviour:
   GroundedRadius: 0.28
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 16777217
   CinemachineCameraTarget: {fileID: 8338988566280778634}
   TopClamp: 70
   BottomClamp: -30

@@ -57,9 +57,9 @@ public class RangeAttribute : MultiSupportPropertyAttribute
 	public override void MainDrawInInspector(Rect rect, SerializedProperty serializedProperty, GUIContent label)
 	{
 		if (this._floatRange)
-			EditorGUI.Slider(rect, this.serializedProperty, this.floatMin, this.floatMax);
+			EditorGUI.Slider(rect, serializedProperty, this.floatMin, this.floatMax);
 		else
-			EditorGUI.IntSlider(rect, this.serializedProperty, this.intMin, this.intMax);
+			EditorGUI.IntSlider(rect, serializedProperty, this.intMin, this.intMax);
 	}
 #endif
 }

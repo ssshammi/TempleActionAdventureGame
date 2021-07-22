@@ -6273,6 +6273,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 457627414877898608, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 457627415174274136, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6345,6 +6349,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 457627416756891584, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238524166953993684, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: _audioSourceControlGroup
+      value: 
+      objectReference: {fileID: 11400000, guid: 73e8061ddf676dc4385df557e5f79358, type: 2}
+    - target: {fileID: 2238524167759244644, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: _audioSourceControlGroup
+      value: 
+      objectReference: {fileID: 11400000, guid: 107f37282900cb145909db248f05bb9b, type: 2}
+    - target: {fileID: 2238524168111196608, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: _audioSourceControlGroup
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f3e188eda3a3b54bbd2c7ad91c1f394, type: 2}
     - target: {fileID: 6332685961938924618, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6513,6 +6533,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8365047270713358403, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
+      propertyPath: _audioSourceControlGroup
+      value: 
+      objectReference: {fileID: 11400000, guid: e9c7d91290044b24aa93edd03cae943f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58f642ce7352e554ba376b2aad2296fd, type: 3}
 --- !u!224 &1451728152 stripped
@@ -8013,11 +8037,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2103663865}
         m_TargetAssemblyTypeName: SceneOperator, Assembly-CSharp
-        m_MethodName: LoadNextScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 90944a29f784cf24188b6dad26823df2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SceneReferenceCollection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9599,6 +9623,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4030661043538633270, guid: c86b72c368fa9a441a2ddb790517d7e8, type: 3}
+      propertyPath: _runtimeScene.scenePath
+      value: Assets/{#}PixLi/unity-pixli-scene-management/#Presets/[Bootstrap][Scene].unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030661043538633270, guid: c86b72c368fa9a441a2ddb790517d7e8, type: 3}
+      propertyPath: _runtimeScene.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: b9fc9b921c9c6e942beb72d46da3298c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86b72c368fa9a441a2ddb790517d7e8, type: 3}
 --- !u!1001 &4672927708315732727

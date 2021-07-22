@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &819680274085540318
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: MaxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: MinDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470292, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470293, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162757859917470294, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}
+      propertyPath: m_Name
+      value: '[Audio Source Controller] Sound Effect'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 951eff5ba89120c408b8b4f6817b02ff, type: 3}

@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.9716825, y: -0.038, z: 1.3183804}
   m_LocalScale: {x: 148.9979, y: 148.9979, z: 136.53992}
-  m_Children: []
+  m_Children:
+  - {fileID: 685621522745705311}
   m_Father: {fileID: 7307189640670431581}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -308,9 +309,9 @@ MonoBehaviour:
     _event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5978324185120632919, guid: eba404f1e15d00c4bb4b7d7c9e7f9a5f, type: 3}
-          m_TargetAssemblyTypeName: AudioSourcePlayer, com.pixel-lifetime.unity-pixli-audio-system
-          m_MethodName: PlayUI
+        - m_Target: {fileID: 685621522745705309}
+          m_TargetAssemblyTypeName: AudioSourceController, com.pixel-lifetime.unity-pixli-audio-system
+          m_MethodName: Play
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: fe96828b197651d4ab7034a4c3a848b7, type: 3}
@@ -363,3 +364,76 @@ MonoBehaviour:
   _loop: 0
   _repeat: 0
   _time: 5
+--- !u!1001 &2956499345197312212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1070317561764044623}
+    m_Modifications:
+    - target: {fileID: 2343078356779002760, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_Name
+      value: '[Audio Source Controller] Sound Effect'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01923
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+--- !u!4 &685621522745705311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2343078356779002763, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+  m_PrefabInstance: {fileID: 2956499345197312212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &685621522745705309 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2343078356779002761, guid: ca9421feeb63e2c42a1750e260052a5b, type: 3}
+  m_PrefabInstance: {fileID: 2956499345197312212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab591329974f4534d85e5e88529c911c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

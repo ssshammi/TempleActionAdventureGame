@@ -31,6 +31,18 @@ public class AudioPlayer : MonoBehaviourSingleton<AudioPlayer>
 		return audioSourceController;
 	}
 
+	public AudioSourceController Play(AudioClip audioClip, IdTag idTag, Vector3 worldPosition)
+	{
+		AudioSourceController audioSourceController = this.Play(
+			audioClip: audioClip,
+			idTag: idTag
+		);
+
+		audioSourceController.transform.position = worldPosition;
+
+		return audioSourceController;
+	}
+
 	public AudioSourceController Play(AudioClip audioClip, float volume, IdTag idTag)
 	{
 		AudioSourceController audioSourceController = this._audioSourcePlayers[idTag].Play(

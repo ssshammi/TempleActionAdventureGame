@@ -31,9 +31,22 @@ public class ExposeAttribute : MultiSupportPropertyAttribute
 #if UNITY_EDITOR
 	public override float GetPropertyHeight()
 	{
-		return this._exposeMode == ExposeMode.Custom ? 0f : base.GetPropertyHeight();
+		float propertyHeight = base.GetPropertyHeight();
+
+		switch (this._exposeMode)
+		{
+			case ExposeMode.Custom:
+
+
+
+				break;
+			case ExposeMode.Native:
+				break;
+		}
+
+		return propertyHeight;
 	}
-		
+
 	private Editor _editor;
 
 	public override void MainDrawInInspector(Rect rect, SerializedProperty serializedProperty, GUIContent label)
@@ -49,26 +62,27 @@ public class ExposeAttribute : MultiSupportPropertyAttribute
 		{
 			case ExposeMode.Custom:
 
-				EditorGUILayout.BeginVertical();
+				//EditorGUILayout.BeginVertical();
 				{
 					Object @object = serializedProperty.objectReferenceValue;
 
 					if (@object != null)
 					{
-						Rect horizontal = EditorGUILayout.BeginHorizontal();
+						//Rect horizontal = EditorGUILayout.BeginHorizontal();
 						{
-							horizontal.position += new Vector2(-4f, 0f);
-							horizontal.width = EditorGUIUtility.labelWidth;
+							//horizontal.position += new Vector2(-4f, 0f);
+							//horizontal.width = EditorGUIUtility.labelWidth;
 
-							serializedProperty.isExpanded = EditorGUI.Foldout(horizontal, serializedProperty.isExpanded, GUIContent.none, true);
+							serializedProperty.isExpanded = EditorGUI.Foldout(rect, serializedProperty.isExpanded, GUIContent.none, true);
 
-							EditorGUILayout.PropertyField(
+							EditorGUI.PropertyField(
+								rect,
 								serializedProperty,
 								new GUIContent(string.IsNullOrEmpty(@object.name) ? serializedProperty.displayName : @object.name),
 								true
 							);
 						}
-						EditorGUILayout.EndHorizontal();
+						//EditorGUILayout.EndHorizontal();
 
 						if (serializedProperty.isExpanded)
 						{
@@ -87,12 +101,12 @@ public class ExposeAttribute : MultiSupportPropertyAttribute
 					{
 						//Rect horizontal = EditorGUILayout.BeginHorizontal();
 						//{
-							EditorGUILayout.PropertyField(serializedProperty, true);
+							EditorGUI.PropertyField(rect, serializedProperty, true);
 						//}
 						//EditorGUILayout.EndHorizontal();
 					}
 				}
-				EditorGUILayout.EndVertical();
+				//EditorGUILayout.EndVertical();
 
 				break;
 			case ExposeMode.Native:

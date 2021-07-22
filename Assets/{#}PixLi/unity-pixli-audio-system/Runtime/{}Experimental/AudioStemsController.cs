@@ -66,7 +66,7 @@ public class AudioStemsController : MonoBehaviourSingleton<AudioStemsController>
 		}
 	}
 
-	private void Start()
+	public void Initialize()
 	{
 		this._audioSourceControllers = new AudioSourceController[this._audioClipArchive.Assets.Count];
 		this._isAudioSourceControllerActive = new bool[this._audioSourceControllers.Length];
@@ -88,6 +88,11 @@ public class AudioStemsController : MonoBehaviourSingleton<AudioStemsController>
 
 			this._audioSourceControllers[a] = audioSourceController;
 		}
+	}
+
+	private void Start()
+	{
+		this.Initialize();
 	}
 
 #if UNITY_EDITOR
