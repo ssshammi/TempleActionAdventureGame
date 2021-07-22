@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 456489332976712878}
   - component: {fileID: 456489332976712872}
   - component: {fileID: 456489332976712873}
+  - component: {fileID: 5496346353965568305}
+  - component: {fileID: 7185009351698610254}
+  - component: {fileID: 6165587450872453221}
   m_Layer: 0
   m_Name: Sigil_Door_Frame
   m_TagString: Untagged
@@ -81,6 +84,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5496346353965568305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456489332976712879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8344467, y: 0.68123484, z: 6.9501004}
+  m_Center: {x: -0.72252727, y: -0.3355992, z: 3.4797306}
+--- !u!65 &7185009351698610254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456489332976712879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8344467, y: 0.6812348, z: 6.9501}
+  m_Center: {x: -0.72252727, y: -4.27, z: 3.4797306}
+--- !u!65 &6165587450872453221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456489332976712879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8344467, y: 4.6134233, z: 0.6701587}
+  m_Center: {x: -0.72252727, y: -2.3056054, z: 6.6282396}
 --- !u!1 &456489333784329795
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +134,7 @@ GameObject:
   - component: {fileID: 456489333784329794}
   - component: {fileID: 456489333784329804}
   - component: {fileID: 456489333784329805}
+  - component: {fileID: 8304452264407822792}
   m_Layer: 0
   m_Name: Sigil_Door
   m_TagString: Untagged
@@ -163,6 +206,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8304452264407822792
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456489333784329795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2327614, y: 3.3552225, z: 6.311748}
+  m_Center: {x: -0.66443944, y: -2.3222742, z: 3.1568038}
 --- !u!1 &456489334025862492
 GameObject:
   m_ObjectHideFlags: 0
