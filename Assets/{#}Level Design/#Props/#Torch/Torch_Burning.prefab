@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4457369678333990909}
   - component: {fileID: 753255137295652952}
   - component: {fileID: 3283386669397322898}
+  - component: {fileID: 2179769817903474472}
   m_Layer: 0
   m_Name: Torch_Burning
   m_TagString: Untagged
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2179769817903474472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931663054818872647}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17177059, y: 0.53297675, z: 0.21163517}
+  m_Center: {x: 0, y: -0.06443867, z: 0}
 --- !u!1001 &8484891386765327265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136,10 +150,6 @@ PrefabInstance:
     - target: {fileID: 430772, guid: ac76e11459c14ad499a9c3e27c04b527, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 247423943878531025, guid: ac76e11459c14ad499a9c3e27c04b527, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac76e11459c14ad499a9c3e27c04b527, type: 3}

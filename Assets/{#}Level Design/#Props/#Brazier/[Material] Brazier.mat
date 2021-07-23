@@ -106,7 +106,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_c9decba9984a41c5bd8c09b6f5e3e4a9: 0
-    - Vector1_6f35db0c379d461f9d13eb19bfd6c9e0: 0.617
+    - Vector1_6f35db0c379d461f9d13eb19bfd6c9e0: 0.726
     - Vector1_884e2a01b3e842cab5c384c557f3556f: 1
     - Vector1_fdf3b2c0024c491fb5217de8126cef85: 1
     - _AlphaClip: 0

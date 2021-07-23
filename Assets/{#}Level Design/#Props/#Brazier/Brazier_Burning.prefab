@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6160832077010259967}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 34.473335, y: 87.458824, z: 87.37491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -150,14 +150,6 @@ PrefabInstance:
     - target: {fileID: 413332, guid: 3db0cbb31bbccd84c8870eaa2df2ee23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5243936715763743507, guid: 3db0cbb31bbccd84c8870eaa2df2ee23, type: 3}
-      propertyPath: m_Name
-      value: '[Light] Point'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5243936715763743507, guid: 3db0cbb31bbccd84c8870eaa2df2ee23, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db0cbb31bbccd84c8870eaa2df2ee23, type: 3}
