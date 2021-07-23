@@ -23936,7 +23936,7 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 1733928993}
   - {fileID: 1095611281}
-  _movable: {fileID: 0}
+  _movable: {fileID: 1213352791}
   _loop: 0
   _repeat: 0
   _time: 0
