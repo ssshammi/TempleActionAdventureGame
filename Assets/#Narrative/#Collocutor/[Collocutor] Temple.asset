@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: '[Collocutor] Temple'
   m_EditorClassIdentifier: 
   _profileName: Temple
-  _profileIcon: {fileID: 3930923831080612721, guid: 7ab96f9dd3ff892478ae799f3e41711d, type: 3}
+  _profileIcon: {fileID: 21300000, guid: 19f5048e8a8ea49bfbb4eb51637242fb, type: 3}
