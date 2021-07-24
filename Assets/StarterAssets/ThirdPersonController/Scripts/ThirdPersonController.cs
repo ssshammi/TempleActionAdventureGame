@@ -173,7 +173,14 @@ namespace StarterAssets
 			// When became grounded.
 			if (this.Grounded && !previousGrounded)
 			{
-				AudioPlayer._Instance.Play(this._landAudioClip, idTag: IdTag.Audio.SoundEffect);
+				if (this._landAudioClipCooldown._Finished)
+				{
+					AudioPlayer._Instance.Play(this._landAudioClip, idTag: IdTag.Audio.SoundEffect);
+
+					this._landAudioClipCooldown.Reset();
+				}
+
+				Debug.Log(Physics.OverlapSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore)[0]);
 			}
 
 			// update animator if using character
@@ -276,8 +283,14 @@ namespace StarterAssets
 		[SerializeField] private AudioClip _jumpAudioClip;
 		public AudioClip _JumpAudioClip => this._jumpAudioClip;
 
+		[SerializeField] private Cooldown _jumpAudioClipCooldown;
+		public Cooldown _JumpAudioClipCooldown => this._jumpAudioClipCooldown;
+
 		[SerializeField] private AudioClip _landAudioClip;
 		public AudioClip _LandAudioClip => this._landAudioClip;
+
+		[SerializeField] private Cooldown _landAudioClipCooldown;
+		public Cooldown _LandAudioClipCooldown => this._landAudioClipCooldown;
 
 		private void JumpAndGravity()
 		{
@@ -312,7 +325,12 @@ namespace StarterAssets
 						_animator.SetBool(_animIDJump, true);
 					}
 
-					AudioPlayer._Instance.Play(this._jumpAudioClip, idTag: IdTag.Audio.SoundEffect);
+					if (this._jumpAudioClipCooldown._Finished)
+					{
+						AudioPlayer._Instance.Play(this._jumpAudioClip, idTag: IdTag.Audio.SoundEffect);
+
+						this._jumpAudioClipCooldown.Reset();
+					}
 				}
 
 				// jump timeout

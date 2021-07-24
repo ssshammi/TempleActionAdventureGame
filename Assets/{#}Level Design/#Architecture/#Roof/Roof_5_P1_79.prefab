@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2563238584335711596}
   - component: {fileID: 2563238584335711595}
   - component: {fileID: 2563238584335711594}
-  - component: {fileID: 2563238584335711597}
+  - component: {fileID: 3144591892546620440}
   m_Layer: 0
   m_Name: Roof_5_P1_79
   m_TagString: Untagged
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2563238584335711597
-BoxCollider:
+--- !u!64 &3144591892546620440
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,6 +92,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 58.164032, y: 40.816517, z: 0.7375468}
-  m_Center: {x: -29.08279, y: -12.598731, z: 0.37308222}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2480777694541196221, guid: bce3570d0b146ef458c676e6e7f9416b, type: 3}
