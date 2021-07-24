@@ -21,24 +21,39 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Stone_Slab_Mat
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
+  m_Shader: {fileID: -6465566751694194690, guid: 1756a2a7aa2df6c44a70624caf312901, type: 3}
+  m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_a3ec541dda88435690fe1e90af36af56:
+        m_Texture: {fileID: 2800000, guid: 63794c0a26d0974459cef37b34b163b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_b4869c26951a4e2b9c469bd5b7b368da:
+        m_Texture: {fileID: 2800000, guid: 306cbe99e9d0abd48aa3ecebd1553c65, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_bdbaf0ef0bc44da2b641b4dc642db15e:
+        m_Texture: {fileID: 2800000, guid: 8f8e7389aa2a39540ab49626a3a1d449, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_ccc10ebb325b4d28be236ce3580e9613:
+        m_Texture: {fileID: 2800000, guid: acd6e6f52fe44104fa4dcce3f201c571, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: eaefdf6af27a99a4b8f4a0ccff9deff6, type: 3}
+        m_Texture: {fileID: 2800000, guid: acd6e6f52fe44104fa4dcce3f201c571, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 13eda46b0b9716e4db187f1bb094f5dd, type: 3}
+        m_Texture: {fileID: 2800000, guid: b1a688da6c08493489e29d88def3d0d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -54,15 +69,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 2f2c5b15a92567c4a831b1506b23ab1b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8f8e7389aa2a39540ab49626a3a1d449, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: eaefdf6af27a99a4b8f4a0ccff9deff6, type: 3}
+        m_Texture: {fileID: 2800000, guid: acd6e6f52fe44104fa4dcce3f201c571, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: bfa2eb61a5be7dc4f8188c9d13014e72, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63794c0a26d0974459cef37b34b163b6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,6 +105,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_c9decba9984a41c5bd8c09b6f5e3e4a9: 1
+    - Vector1_6f35db0c379d461f9d13eb19bfd6c9e0: 0
+    - Vector1_884e2a01b3e842cab5c384c557f3556f: 1
+    - Vector1_fdf3b2c0024c491fb5217de8126cef85: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -119,6 +138,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_525189c0f8c1490ab9c7542071ad2c8f: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.7353569, g: 0.7353569, b: 0.7353569, a: 1}
     - _Color: {r: 0.4, g: 0.4, b: 0.4, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
