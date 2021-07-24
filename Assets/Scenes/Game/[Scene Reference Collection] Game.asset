@@ -22,6 +22,6 @@ MonoBehaviour:
       Chamber}.unity
   - sceneAsset: {fileID: 102900000, guid: c67df488eda88bb429f7ff21aba72d5d, type: 3}
     scenePath: Assets/Scenes/Game/@Room (3) {Final}/[Scene] Room (3) {Final}.unity
-  - sceneAsset: {fileID: 102900000, guid: 061191199836129409e27bcf4cbfaf26, type: 3}
+  - sceneAsset: {fileID: 102900000, guid: fbc721c2e263df746ae9752c7a5c42c2, type: 3}
     scenePath: Assets/Scenes/Game/@Room (4) {Wind}/[Scene] Room (4) {Wind}.unity
   _sceneReferenceCollections: []
