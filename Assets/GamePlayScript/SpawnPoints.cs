@@ -14,11 +14,12 @@ public class SpawnPoints : MonoBehaviour
 
     private void Awake()
     {
-      //  SpawnPointsLoc = SpwanPointContainer.GetComponentsInChildren<Transform>();
+		SpawnPointsLoc = SpwanPointContainer.GetComponentsInChildren<Transform>();
 
-      //  this.transform.position = SpawnPointsLoc[spwanLocation].transform.position;
-    //this.transform.rotation = Quaternion.Euler(0, //SpawnPointsLoc[spwanLocation].transform.eulerAngles.y, 0);
-    }
+		this.transform.position = SpawnPointsLoc[spwanLocation].transform.position;
+		//this.transform.rotation = Quaternion.Euler(0, //SpawnPointsLoc[spwanLocation].transform.eulerAngles.y, 0);
+
+	}
     
     public void setSavingPointContainer(Transform continerWithXPoints ){
     
