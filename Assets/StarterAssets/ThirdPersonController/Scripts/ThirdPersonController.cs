@@ -180,7 +180,7 @@ namespace StarterAssets
 					this._landAudioClipCooldown.Reset();
 				}
 
-				Debug.Log(Physics.OverlapSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore)[0]);
+				//Debug.Log(Physics.OverlapSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore)[0]);
 			}
 
 			// update animator if using character

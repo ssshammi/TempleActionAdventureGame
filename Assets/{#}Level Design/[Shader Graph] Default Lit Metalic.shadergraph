@@ -546,7 +546,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "066b200214fa44228674f10a6278f4e6",
     "m_Id": 0,
-    "m_DisplayName": "Normal",
+    "m_DisplayName": "Normal Map",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -644,7 +644,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "0e2f5c3b79a142769541d68740a419dd",
     "m_Id": 0,
-    "m_DisplayName": "RouthnessMetallicAO",
+    "m_DisplayName": "RouthnessMetallicAO Map",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1888,7 +1888,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "7d53694b089c43d28e8375d24062e17e",
     "m_Id": 0,
-    "m_DisplayName": "Base",
+    "m_DisplayName": "Base Map",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2934,8 +2934,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -439.0000305175781,
-            "y": 650.0,
+            "x": -518.0,
+            "y": 651.0,
             "width": 208.00001525878907,
             "height": 326.0
         }
@@ -3080,8 +3080,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -606.0000610351563,
-            "y": 796.0,
+            "x": -639.0,
+            "y": 740.0,
             "width": 91.0,
             "height": 34.0
         }

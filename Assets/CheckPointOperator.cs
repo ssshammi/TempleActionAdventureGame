@@ -8,7 +8,7 @@ public class CheckPointOperator : MonoBehaviour
 	{
 		CheckPointsManager._Instance.ActiveCheckPoint = transform;
 
-		Debug.Log("ACtive point set.");
+		//Debug.Log("ACtive point set.");
 	}
 
 	public void Respawn() => CheckPointsManager._Instance.Respawn();
