@@ -1186,7 +1186,7 @@ PrefabInstance:
     - target: {fileID: -8256294927876109538, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1624e0c0f49dee243be75adc832bad67, type: 2}
+      objectReference: {fileID: 2100000, guid: 74dd33c70cb7e1147994ae1fc6cd48f2, type: 2}
     - target: {fileID: -8255767369609292000, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6925,7 +6925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10575,6 +10575,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6761331356095637110, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2198864479405965357, guid: 7c8a07e4833b4154a99c6e104dbb7bd8, type: 3}
     - target: {fileID: 6779601090606754938, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -12059,7 +12063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Intensity
-      value: 3.0696812
+      value: 2.9599874
       objectReference: {fileID: 0}
     - target: {fileID: 3385116520937715919, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_RootOrder
@@ -12584,7 +12588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Intensity
-      value: 2.9038506
+      value: 2.7922482
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Lightmapping
@@ -13517,6 +13521,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 595309108172290348, guid: 056b2db95c1d73e4c8a2283b928ce1d7, type: 3}
   m_PrefabInstance: {fileID: 464663822}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &465724169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3976464892399724740, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
+  m_PrefabInstance: {fileID: 91513471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &465724170
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465724169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &474006097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17281,7 +17304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.846735
+      value: 2.94252
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
@@ -17290,6 +17313,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6788187485361345861, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
   m_PrefabInstance: {fileID: 1281687034}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282298810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69bebf697004ad942a2c0cd30a72cc43, type: 3}
+  m_PrefabInstance: {fileID: 91513471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1282298811
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282298810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1298537876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22313,7 +22355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9266932
+      value: 2.7276235
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
