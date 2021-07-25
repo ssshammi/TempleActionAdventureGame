@@ -86,7 +86,7 @@ namespace PixLi
 
 		private bool _triedToFindDefaultCollider;
 
-		protected virtual void OnDrawGizmosSelected()
+		protected virtual void OnDrawGizmos()
 		{
 			if (!this._triedToFindDefaultCollider)
 			{

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8943885442706020580}
   - component: {fileID: 3164122790312752294}
   - component: {fileID: 7294822800989780999}
+  - component: {fileID: 4187596948235661962}
+  - component: {fileID: 3065183503490890085}
   m_Layer: 0
   m_Name: P_Wind_Room_Column_Wall
   m_TagString: Untagged
@@ -93,5 +95,31 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6157537, y: 1.5648099, z: 7.057389}
-  m_Center: {x: -0.7078768, y: 0.6680568, z: 3.5286944}
+  m_Size: {x: 1.6033809, y: 0.8561346, z: 4.68813}
+  m_Center: {x: -0.70169044, y: 0.3137191, z: 2.5388358}
+--- !u!65 &4187596948235661962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4538445520958774054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6157544, y: 1.5648116, z: 0.92306304}
+  m_Center: {x: -0.70787716, y: 0.66804826, z: 0.6318613}
+--- !u!65 &3065183503490890085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4538445520958774054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48767915, y: 1.5648116, z: 7.0573893}
+  m_Center: {x: -0.14383937, y: 0.66804826, z: 3.5286932}

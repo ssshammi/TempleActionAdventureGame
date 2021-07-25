@@ -12179,7 +12179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Intensity
-      value: 5.716025
+      value: 5.630565
       objectReference: {fileID: 0}
     - target: {fileID: 3385116520937715919, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_RootOrder
@@ -12704,7 +12704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Intensity
-      value: 5.7851934
+      value: 5.8235216
       objectReference: {fileID: 0}
     - target: {fileID: 2972464939123930745, guid: 933c9ed4cf2aee047bf00352e32ea937, type: 3}
       propertyPath: m_Lightmapping
@@ -17428,7 +17428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 5.7903743
+      value: 5.939312
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
@@ -22479,7 +22479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 5.7912087
+      value: 5.8730264
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
@@ -22723,7 +22723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7125507416555138738, guid: 7b4ecbf67a946b047b9b5c37a2dd41a2, type: 3}
       propertyPath: _onInteractDelayedEvents.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7125507416555138738, guid: 7b4ecbf67a946b047b9b5c37a2dd41a2, type: 3}
       propertyPath: _onInteractDelayedEvents.Array.data[1]._event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

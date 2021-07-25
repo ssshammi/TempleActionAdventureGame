@@ -312,7 +312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 3.0319054
+      value: 5.702977
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -1308,7 +1308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9665885
+      value: 5.9004107
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -1927,7 +1927,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3897563851652334267, guid: a60c83980831c4c458b26ebb2abf0471, type: 3}
       propertyPath: m_Intensity
-      value: 2.033914
+      value: 4.2303286
       objectReference: {fileID: 0}
     - target: {fileID: 3897563851652334267, guid: a60c83980831c4c458b26ebb2abf0471, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -2053,7 +2053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0801518
+      value: 4.141684
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -2061,7 +2061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0555863
+      value: 4.172529
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -2227,7 +2227,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3897563851652334267, guid: a60c83980831c4c458b26ebb2abf0471, type: 3}
       propertyPath: m_Intensity
-      value: 2.207728
+      value: 4.227165
       objectReference: {fileID: 0}
     - target: {fileID: 3897563851652334267, guid: a60c83980831c4c458b26ebb2abf0471, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -2690,7 +2690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9426367
+      value: 5.8592677
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -3170,7 +3170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 3.068136
+      value: 5.7402
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -3348,7 +3348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9975667
+      value: 6.003075
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -3484,7 +3484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.8848372
+      value: 5.5860643
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -4697,7 +4697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9878275
+      value: 5.780022
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -5504,7 +5504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.size
@@ -5531,6 +5531,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2
       objectReference: {fileID: 0}
@@ -5547,6 +5555,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8324583016186608302, guid: 0166eee23b20ff8409a6d4394a805088, type: 3}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 4672927708555585649, guid: cc0806f18c38c8944b04c99bbf031a84, type: 3}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 4672927708555585649, guid: cc0806f18c38c8944b04c99bbf031a84, type: 3}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3285925778131587845, guid: 1abfb51d4ab8bd14e8e5a49d44dc2e13, type: 3}
@@ -5560,6 +5576,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
@@ -5579,6 +5603,14 @@ PrefabInstance:
       value: DisplayDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayUI
       objectReference: {fileID: 0}
@@ -5595,13 +5627,33 @@ PrefabInstance:
       value: DialogueUserInterfaceViewOperator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: AudioStemsController, com.pixel-lifetime.unity-pixli-audio-system
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: AudioStemsController, com.pixel-lifetime.unity-pixli-audio-system
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioSourcePlayer, com.pixel-lifetime.unity-pixli-audio-system
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: 1ef7ac674411c2144a165a7fb65fb90f, type: 2}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -5613,6 +5665,14 @@ PrefabInstance:
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: PixLi.Dialogue, NewAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
+      propertyPath: _conditionalEvents.Array.data[0]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1087814915785980070, guid: eef531d7d7ed1c941ae6f56dcf81bd17, type: 3}
       propertyPath: _conditionalEvents.Array.data[1]._reactions.Array.data[0]._onReact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5827,7 +5887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.9714804
+      value: 5.5821195
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6045,7 +6105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 2.868836
+      value: 5.505231
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6123,7 +6183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_Intensity
-      value: 3.0207381
+      value: 5.876662
       objectReference: {fileID: 0}
     - target: {fileID: 7713199072201526179, guid: a38f0226091b97a4e85d0de5749aeb57, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6259,7 +6319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0091195
+      value: 4.1212645
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6267,7 +6327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.1125114
+      value: 4.2414255
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6289,6 +6349,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5225297588441608803, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d2c47c9f877b7f648b0ddbf771d9c148, type: 2}
     - target: {fileID: 7872108851890285292, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
       value: 3
@@ -6853,7 +6917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0967047
+      value: 4.196912
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -6873,7 +6937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.1268127
+      value: 4.238824
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -7493,11 +7557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0091286
+      value: 4.2280035
       objectReference: {fileID: 0}
     - target: {fileID: 3380469546241556046, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 2.0815666
+      value: 4.2244515
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}

@@ -95,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 433049130239204792, guid: 30a668ebe18b7484eb1d0c0d5fc26ffc, type: 3}
+  - {fileID: 2100000, guid: c906baed8a10d4f40a0c51aad998d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   - {fileID: 520618742768245926}
   _movable: {fileID: 520618742769185368}
   _loop: 0
+  _rigidbody: {fileID: 0}
   _repeat: 1
   _time: 3
 --- !u!114 &520618742607526997
@@ -213,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520618742768245927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.205, y: 0.185, z: -0.292}
+  m_LocalPosition: {x: -1.205, y: 0.185, z: -1.376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 520618742607527006}
@@ -274,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mechanism_Device_Moving_Platform_29
       objectReference: {fileID: 0}
+    - target: {fileID: 2858220322820483215, guid: 63df7ea1e44aaf740abc3d06eb1f8e2a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c906baed8a10d4f40a0c51aad998d586, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63df7ea1e44aaf740abc3d06eb1f8e2a, type: 3}
 --- !u!4 &520618742769185368 stripped
