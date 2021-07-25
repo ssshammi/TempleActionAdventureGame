@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: 69bebf697004ad942a2c0cd30a72cc43
+guid: b600ef9d9d98c374a9cf7fce1a87d867
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Block_Mat
-    second: {fileID: 2100000, guid: 1624e0c0f49dee243be75adc832bad67, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Fbx Default Material
-    second: {fileID: -6527670528093515950, guid: c6a55ba99e9e99d41b7eef123e311a43, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pile_Rocks_Mat
-    second: {fileID: 2100000, guid: 401ebd7865e1b29429c08d7b26d2748c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pot_1_Mat
-    second: {fileID: 2100000, guid: 2c8f1a864a7852b4a89e0d2646ea2081, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pot_2_Mat
-    second: {fileID: 2100000, guid: f7d0e179174fff844838ea650709d9b8, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
