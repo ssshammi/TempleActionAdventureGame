@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 6049761968974656819}
   - component: {fileID: 8363718032529687033}
   - component: {fileID: 1074986076234730482}
+  - component: {fileID: 6355641173410185435}
   m_Layer: 0
   m_Name: Ankh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7231314117593266838
 Transform:
@@ -95,3 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.53682375, y: 3.1509368, z: 1.7455893}
   m_Center: {x: 0, y: 1.5754682, z: 0.006979079}
+--- !u!95 &6355641173410185435
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8003205830995976236}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ddbb87ffb9c03b44949d1901ef2d610, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
