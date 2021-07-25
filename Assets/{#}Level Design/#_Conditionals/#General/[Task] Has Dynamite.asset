@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subTasks: []
   active: 1
-  completed: 0
+  completed: 1
   _globalEO: 0
+  _eoResetOnEnteringPlayMode: 1

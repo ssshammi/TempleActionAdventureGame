@@ -20,15 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/@Room (3) {Final}/[Scene] Room (3) {Final}.unity
     guid: c67df488eda88bb429f7ff21aba72d5d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Game/@Room (2) {Grand Chamber}/[Scene] Room (2) {Grand Chamber}.unity
     guid: 24f977e64cf7e2f4c8545f3f0df7562a
-  - enabled: 0
-    path: Assets/Scenes/Game/@Room (4) {Wind} NEW/[Scene] Room (4) {Wind} NEW IGNORE.unity
-    guid: 3eaeddaeacb38cd42b9b70b0c15e2568
   - enabled: 1
     path: Assets/Scenes/Game/@Room (4) {Wind}/[Scene] Room (4) {Wind}.unity
     guid: fbc721c2e263df746ae9752c7a5c42c2

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5977676609289389355}
   - component: {fileID: 7303469296549890702}
   - component: {fileID: 4809798123000233540}
+  - component: {fileID: 807885784214468418}
   m_Layer: 0
   m_Name: Stone_Structure
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6466933326571331473}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.027092, y: 86.86116, z: -29.345482}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &807885784214468418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466933326571331473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6157745, y: 4.502028, z: 1.6157745}
+  m_Center: {x: 0, y: 2.2502801, z: 0.007156372}
