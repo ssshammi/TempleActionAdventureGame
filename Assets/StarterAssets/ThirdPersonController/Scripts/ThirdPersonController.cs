@@ -108,6 +108,8 @@ namespace StarterAssets
 		private int _animIDJump;
 		private int _animIDFreeFall;
 		private int _animIDSlide;
+        private int _animIDPush;
+        private int _animIDWater;
 		private int _animIDMotionSpeed;
 
 		private Animator _animator;
@@ -162,6 +164,8 @@ namespace StarterAssets
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
 			_animIDSlide = Animator.StringToHash("Slide");
+            _animIDPush = Animator.StringToHash("Push");
+            _animIDWater= Animator.StringToHash("Water");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		}
 
@@ -287,6 +291,35 @@ namespace StarterAssets
 				_animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
 			}
 		}
+        
+        public void PushObject(bool hasTrue) {
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDPush, hasTrue);
+			}
+		}
+
+		public void SlidePlayer(bool hasTrue)
+		{
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDSlide, hasTrue);
+				//_animator.SetTrigger("Slope");
+			}
+		}
+
+		public void WaterPlayer(bool hasTrue)
+		{
+
+			if (_hasAnimator)
+			{
+				_animator.SetBool(_animIDWater, hasTrue);
+				
+			}
+		}
+		
 
 		[SerializeField] private AudioClip _jumpAudioClip;
 		public AudioClip _JumpAudioClip => this._jumpAudioClip;
@@ -313,6 +346,9 @@ namespace StarterAssets
 					_animator.SetBool(_animIDJump, false);
 					_animator.SetBool(_animIDFreeFall, false);
 					_animator.SetBool(_animIDSlide, false);
+                     _animator.SetBool(_animIDPush, false);
+                    // _animator.SetBool(_animIDWater, false);
+                    
 				}
 
 				// stop our velocity dropping infinitely when grounded

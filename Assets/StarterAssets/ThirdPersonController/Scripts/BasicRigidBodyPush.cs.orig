@@ -53,13 +53,19 @@ public class BasicRigidBodyPush : MonoBehaviour
 
 		if (twpm != null)
 		{
+<<<<<<< HEAD
 			//twpm.Move(strength * Time.deltaTime, pushDir);
+		}
+
+=======
+			twpm.Move(strength * Time.deltaTime, pushDir);
             this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
             
 		}//else
         
         //this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(false);
             
+>>>>>>> 69732ced21d7669d2ad658aa135da6fd79db8d53
 		// Apply the push and take strength into account
 		//body.AddForce(pushDir * strength, this.ForceMode);
 
