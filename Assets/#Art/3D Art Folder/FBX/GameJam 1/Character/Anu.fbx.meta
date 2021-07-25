@@ -3,7 +3,12 @@ guid: 459d0d8b7632cc24a9555b6f699379d8
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anubis_Mat
+    second: {fileID: 2100000, guid: d75c0ff41e2e0f545abff66d63d1cb33, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
