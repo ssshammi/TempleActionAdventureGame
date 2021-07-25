@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using StarterAssets;
 public class BasicRigidBodyPush : MonoBehaviour
 {
 	public LayerMask pushLayers;
@@ -13,6 +13,24 @@ public class BasicRigidBodyPush : MonoBehaviour
 		if (canPush) PushRigidBodies(hit);
 	}
 
+
+ public void OnInteractionTriggerEnter(Collider other)
+    {
+		//var bodyLayerMask = other.gameObject.layer;
+		//if ((bodyLayerMask & pushLayers.value) == 0) return;
+
+		this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
+
+	}
+
+	public void OnInteractionTriggerExit(Collider other)
+	{
+	//	var bodyLayerMask = other.gameObject.layer;
+	//	if ((bodyLayerMask & pushLayers.value) == 0) return;
+
+		this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(false);
+
+	}
 	private void PushRigidBodies(ControllerColliderHit hit)
 	{
 		// https://docs.unity3d.com/ScriptReference/CharacterController.OnControllerColliderHit.html
@@ -36,8 +54,12 @@ public class BasicRigidBodyPush : MonoBehaviour
 		if (twpm != null)
 		{
 			twpm.Move(strength * Time.deltaTime, pushDir);
-		}
-
+            this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(true);
+            
+		}//else
+        
+        //this.transform.gameObject.GetComponent<ThirdPersonController>().PushObject(false);
+            
 		// Apply the push and take strength into account
 		//body.AddForce(pushDir * strength, this.ForceMode);
 
