@@ -35,7 +35,7 @@ public class BasicRigidBodySlide : MonoBehaviour
 
 		if (twpm != null)
 		{
-			twpm.Move(strength * Time.deltaTime, pushDir);
+			//twpm.Move(strength * Time.deltaTime, pushDir);
 		}
 
 		// Apply the push and take strength into account

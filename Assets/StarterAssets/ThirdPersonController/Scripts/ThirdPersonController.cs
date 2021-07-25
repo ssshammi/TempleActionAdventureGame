@@ -83,6 +83,9 @@ namespace StarterAssets
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
 
+		[SerializeField] private CharacterPush _characterPush;
+		public CharacterPush _CharacterPush => this._characterPush;
+
 		// cinemachine
 		private float _cinemachineTargetYaw;
 		private float _cinemachineTargetPitch;
@@ -261,7 +264,12 @@ namespace StarterAssets
 			Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
 			// move the player
-			_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+			//Debug.Log(this._characterPush.Attempt(targetDirection, out Vector3 movement));
+
+			if (this._characterPush.Attempt(targetDirection, out Vector3 movement))
+				_controller.Move(movement);
+			else
+				_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
 			Cooldown cooldown = this._input.sprint ? this._sprintFootstepAudioCooldown : this._walkFootstepAudioCooldown;
 			if (this._speed > this.MoveSpeed / 2.0f && cooldown._Finished && this.Grounded)

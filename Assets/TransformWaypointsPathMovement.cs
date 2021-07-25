@@ -37,8 +37,23 @@ public class TransformWaypointsPathMovement : MonoBehaviour
 	private int _currentWaypointIndex => this._loop ? this._freeCurrentWaypointIndex % this._waypoints.Length : Oscillate(this._freeCurrentWaypointIndex, 0, this._waypoints.Length - 1);
 	private int _nextWaypointIndex => this._loop ? (this._freeCurrentWaypointIndex + 1) % this._waypoints.Length : Oscillate(this._freeCurrentWaypointIndex + 1, 0, this._waypoints.Length - 1);
 
-	public void Move(float distance, Vector3 direction)
+	public bool IsDirectionValid(Vector3 direction)
 	{
+		Transform currentWaypoint = this._waypoints[this._currentWaypointIndex];
+		Transform targetWaypoint = this._waypoints[this._nextWaypointIndex];
+
+		Vector3 directionToTargetWaypoint = targetWaypoint.position - currentWaypoint.position;
+
+		return MathUtil.GetProjectionValue(direction, directionToTargetWaypoint) > 0.7f;
+	}
+
+	[SerializeField] private Rigidbody _rigidbody;
+	public Rigidbody _Rigidbody => this._rigidbody;
+
+	public void Move(float strength, Vector3 direction, out Vector3 movement)
+	{
+		movement = Vector3.zero;
+
 		if (this._currentWaypointIndex + 1 < this._waypoints.Length)
 		{
 			Transform currentWaypoint = this._waypoints[this._currentWaypointIndex];
@@ -46,18 +61,19 @@ public class TransformWaypointsPathMovement : MonoBehaviour
 
 			Vector3 directionToTargetWaypoint = targetWaypoint.position - currentWaypoint.position;
 
-			//Debug.Log(MathUtil.GetProjectionValue(direction, directionToTargetWaypoint));
+			movement = directionToTargetWaypoint.normalized * strength * Time.fixedDeltaTime;
 
-			if (MathUtil.GetProjectionValue(direction, directionToTargetWaypoint) > 0.7f)
+			//this._movable.position = this._movable.position + movement;
+
+			this._rigidbody.MovePosition(this._rigidbody.position + movement);
+
+			//Debug.Log(MathUtil.GetProjectionValue(directionToTargetWaypoint, targetWaypoint.position - this._movable.position));
+			if (MathUtil.GetProjectionValue(directionToTargetWaypoint, targetWaypoint.position - this._movable.position) < 0)
 			{
-				this._movable.position = this._movable.position + directionToTargetWaypoint.normalized * distance;
+				//this._movable.position = targetWaypoint.position;
+				this._rigidbody.MovePosition(targetWaypoint.position);
 
-				if (Vector3.Distance(this._movable.position, targetWaypoint.position) < 0.1f)
-				{
-					this._movable.position = targetWaypoint.position;
-
-					++this._freeCurrentWaypointIndex;
-				}
+				++this._freeCurrentWaypointIndex;
 			}
 		}
 	}
