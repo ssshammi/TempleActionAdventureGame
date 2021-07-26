@@ -175,6 +175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 456489332976712879, guid: 9830b6f8cad85a94b9f4a1606eae9065, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 456489333784329794, guid: 9830b6f8cad85a94b9f4a1606eae9065, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.857
@@ -235,9 +239,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3477670672846712034, guid: 9830b6f8cad85a94b9f4a1606eae9065, type: 3}
+      propertyPath: m_Intensity
+      value: 7.957747
+      objectReference: {fileID: 0}
     - target: {fileID: 3477670673354102850, guid: 9830b6f8cad85a94b9f4a1606eae9065, type: 3}
       propertyPath: m_Intensity
-      value: 2.0746071
+      value: 7.957747
       objectReference: {fileID: 0}
     - target: {fileID: 3477670673354102850, guid: 9830b6f8cad85a94b9f4a1606eae9065, type: 3}
       propertyPath: m_UseColorTemperature
