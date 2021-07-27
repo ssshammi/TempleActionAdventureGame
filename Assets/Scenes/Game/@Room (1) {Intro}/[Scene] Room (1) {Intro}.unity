@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000010, guid: ca467f1d6f73dc147856091b53d1a60e, type: 2}
+  m_LightingDataAsset: {fileID: 112000010, guid: e32411b730b65b84988156cc4899b2dd, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 87253493228be73469d74c0d588e800b, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -40433,9 +40433,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 164965496}
     m_Modifications:
+    - target: {fileID: 3049953180407840003, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8158627126113563614, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
       propertyPath: m_Name
       value: P_Floor_3_low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158627126113563614, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8823277938258291044, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
       propertyPath: m_RootOrder
@@ -45427,9 +45435,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 164965496}
     m_Modifications:
+    - target: {fileID: 3049953180407840003, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8158627126113563614, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
       propertyPath: m_Name
       value: P_Floor_3_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158627126113563614, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8823277938258291044, guid: 7394aaf526d8a5a41a37ef0b29bd6462, type: 3}
       propertyPath: m_RootOrder
