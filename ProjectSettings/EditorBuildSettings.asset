@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/[Scene] Main Menu.unity
     guid: c09eeaf1bc2522a44895cdc97661bd86
   - enabled: 1
-    path: Assets/Scenes/Game/[Scene] Game.unity
-    guid: 1679a5e7e41400d40a291d4e3e52080c
-  - enabled: 1
     path: Assets/{#}PixLi/unity-pixli-scene-management/#Presets/[Runtime][Scene].unity
     guid: b9fc9b921c9c6e942beb72d46da3298c
+  - enabled: 1
+    path: Assets/Scenes/Game/[Scene] Game.unity
+    guid: 1679a5e7e41400d40a291d4e3e52080c
   - enabled: 1
     path: Assets/Scenes/Game/@Room (1) {Intro}/[Scene] Room (1) {Intro}.unity
     guid: 3224e7ad9c9317b4488c54f3ca2a7113

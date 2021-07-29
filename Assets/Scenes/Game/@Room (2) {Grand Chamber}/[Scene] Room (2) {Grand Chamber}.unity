@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000004, guid: e32411b730b65b84988156cc4899b2dd, type: 2}
+  m_LightingDataAsset: {fileID: 112000004, guid: 4e121c3e12ee1084ba8c4d1f134459c6, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 477cc4148fad3449482a3bc3178594e2, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -9035,7 +9035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 7.9080396
+      value: 7.957747
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_AreaSize.x
@@ -10549,7 +10549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_Intensity
-      value: 47.746483
+      value: 7.957747
       objectReference: {fileID: 0}
     - target: {fileID: 3380469545641839342, guid: 6594987d96ba5ef4b8fc6be42a98a54a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
